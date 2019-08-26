@@ -1,0 +1,181 @@
+---
+---
+
+body
+    background-color: #d9d9d9
+    color: #111
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif
+    margin: 0
+    padding: 0
+
+=pageshadow($property)
+    -webkit-box-shadow: $property
+    -moz-box-shadow: $property
+    box-shadow: $property
+
+.wrapper
+    background-color: white
+    max-width: 800px
+    margin: 56px auto
+    +pageshadow(2px 2px 18px rgba(0,0,0,0.12))
+    border-radius: 5px
+    overflow: hidden
+
+header 
+    text-align: center
+    padding: 40px 0
+    color: white
+    background-color: #5b92aa
+    background: -webkit-linear-gradient(right, #67a0b9 0%, #5b92aa 100%)
+    background: -moz-linear-gradient(right, #67a0b9 0%, #5b92aa 100%)
+    background: linear-gradient(to left, #67a0b9, #5b92aa)
+
+header h1 
+    font-weight: 500
+
+header h1 a 
+    color: white
+    text-decoration: none
+
+.subheader, footer
+    background-color: #f7f7f7
+    color: #444
+
+.subheader 
+    font-size: 15px
+    border-bottom: 1px solid #ddd
+    padding: 8px 20px
+    line-height: 150%
+
+.subheader a, footer a
+    color: #444
+
+.subheader a:hover, footer a:hover 
+    color: #000
+
+.theme 
+    font-size: 15px
+    clear: both
+    margin-bottom: 20px
+    padding: 20px
+    padding-top: 0
+    border-bottom: 1px dotted #888
+
+.theme:first-child 
+    margin-top: 20px
+
+.theme:last-child 
+    border-bottom: 0
+
+.theme h2 
+    font-size: 15px
+    font-weight: 600
+    margin-top: 0
+    text-transform: uppercase
+
+.theme img 
+    float: left
+    width: 225px
+    height: auto
+    border-radius: 3px
+    border: 1px solid #ccc
+    margin-right: 30px
+
+figure 
+    margin: 0
+
+.post-section h2 
+    font-weight: 500
+
+.post-section a, .theme a 
+    color: #3d7e9a
+
+.post-section a:hover, .theme a:hover 
+    color: #2c4851
+
+.post-section 
+    padding: 20px
+    line-height: 150%
+    border-bottom: 1px dotted #888
+
+.post-section.title 
+    border-bottom: 0
+
+.post-section:last-child 
+    border-bottom: 0
+
+.post-section ul 
+    list-style-type: square
+    font-size: 14px
+
+.post-section img 
+    border-radius: 3px
+    max-width: 100%
+    height: auto
+
+.question 
+    font-size: 15px
+    padding-top: 2px
+    margin-bottom: 20px
+
+.question b 
+    font-weight: 600
+
+footer 
+    text-align: center
+    border-top: 1px solid #ddd
+    font-size: 15px
+    padding: 8px 20px
+    line-height: 150%
+
+.align-center 
+    text-align: center
+    padding-bottom: 40px
+
+=btnshadow($property)
+    -webkit-box-shadow: $property
+    -moz-box-shadow: $property
+    box-shadow: $property
+
+a.btn 
+    background-color: #5b92aa
+    +btnshadow(0px 5px 0px #435666)
+    font-size: 15px
+    font-weight: 600
+    padding: 15px 25px
+    color: white
+    text-decoration: none
+    border-radius: 5px
+    text-transform: uppercase
+
+a.btn:hover 
+    background-color: #67a0b9
+    color: white
+
+.clearfix:before, .clearfix:after
+    content: "\0020"
+    display: block
+    height: 0
+    overflow: hidden 
+
+.clearfix:after
+    clear: both 
+
+.clearfix
+    zoom: 1 
+
+@media screen and (max-width:800px) 
+    .wrapper 
+        margin: 0
+        box-shadow: none
+        border-radius: 0
+    
+
+@media screen and (max-width:650px) 
+    .theme img 
+        float: none
+        width: 100%
+        height: auto
+        margin-right: 0
+        margin-bottom: 15px
+    

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>{{ page.title }}</title>
+        {% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <meta name="theme-color" content="#85a6b1">
+        <meta name="google-site-verification" content="OFYFhwH45Ur4cHfY_HZFaLhzu68hYRxweFEH4Gv6KS4">
+        <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Roboto:400,400italic,500,700">
+        <link rel="stylesheet" type="text/css" href="/assets/style.css">
+    </head>
+    <body>
+        <div class="wrapper">
+            <header>
+                <h1><a href="/">Adorable Themes</a></h1>
+            </header>
+            {% if page.subtitle %}
+            <div class="subheader">
+                <p>{{ page.subtitle }}</p>
+            </div>
+            {% endif %}
+            <main>
+                {{ content }}
+            </main>
+            {% include footer.html %}
+        </div>
+        {% include ga.html %}
+    </body>
+</html>

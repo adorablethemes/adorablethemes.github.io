@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>{{ page.title }}</title>
+        {% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <meta name="theme-color" content="#85a6b1">
+        <meta name="google-site-verification" content="OFYFhwH45Ur4cHfY_HZFaLhzu68hYRxweFEH4Gv6KS4">
+        <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Roboto:400,400italic,500,700">
+        <link rel="stylesheet" type="text/css" href="/assets/style.css">
+    </head>
+    <body>
+        <div class="wrapper">
+            <header>
+                <h1><a href="/">Adorable Themes</a></h1>
+            </header>
+            <main>
+                <article class="post-section">
+                    {% if page.theme_image %}<figure><img src="/assets/{{ page.theme_image }}" /></figure>{% endif %}
+                    <h2>{{ page.theme_name }} Theme</h2>
+                    <p><small>Last update: <b>{{ page.theme_version }}</b> ({{ page.theme_date }})</small></p>
+                    <p><a href="{{ page.preview_url }}" target="_blank">Live preview</a> | {% if page.code_url %}<a href="{{ page.code_url }}" target="_blank">Code &rarr;</a>{% endif %}{% if page.install_url %}<a href="{{ page.install_url }}" target="_blank">Install &rarr;</a>{% endif %}</p>
+                    <ul>
+                        {% if page.info_1 %}<li>{{ page.info_1 }}</li>{% endif %}
+                        {% if page.info_2 %}<li>{{ page.info_2 }}</li>{% endif %}
+                        {% if page.info_3 %}<li>{{ page.info_3 }}</li>{% endif %}
+                        {% if page.info_4 %}<li>{{ page.info_4 }}</li>{% endif %}
+                        {% if page.info_5 %}<li>{{ page.info_5 }}</li>{% endif %}
+                    </ul>
+                </article>
+                {{ content }}
+            </main>
+            {% include footer.html %}
+        </div>
+        {% include ga.html %}
+    </body>
+</html>

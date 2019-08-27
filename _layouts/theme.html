@@ -5,9 +5,16 @@
         <title>{{ page.title }}</title>
         {% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-        <meta name="theme-color" content="#85a6b1">
+        <meta name="theme-color" content="#5b92aa">
         <meta name="google-site-verification" content="OFYFhwH45Ur4cHfY_HZFaLhzu68hYRxweFEH4Gv6KS4">
+        <meta property="og:site_name" content="Adorable Themes">
+        <meta property="og:title" content="{{ page.theme_name }}">
+        <meta property="og:type" content="article">
+        <meta property="og:url" content="{{ page.url }}">
+        <meta property="og:locale" content="en_us">
+        <meta property="og:image" content="/assets/{{ page.theme_image }}">
         <link rel="stylesheet" type="text/css" href="/assets/style.css">
+        <!--[if lt IE 9]><script src="//static.tumblr.com/hriofhd/Qj0m8pn7q/html5shiv.js"></script><![endif]-->
     </head>
     <body>
         <div class="wrapper">

@@ -12,7 +12,7 @@
         <meta property="og:type" content="article">
         <meta property="og:url" content="{{ page.url }}">
         <meta property="og:locale" content="en_us">
-        <meta property="og:image" content="/assets/full_{{ page.theme_shortname }}.jpg">
+        <meta property="og:image" content="/assets/full_{{ page.shortname }}.jpg">
         <link rel="stylesheet" type="text/css" href="/assets/style.css">
         <!--[if lt IE 9]><script src="//static.tumblr.com/hriofhd/Qj0m8pn7q/html5shiv.js"></script><![endif]-->
     </head>
@@ -23,10 +23,10 @@
             </header>
             <main>
                 <article class="post-section">
-                    {% if page.theme_image %}<figure><img src="/assets/full_{{ page.theme_shortname }}.jpg" /></figure>{% endif %}
+                    {% if page.theme_image %}<figure><img src="/assets/full_{{ page.shortname }}.jpg" /></figure>{% endif %}
                     <h2>{{ page.theme_name }} Theme</h2>
                     <p><small>Last update: <b>{{ page.theme_version }}</b> ({{ page.theme_date }})</small></p>
-                    <p><a href="https://adorablethemes.com/preview/{{ page.theme_shortname }}" target="_blank">Preview</a> | <a href="https://raw.githubusercontent.com/adorablethemes/themes/master/{{ page.theme_shortname }}.txt" target="_blank">Code &rarr;</a></p>
+                    <p><a href="https://adorablethemes.com/preview/{{ page.shortname }}" target="_blank">Preview</a> | <a href="https://raw.githubusercontent.com/adorablethemes/themes/master/{{ page.shortname }}.txt" target="_blank">Code &rarr;</a></p>
                     <ul>
                         {% if page.info_1 %}<li>{{ page.info_1 }}</li>{% endif %}
                         {% if page.info_2 %}<li>{{ page.info_2 }}</li>{% endif %}

@@ -1,0 +1,1077 @@
+---
+permalink: /preview/mini-grid
+redirect_from:
+  - /preview/minigrid
+  - /preview/twocolmini
+  - /preview/threecolmini
+---
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- 
+        
+        theme:      Mini Grid
+        version:    3.0 (February 25, 2019)
+        from:       adorablethemes.com
+        
+        credits:
+        
+        Font Awesome 4.7.0 (fontawesome.com)
+        Infinite Scroll 3.0.3 (infinite-scroll.com)
+        jQuery 3.3.1 (jquery.com)
+        
+        -->
+        <title>Mini Grid Theme (preview)</title>
+        <meta name="description" content="a tumblr theme with square posts / best for images only / use 12 posts per page">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=840">
+        <meta name="theme-color" content="#dddddd">
+        <meta name="robots" content="noindex"/>
+        <link href="https://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+        <style type="text/css">
+            
+            ::selection{
+            	background: #eeeeee;
+            	color: #222222;
+            }
+            ::-moz-selection{
+            	background: #eeeeee;
+            	color: #222222;
+            }
+            
+            body {
+                color: #eeeeee;
+                background-color: #111111;
+                font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            }
+            
+            body.font-serif {
+                font-family: Georgia, serif;
+            }
+            body.font-monospace {
+                font-family: Consolas, Menlo, Monaco, monospace;
+            }
+            body.font-comic-sans {
+                font-family: 'Comic Sans MS', Chalkboard, sans-serif;
+            }
+            
+            .wrapper {
+                width: 1092px;
+            	margin: 54px auto;
+            }
+            .sidebar {
+                float: left;
+                padding-top: 4px;
+                padding-left: 24px;
+                padding-right: 20px;
+                width: 200px;
+                position: fixed;
+                color: #dddddd;
+            }
+            .main {
+                width: 824px;
+            	float: right;
+            }
+            
+            .permalink-page .wrapper {
+                width: 818px;
+            }
+            .permalink-page .main {
+                width: 550px;
+            }
+            
+            h1,h2,h3 {
+            	font-weight: 400;
+            	font-size: 20px;
+            }
+            h4,h5,h6 {
+            	font-weight: 400;
+            	font-size: 17px;
+            }
+            .blog-title {
+                font-family: Helvetica, Arial, sans-serif;
+                font-weight: normal;
+            }
+            .blog-description {
+            	font-size: 12px; 
+            }
+            
+            a {
+            	color: #eeeeee;
+            	text-decoration: none;
+            }
+            a:hover {
+            	color: #eeeeee;
+                text-decoration: none;
+            }
+            
+            .blog-description a, .blog-description a:hover {
+                color: #dddddd;
+                text-decoration: underline;
+            }
+            
+            .sidebar-links {
+                list-style-type: none;
+                padding-left: 0;
+            }
+            .sidebar-link {
+            	font-size: 11px;
+            	display: block;
+            	padding: 6px 0;
+            	color: #dddddd;
+            	text-decoration: none;
+            }
+            .sidebar-link:hover {
+                color: rgba(221,221,221,0.85);
+                text-decoration: none;
+            }
+            .social-links {
+                margin-top: 16px;
+            }
+            .social-link {
+                color: #dddddd;
+                padding: 1px 0;
+            }
+            .social-link:hover {
+                color: rgba(221,221,221,0.85);
+            }
+            
+            .sidebar-photo {
+            	width: 96px;
+            	height: auto;
+            	border-radius: 3px;
+            	margin-bottom: 16px;
+            }
+            .sidebar-photo.circle {
+                border-radius: 96px;
+            }
+            
+            ul {
+            	list-style-type: none;
+            	padding-left: 0;
+            }
+            ul#posts {
+            	margin-top: 0px;
+            }
+            ol.notes {
+            	list-style-type: none;
+            	padding-left: 0;
+            }
+            
+            .post-section {
+            	padding: 8px 12px;
+            }
+            
+            .post-section a {
+                text-decoration: underline;
+            }
+            
+            .post p {
+            	font-size: 13px;
+            	line-height: 20px;
+            }
+            .post ul {
+            	list-style-type: square;
+            	font-size: 12px;
+            	line-height: 18px;
+            	padding-left: 20px;
+            }
+            .post ol {
+                font-size: 12px;
+            }
+            .post blockquote {
+            	font-size: 12px;
+            	padding: 0 8px;
+            	margin: 0 2px;
+                border-left: 2px solid #eeeeee;
+            	font-style: italic;
+            }
+            .post img {
+            	max-width: 100%;
+            	height: auto;
+            }
+            .post code, .post pre {
+                font-family: Consolas, Menlo, Monaco, monospace;
+            }
+            
+            /* Quote posts */
+            .quote-text {
+                font-style: italic;
+            }
+            .quote-source {
+                font-weight: bold;
+                text-align: right;
+            }
+            
+            .chat {
+            	font-size: 13px;
+            	line-height: 16px;
+            }
+            .chat .label {
+            	font-weight: bold;
+            }
+            .chat ul {
+                padding-left: 0;
+                list-style-type: none;   
+            }
+            .chat ul li {
+                border-bottom: 1px solid rgba(0,0,0,0.1);   
+                padding: 8px 0;
+            }
+            .chat ul li:last-child {
+                border-bottom: 0   
+            }
+            
+            .index-page .post {
+                
+                
+                margin-right: 24px;
+                margin-bottom: 24px;
+                
+                float: left;
+                background: #222222;
+                width: 250px;
+                height: 250px;
+                overflow: hidden;
+                position: relative;
+                
+            }
+            
+            .permalink-page .post {
+                
+                
+                margin-right: 24px;
+                margin-bottom: 24px;
+                
+                background: #222222;
+                float: left;
+                width: 524px;
+                height: auto;
+                
+            }
+            
+            .index-page .post:hover {
+                -webkit-filter: brightness(1.07);
+                filter: brightness(1.07);
+            }
+            
+            .permalink-page .post img {
+                max-width: 100%;
+            	height: auto;
+            }
+            
+            .post-section figure img {
+                max-width: 100%;
+                height: auto;
+            }
+            
+            .post iframe {
+                max-width: 100%;
+            }
+            .tumblr_video_iframe {
+                max-height: 540px;
+            }
+            
+            .photo-post-photo, .photoset-container, .video-post-video, .audio-post-audio {
+                margin: 12px;
+                margin-bottom: 0;
+                display: block;
+            }
+            
+            .square-inner {
+                display: table;
+                width: 250px;
+                height: 250px;
+            }
+            .square-inner-content {
+                display: table-cell;
+                vertical-align: middle;
+                text-align: center;
+                padding: 20px;
+            }
+            .square-inner-content p {
+                max-height: 120px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+            .video .square-inner-content {
+                background-color: rgba(0,0,0,0.33);
+                color: white;
+                text-shadow: 0px 2px 10px black;
+            }
+            
+            hr {
+            	clear: both;
+            	border: 0;
+            	border-bottom: 1px solid rgba(238,238,238,0.25);
+            	margin: 15px 0;
+            }
+            
+            .post-meta {
+                font-size: 12px;
+                padding: 12px;
+                color: rgba(238,238,238,0.66);
+            }
+            .post-meta a {
+                color: rgba(238,238,238,0.66);
+            }
+            .post-meta a:hover {
+                color: rgba(238,238,238,0.8);
+            }
+            .post-tags {
+                font-size: 11px;
+            }
+            ol.notes {
+                padding-left: 0;
+                list-style-type: none;
+            }
+            .note {
+                padding: 8px 0;
+            }
+            .note:last-child {
+                border-bottom: 0;
+            }
+            .note .avatar {
+                vertical-align: middle;
+                border-radius: 2px;
+                margin-right: 8px;
+            }
+            .note blockquote {
+                border-left: 0;
+                margin: 8px 16px;
+            }
+            
+            .but img {
+                border-radius: 2px;
+            }
+            
+            a img {
+            	border: none;   
+            }
+            
+            .pagination {
+            	clear: both;
+            	text-align: center;
+            	padding-top: 30px;
+            	margin-right: 24px;
+            }
+            .pagination a, .pagination a:hover {
+                font-size: 15px;
+                color: #dddddd;
+                padding: 10px 0;
+                text-decoration: none;
+            }
+            .span33, .span50 {
+                float: left;
+                min-height: 1px;
+            }
+            .span33 {
+                width: 33.33%;
+            }
+            .span50 {
+                width: 50%;
+            }
+            #view_more_button {
+                cursor: pointer;
+            }
+            #view_more_button:hover {
+                color: rgba(221,221,221,0.85);
+            }
+            
+            
+            #view_more_button {
+                display: none;
+            }
+            
+            
+            .tag:before {
+                content: "#";
+            }
+            
+            .reblog-avatar {
+                border-radius: 2px;
+                width: 16px;
+                height: 16px;
+                margin-right: 7px;
+                vertical-align: middle;
+            }
+            .reblog-avatar.deleted {
+                -webkit-filter: grayscale(1);
+                filter: grayscale(1);
+            }
+            a.reblog-username {
+                color: #eeeeee;
+                text-decoration: none;
+            }
+            .asker-username a, .answerer-username a {
+                text-decoration: none;
+            }
+            .post-section {
+                border-bottom: 1px solid rgba(238,238,238,0.1);
+            }
+            .post-section:last-child {
+                border-bottom: 0;
+            }
+            p.tmblr-attribution {
+                font-size: 10px;
+            }
+            div.npf_row {
+                max-width: 100%;
+                height: auto !important;
+                display: flex;
+                margin: 0 !important;
+            }
+            div.npf_row figure.tmblr-full {
+                flex: 1;
+                justify-content: space-between;
+            }
+            div.npf_row figure.tmblr-full:first-child {
+                padding-right: 2px;
+            }
+            figure video {
+                max-width: 100%;
+            }
+            
+            .align-left {
+                text-align: left;
+            }
+            .align-center {
+                text-align: center;
+            }
+            .align-right {
+                text-align: right;
+            }
+            .float-right{
+                float: right;
+            }
+            
+            .clearfix:before,
+            .clearfix:after {
+            	content: " ";
+            	display: table;
+            }
+            .clearfix:after {
+            	clear: both;
+            }
+            .clearfix {
+            	*zoom: 1;
+            }
+            
+            .tmblr-iframe--app-cta-button {
+                display: none !important;
+            }
+            
+            @media screen and (min-width: 1380px) {
+                .index-page .wrapper {
+                    width: 1366px;
+                }
+                .index-page .main {
+                    width: 1098px;
+                }
+            }
+            @media screen and (max-width: 1090px) {
+                .index-page .wrapper {
+                    width: 816px;
+                }
+                .index-page .main {
+                    width: 548px;
+                }
+            }
+            
+            
+        </style>
+    </head>
+    <body class="index-page font-sans-serif">
+        <div class="wrapper clearfix">
+            <div class="sidebar">
+                
+                
+                
+                
+                <a href="#">
+            	    <img class="sidebar-photo" src="https://static.tumblr.com/9e4c110e1b7cf34374ec6c616bf7982d/anzluor/QoEpwwuvf/tumblr_static_oe1krdy31og4wwgg48k4socw.png" alt="minigrid-theme" />
+                </a>
+                
+
+            	
+            		<h1 class="blog-title">Mini Grid Theme</h1>
+            	
+
+            	
+            		<div class="blog-description">a tumblr theme with square posts<br />
+best for images only<br />
+use 12 posts per page</div>
+            	
+            	
+            	<div class="social-links">
+                	
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                </div>
+
+	            <ul class="sidebar-links">
+	
+	                <li><a class="sidebar-link" href="#">Home</a></li>
+
+                		<li><a class="sidebar-link" href="#">Archive</a></li>
+            		
+		
+            		
+            			<li><a class="sidebar-link" href="#">Random</a></li>
+            		
+		
+		            <li><a class="sidebar-link" href="https://adorablethemes.com/theme/mini-grid" target="_blank">Theme</a></li>
+		
+	            </ul>
+
+            </div>
+
+            <div class="main clearfix">
+
+                <div id="posts">
+
+                
+                    <div id="145710729959" class="post photo">
+    
+                        <div class="post-main">
+                        
+                    	
+    
+                        
+
+                    	
+                    	    
+                    		<a href="#">
+                    			<div class="square-inner" style="background-image: url('https://66.media.tumblr.com/tumblr_m1ezkb1wdQ1rncj8qo1_500.png'); background-size: cover; background-position: center center">
+                    			</div>
+                    		</a>
+                    		
+                    		
+                    	
+
+                    	
+
+                    	
+
+                    	
+
+                    	
+
+                    	
+
+                    	
+                        
+	                    </div>
+	
+	                    
+	
+                    </div>
+                    
+                    
+
+                    
+                    <div id="145710659529" class="post photo">
+    
+                        <div class="post-main">
+                        
+                    	
+    
+                        
+
+                    	
+                    	    
+                    		<a href="#">
+                    			<div class="square-inner" style="background-image: url('https://66.media.tumblr.com/9eec64688b28b1de50e0a19d4f10e71a/tumblr_o1yjtzoIYA1so6cwuo1_500.jpg'); background-size: cover; background-position: center center">
+                    			</div>
+                    		</a>
+                    		
+                    		
+                    	
+
+                    	
+
+                    	
+
+                    	
+
+                    	
+
+                    	
+
+                    	
+                        
+	                    </div>
+	
+	                    
+	
+                    </div>
+                    
+                    
+
+                    
+                    <div id="145710650914" class="post photo">
+    
+                        <div class="post-main">
+                        
+                    	
+    
+                        
+
+                    	
+                    	    
+                    		<a href="#">
+                    			<div class="square-inner" style="background-image: url('https://66.media.tumblr.com/1d2c171cc3c86e07d9e5474411ed1bca/tumblr_nn6kra6wcR1thynt0o1_500.jpg'); background-size: cover; background-position: center center">
+                    			</div>
+                    		</a>
+                    		
+                    		
+                    	
+
+                    	
+
+                    	
+
+                    	
+
+                    	
+
+                    	
+
+                    	
+                        
+	                    </div>
+	
+	                    
+	
+                    </div>
+                    
+                    
+
+                    
+                    <div id="145710625729" class="post photo">
+    
+                        <div class="post-main">
+                        
+                    	
+    
+                        
+
+                    	
+                    	    
+                    		<a href="#">
+                    			<div class="square-inner" style="background-image: url('https://66.media.tumblr.com/tumblr_lnp292RgaJ1qf7ikto1_500.jpg'); background-size: cover; background-position: center center">
+                    			</div>
+                    		</a>
+                    		
+                    		
+                    	
+
+                    	
+
+                    	
+
+                    	
+
+                    	
+
+                    	
+
+                    	
+                        
+	                    </div>
+	
+	                    
+	
+                    </div>
+                    
+                    
+
+                    
+                    <div id="145710607439" class="post photo">
+    
+                        <div class="post-main">
+                        
+                    	
+    
+                        
+
+                    	
+                    	    
+                    		<a href="#">
+                    			<div class="square-inner" style="background-image: url('https://66.media.tumblr.com/a00da49e609dd414ad59a83c24a4538d/tumblr_mhn7qxgFio1r9ouy2o1_500.jpg'); background-size: cover; background-position: center center">
+                    			</div>
+                    		</a>
+                    		
+                    		
+                    	
+
+                    	
+
+                    	
+
+                    	
+
+                    	
+
+                    	
+
+                    	
+                        
+	                    </div>
+	
+	                    
+	
+                    </div>
+                    
+                    
+
+                    
+                    <div id="145710600669" class="post photo">
+    
+                        <div class="post-main">
+                        
+                    	
+    
+                        
+
+                    	
+                    	    
+                    		<a href="#">
+                    			<div class="square-inner" style="background-image: url('https://66.media.tumblr.com/tumblr_lsxa9dDhq51r3wbvoo1_500.jpg'); background-size: cover; background-position: center center">
+                    			</div>
+                    		</a>
+                    		
+                    		
+                    	
+
+                    	
+
+                    	
+
+                    	
+
+                    	
+
+                    	
+
+                    	
+                        
+	                    </div>
+	
+	                    
+	
+                    </div>
+                    
+                    
+
+                    
+                    <div id="145710585679" class="post photo">
+    
+                        <div class="post-main">
+                        
+                    	
+    
+                        
+
+                    	
+                    	    
+                    		<a href="#">
+                    			<div class="square-inner" style="background-image: url('https://66.media.tumblr.com/tumblr_maxe4cI3uP1qdmej1o1_500.jpg'); background-size: cover; background-position: center center">
+                    			</div>
+                    		</a>
+                    		
+                    		
+                    	
+
+                    	
+
+                    	
+
+                    	
+
+                    	
+
+                    	
+
+                    	
+                        
+	                    </div>
+	
+	                    
+	
+                    </div>
+                    
+                    
+
+                    
+                    <div id="145710579069" class="post photo">
+    
+                        <div class="post-main">
+                        
+                    	
+    
+                        
+
+                    	
+                    	    
+                    		<a href="#">
+                    			<div class="square-inner" style="background-image: url('https://66.media.tumblr.com/516d15eca3ab95750cdb232c18986f1e/tumblr_mm6mwbxU3d1r9mn8eo1_500.jpg'); background-size: cover; background-position: center center">
+                    			</div>
+                    		</a>
+                    		
+                    		
+                    	
+
+                    	
+
+                    	
+
+                    	
+
+                    	
+
+                    	
+
+                    	
+                        
+	                    </div>
+	
+	                    
+	
+                    </div>
+                    
+                    
+
+                    
+                    <div id="145710572289" class="post photo">
+    
+                        <div class="post-main">
+                        
+                    	
+    
+                        
+
+                    	
+                    	    
+                    		<a href="#">
+                    			<div class="square-inner" style="background-image: url('https://66.media.tumblr.com/e62e3f0899044ca8b8ccd9a06d0d2c8a/tumblr_n1ofeynaDd1r4ueyro1_500.png'); background-size: cover; background-position: center center">
+                    			</div>
+                    		</a>
+                    		
+                    		
+                    	
+
+                    	
+
+                    	
+
+                    	
+
+                    	
+
+                    	
+
+                    	
+                        
+	                    </div>
+	
+	                    
+	
+                    </div>
+                    
+                    
+
+                    
+                    <div id="145710563504" class="post photo">
+    
+                        <div class="post-main">
+                        
+                    	
+    
+                        
+
+                    	
+                    	    
+                    		<a href="#">
+                    			<div class="square-inner" style="background-image: url('https://66.media.tumblr.com/c8070e7f53b251bcce5568dbee400ba0/tumblr_n3kihugylt1reb7cpo1_500.jpg'); background-size: cover; background-position: center center">
+                    			</div>
+                    		</a>
+                    		
+                    		
+                    	
+
+                    	
+
+                    	
+
+                    	
+
+                    	
+
+                    	
+
+                    	
+                        
+	                    </div>
+	
+	                    
+	
+                    </div>
+                    
+                    
+
+                    
+                    <div id="145710553209" class="post photo">
+    
+                        <div class="post-main">
+                        
+                    	
+    
+                        
+
+                    	
+                    	    
+                    		<a href="#">
+                    			<div class="square-inner" style="background-image: url('https://66.media.tumblr.com/a09ba19674be3b9a76e114aa6fed9b48/tumblr_mmqw6ubgfg1rtp2uuo1_500.png'); background-size: cover; background-position: center center">
+                    			</div>
+                    		</a>
+                    		
+                    		
+                    	
+
+                    	
+
+                    	
+
+                    	
+
+                    	
+
+                    	
+
+                    	
+                        
+	                    </div>
+	
+	                    
+	
+                    </div>
+                    
+                    
+
+                    
+                    <div id="145710540809" class="post photo">
+    
+                        <div class="post-main">
+                        
+                    	
+    
+                        
+
+                    	
+                    	    
+                    		<a href="#">
+                    			<div class="square-inner" style="background-image: url('https://66.media.tumblr.com/19dd2acdaf97ad542e38d34c570e24e8/tumblr_mxpkz3V6rt1soojiro1_500.jpg'); background-size: cover; background-position: center center">
+                    			</div>
+                    		</a>
+                    		
+                    		
+                    	
+
+                    	
+
+                    	
+
+                    	
+
+                    	
+
+                    	
+
+                    	
+                        
+	                    </div>
+	
+	                    
+	
+                    </div>
+                    
+                    
+
+                    
+                </div>
+                
+            </div>
+        </div>
+
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    
+    <script>
+    
+    
+    getThumbs('.post');
+    
+    function getThumbs(items) {
+        // Look for images to use as thumbnails
+        $(items).each(function(){
+            done = false;
+            add = "";
+            isVideo = false;
+            isLink = false;
+            pid = $(this).attr('id');
+            $("#" + pid + ' .temp').each(function(){
+                // Look for an image
+                $("#" + pid + ' .tmblr-full img').each(function(){
+                    if (!done) {
+                        add = $(this).attr('src');
+                        done = true;
+                    }
+                });
+                if (!done) {
+                    // Look for a video
+                    $("#" + pid + ' .tmblr-full video').each(function(){
+                        if (!done) {
+                            add = $(this).attr('poster');
+                            isVideo = true;
+                            done = true;
+                        }
+                    });
+                }
+            });
+            if (done) {
+                a = "";
+                if (isVideo) {
+                    a = '<div class="square-inner-content"><h2 class="post-title"><i class="fa fa-play fa-lg"></i></h2></div>';
+                }
+                else if ((isLink)||($(this).hasClass('link'))) {
+                    a = '<div class="square-inner-content"><h2 class="post-title"><i class="fa fa-link fa-lg"></i></h2></div>';
+                    isLink = true;
+                }
+                addstr = '<div class="square-inner" style="background-image:url('+add+');background-size:cover;background-position:center center">'+a+'</div>';
+                $("#" + pid + ' .square-inner').html(addstr);
+                if ((isVideo)||(isLink)) {
+                    $("#" + pid).addClass('video');
+                }
+            }
+        });
+    }
+    </script>
+    {% include ga.html %}
+</body>
+</html>

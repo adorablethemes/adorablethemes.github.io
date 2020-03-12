@@ -1,0 +1,982 @@
+---
+permalink: /preview/basic
+redirect_from:
+  - /preview/onecol
+---
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- 
+        
+        theme:      Basic
+        version:    4.0.3 (August 10, 2018)
+        from:       adorablethemes.com
+        
+        credits:
+        
+        Font Awesome 4.7.0 (fontawesome.com)
+        Infinite Scroll 2.0.2 (infinite-scroll.com)
+        jQuery 3.3.1 (jquery.com)
+        
+        -->
+        <title>Basic Theme (preview)</title>
+        <meta name="description" content="Write something about yourself here. Or don&#039;t. That&#039;s okay too.">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#529ECC">
+        <link href="https://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        <meta name="robots" content="noindex"/>
+        <style type="text/css">
+        body {
+			color: #000000;
+			background-color: #FFFFFF;
+			
+			font-family: Helvetica, Arial, sans-serif;
+        }
+        .wrapper {
+			width: 744px;
+			margin: 0 auto;
+        }
+        .sidebar {
+			width: 164px;
+			padding: 10px;
+			margin-top: 48px;
+			background: #ffffff;
+			border: 2px solid #dfdfdf;
+            text-align: center;
+            
+            border-radius: 6px;
+            
+            
+            
+            margin-left: 559px;
+            position: fixed;
+            
+            
+        }
+        .main {
+			float: left;
+			width: 524px;   
+        }
+        #posts {
+            margin-top: 48px;
+        }
+        .background-cover {
+            background-position: center center;
+            background-size: cover;
+        }
+        .background-tile {
+            background-repeat: repeat;
+        }
+        .background-center {
+            background-position: center center;
+            background-repeat: no-repeat;
+        }
+        .sidebar-photo {
+			max-width: 160px;
+			height: auto;
+			border-radius: 3px;
+        }
+        .sidebar-photo-circle {
+            border-radius: 160px;
+        }
+        h1,h2,h3,h4,h5,h6 {
+			font-family: Helvetica, Arial, sans-serif;
+			font-weight: 400;
+        }
+        h1,h2,h3 {
+			font-size: 18px;
+        }
+        h3 {
+			margin: 8px 0;
+        }
+        .blog-title {
+            font-family: Georgia, Palatino, 'Palatino Linotype', Times, 'Times New Roman', serif;
+            font-weight: normal;
+        }
+        .blog-description {
+			font-size: 12px; 
+        }
+        a {
+			color: #529ECC;
+			text-decoration: none;
+        }
+        a:hover {
+			color: #529ECC;
+			text-decoration: underline;
+        }
+        ul {
+			list-style-type: none;
+			padding-left: 0;
+        }
+        .social-buttons {
+            padding-top: 5px;
+        }
+        .social-link img {
+            border-radius: 2px;
+        }
+        .sidebar-links li {
+			margin-bottom: 3px;
+        }
+        .sidebar-link {
+			font-size: 13px;
+        }
+        .post p {
+			font-size: 13px;
+			line-height: 150%;
+        }
+        .post ul {
+            font-size: 13px;
+			list-style-type: circle;
+            line-height: 140%;
+			padding-left: 20px;
+        }
+        .post ol {
+            font-size: 13px;
+            line-height: 140%;
+            padding-left: 20px;   
+        }
+        .post blockquote {
+            font-size: 13px;
+			padding: 3px 8px;
+			margin: 16px 2px;
+            border-left: 2px solid #000000;
+			font-style: italic;
+        }
+        .post iframe {
+            max-width: 100%;
+        }
+        .tumblr_video_iframe {
+            max-height: 540px;
+        }
+        .chat .label {
+			font-weight: bold;
+			text-align: right;
+        }
+        .chat ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        .chat ul li {
+            border-bottom: 1px solid rgba(0,0,0,0.05);
+            padding: 5px 0;
+        }
+        .chat ul li:last-child {
+            border-bottom: 0;   
+        }
+        .quote-text {
+            font-family: serif;
+            font-size: 15px !important;
+            font-style: italic;
+        }
+        p.link-excerpt {
+            font-size: 11px;
+        }
+        .post {
+			background: #ffffff;
+			padding: 10px 10px 0px;
+			margin-bottom: 50px;
+            
+            border-radius: 6px;
+            
+            
+            border: 2px solid #dfdfdf;
+        }
+        .post img {
+			max-width: 100%;
+			height: auto;
+        }
+        .post-title a {
+            color: #000000;
+        }
+        .post-meta {
+			color: #888888;
+			font-size: 12px;
+			border-top: 1px solid #f7f7f7;
+			padding: 8px 0;
+			min-height: 14px;
+        }
+        .post-meta a, .post-meta a:hover {
+            color: #888888;   
+        }
+        .post-tags {
+            border-top: 0;
+        }
+        .float-right {
+			float: right;
+        }
+        hr {
+			clear: both;
+			border: 0;
+			border-bottom: 1px solid #f7f7f7;
+			margin: 15px 5px;
+        }
+        .tag:before {
+            content: "#";
+        }
+        ol.notes {
+    		list-style-type: none;
+			padding-left: 0;
+        }
+        .note {
+			padding: 5px 0;
+        }
+        .note:last-child {
+            border-bottom: 0;   
+        }
+        .note img.avatar {
+            width: 16px;
+            height: 16px;
+            border-radius: 2px;
+            margin-right: 7px;
+			vertical-align: middle;
+        }
+        a img {
+			border: 0;
+        }
+        .question-container {
+            color: #eeeeee;
+            background-color: #333333;
+            padding: 10px 20px;
+            
+            border-radius: 3px;
+            
+        }
+        .asker-avatar {
+            width: 30px;
+            height: 30px;
+            vertical-align: middle;
+            border-radius: 3px;
+        }
+        .asker a {
+            color: #000000;
+            font-weight: bold;
+        }
+        .answerer a {
+            color: #000000;
+        }
+		.arrow-down {
+			width: 0; 
+			height: 0; 
+			border-left: 10px solid transparent;
+			border-right: 10px solid transparent;
+			border-top: 10px solid #333333;
+			margin-left: 5px;
+		}
+        
+        div.pagination {
+			clear: both;
+			width: 520px;
+			padding-bottom: 60px;
+        }
+        .span33, .span50 {
+            float: left;
+            min-height: 1px;
+        }
+        .span33 {
+            width: 33.33%;
+        }
+        .span50 {
+            width: 50%;
+        }
+        .pagination a {
+            font-size: 12px;
+            background: #ffffff;
+            color: #000000;
+            padding: 5px;
+            
+            border-radius: 3px;
+            
+            
+        }
+        .pagination a:hover {
+            color: rgba(0,0,0,0.8);
+            text-decoration: none;
+        }
+        .align-left {
+            text-align: left;
+        }
+        .align-center {
+            text-align: center;
+        }
+        .align-right {
+            text-align: right;
+        }
+        
+        #following-avatars {
+            font-family: arial, sans-serif;
+        }
+        #following-avatars a:nth-child(n+26) {
+        	display: none;
+        }
+        #following-avatars img {
+            width: 28px;
+            height: 28px;
+            border-radius: 2px;   
+        }
+        
+        a.read_more:after {
+            content: " \2192";
+        }
+        
+        .note.like:after {
+            content: '\f004';
+            font-family: FontAwesome;
+            font-size: 10px;
+            float: right;
+            margin-top: -18px;
+            color: rgba(0,0,0,0.6);
+        }
+        .note.reblog:after {
+            content: '\f021';
+            font-family: FontAwesome;
+            font-size: 10px;
+            float: right;
+            margin-top: -18px;
+            color: rgba(0,0,0,0.6);
+        }
+        .note.reply:after {
+            content: '\f075';
+            font-family: FontAwesome;
+            font-size: 10px;
+            float: right;
+            margin-top: -18px;
+            color: rgba(0,0,0,0.6);
+        }
+        .note.answer:after {
+            content: '\f112';
+            font-family: FontAwesome;
+            font-size: 10px;
+            float: right;
+            margin-top: -18px;
+            color: rgba(0,0,0,0.6);
+        }
+        
+        .font-serif .post-section {
+            font-family: Georgia, Times, 'Times New Roman', serif;
+        }
+        .font-monospace .post-section {
+            font-family: Consolas, Monaco, 'Courier New', monospace;
+        }
+        
+        figure {
+            margin: 0;
+        }
+        
+        .reblog-avatar {
+            border-radius: 2px;
+            width: 16px;
+            height: 16px;
+            margin-right: 7px;
+            vertical-align: middle;
+        }
+        .reblog-avatar.deleted {
+            -webkit-filter: grayscale(1);
+            filter: grayscale(1);
+        }
+        a.reblog-username {
+            color: #000000;
+        }
+        .post-section {
+            border-bottom: 1px solid #f7f7f7;
+        }
+        .post-section:last-child {
+            border-bottom: 0;
+        }
+        p.tmblr-attribution {
+            font-size: 10px;
+        }
+        .npf_quirky {
+            font-family: Gabriola, serif;
+            font-size: 150% !important;
+        }
+        .npf_color_joey {color: #ff492f;}
+        .npf_color_monica {color: #ff8a00;}
+        .npf_color_phoebe {color: #fcf01d;}
+        .npf_color_ross {color: #00cf35;}
+        .npf_color_rachel {color: #00b8ff;}
+        .npf_color_chandler {color: #973ff4;}
+        .npf_color_niles {color: #ff62ce;}
+        .npf_color_frasier {color: #001935;}
+        .npf_color_mr_big {color: #000c1a;}
+        
+        .social-link {
+            background-color: white;
+            border-radius: 3px;
+            padding: 1px 0;
+        }
+        .social-link .fa-facebook-square {
+            color: #3B5998;
+        }
+        .social-link .fa-twitter-square {
+            color: #1DA1F2;
+        }
+        .social-link .fa-instagram {
+            color: #b98f62;
+        }
+        .social-link .fa-pinterest-square {
+            color: #d55063;
+        }
+        .social-link .fa-soundcloud {
+            color: #e98d42;
+        }
+        .social-link .fa-twitch {
+            color: #8663c5;
+        }
+        .social-link .fa-steam-square {
+            color: #444;
+        }
+        .social-link .fa-vine {
+            color: #00bf8f;
+        }
+        .social-link .fa-youtube-square {
+            color: #da4848;
+        }
+        
+        .post-attribution {
+            display: none;
+        }
+        .post-attribution.is-reblog {
+            display: block;
+        }
+        .post-attribution.is-submission {
+            display: block;
+        }
+        .post-attribution.has-source {
+            display: block;
+        }
+        
+        .like-button-parent {
+            display: inline-block !important;
+            float: right;
+        }
+        .reblog-button {
+            margin-right: 7px;
+        }
+        .like-button-parent {
+            position: relative;
+        }
+        .like-button-parent .like_button {
+            position: absolute;
+            top: 0;
+            opacity: 0;
+        }
+        .like-button-parent .like_button.liked + span {
+            color: #d95e40;
+        }
+        
+        
+        
+        @media screen and (max-width: 760px) {
+            .wrapper {
+                width: 100%;
+            }
+            .main {
+                width: 100%;
+            }
+            .sidebar {
+                -moz-box-sizing: border-box;
+                box-sizing: border-box;
+                width: 100%;
+                float: none;
+                position: relative;
+                margin-left: 0;
+                margin-top: 0;
+            }
+            #posts {
+                margin-top: 16px;
+            }
+            .post {
+                -moz-box-sizing: border-box;
+                box-sizing: border-box;
+                width: 100%;
+                margin-bottom: 16px;
+            }
+            .post img {
+                max-width: 100%;
+            }
+            .photo img {
+                max-width: 100%;
+                height: auto !important;
+            }
+            ul.sidebar-links {
+                -webkit-columns: 2 auto;
+                -moz-columns: 2 auto;
+                columns: 2 auto;
+            }
+            .sidebar-link {
+                font-size: 14px;
+                line-height: 250%;
+            }
+            #following-avatars {
+                display: none;
+            }
+            div.pagination {
+                width: 100%;
+            }
+        }
+        
+        @media screen and (max-width: 360px) {
+            .post p {
+    			font-size: 12px;
+    			line-height: 150%;
+            }
+            .post ul {
+    			font-size: 11px;
+                line-height: 140%;
+            }
+            .post ol {
+                font-size: 11px;
+                line-height: 140%;
+            }
+            .post blockquote {
+    			font-size: 11px;
+    			padding: 4px;
+    			margin: 8px 5px;
+                border-left: 2px solid #529ECC;
+    			font-style: italic;
+            }
+            .sidebar-link {
+                font-size: 13px;
+                line-height: 250%;
+            }
+        }
+        
+        
+        
+        
+        </style>
+</head>
+    <body class="index-page font-sans-serif background-tile">
+		<div class="wrapper">
+        <div class="sidebar">
+        <center>
+        <a href="#">
+            
+            <img class="sidebar-photo sidebar-photo-square" src="https://66.media.tumblr.com/d187be81348d92d81340179c2ae657b6/c6aeb0f79d88a0dd-0f/s512x512u_c1/c211359279256493ca26da917dc785c9b571468d.pnj" alt="" title="Basic Theme" />
+        </a>
+        </center>
+        
+            <h1 class="blog-title">Basic Theme</h1>
+        
+
+        
+        
+        <hr>
+        
+        <div class="social-buttons">
+            
+            <a class="social-link" target="_blank" href="#" title="Facebook"><i class="fa fa-fw fa-facebook-square"></i></a>
+            
+            
+            
+            <a class="social-link" target="_blank" href="#" title="Twitter"><i class="fa fa-fw fa-twitter-square"></i></a>
+            
+            
+            
+            <a class="social-link" target="_blank" href="#" title="Instagram"><i class="fa fa-fw fa-instagram"></i></a>
+            
+            
+            
+            <a class="social-link" target="_blank" href="#" title="Pinterest"><i class="fa fa-fw fa-pinterest-square"></i></a>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        </div>
+        
+        <ul class="sidebar-links">
+        
+            <li><a class="sidebar-link" href="#">Home</a></li>
+
+			
+				<li><a class="sidebar-link" href="#">Archive</a></li>
+
+			
+			<li><a class="sidebar-link" href="https://adorablethemes.com/theme/basic" target="_blank">Theme</a></li>
+			
+        </ul>
+        
+        
+		
+		<hr>
+		<div id="following-avatars">
+            <a href="#"><img src="https://assets.tumblr.com/images/anonymous_avatar_30.gif" /></a> 
+            <a href="#"><img src="https://assets.tumblr.com/images/anonymous_avatar_30.gif" /></a> 
+            <a href="#"><img src="https://assets.tumblr.com/images/anonymous_avatar_30.gif" /></a> 
+            <a href="#"><img src="https://assets.tumblr.com/images/anonymous_avatar_30.gif" /></a> 
+            <a href="#"><img src="https://assets.tumblr.com/images/anonymous_avatar_30.gif" /></a> 
+            <a href="#"><img src="https://assets.tumblr.com/images/anonymous_avatar_30.gif" /></a> 
+            <a href="#"><img src="https://assets.tumblr.com/images/anonymous_avatar_30.gif" /></a> 
+            <a href="#"><img src="https://assets.tumblr.com/images/anonymous_avatar_30.gif" /></a> 
+            <a href="#"><img src="https://assets.tumblr.com/images/anonymous_avatar_30.gif" /></a> 
+            <a href="#"><img src="https://assets.tumblr.com/images/anonymous_avatar_30.gif" /></a> 
+        </div>
+
+        </div>
+        
+        <div class="main">
+        
+        
+            
+        
+
+        <div id="posts">
+            
+            
+                <div id="145634271316" class="post photo">
+                
+                <div class="post-main">
+                
+                
+                
+                
+
+                
+                    <a href="#"><img class="photo-post-photo" src="https://66.media.tumblr.com/tumblr_lz8yizrtuh1qzy92yo1_500.jpg" alt="This is a caption." style="width:500px;height:334px" /></a>
+                    
+                    
+                        
+                            <div class="post-section">
+                                <p><img class="reblog-avatar" src="https://66.media.tumblr.com/d187be81348d92d81340179c2ae657b6/c6aeb0f79d88a0dd-0f/s64x64u_c1/d1e02a1ca457e0fa8248d82aab911790fc664506.pnj">
+                                <a target="_blank" class="reblog-username" href="#"><b>basic-preview</b></a>
+                                
+                                </p>
+                                <p>This is a caption.<br /></p>
+                            </div>
+                        
+                    
+                
+
+                
+
+                
+
+                
+
+                
+
+                
+
+                
+                
+                </div>
+                
+                
+                <div class="post-meta post-tags">
+                    
+                        <a class="tag" href="#">this is a tag</a>&nbsp;&nbsp;
+                    
+                </div>
+                
+                
+                
+
+                
+                
+                <div class="post-meta">
+                    <div class="float-right like-reblog-buttons">
+                        <div class="float-right like-button-parent">
+    					    <div class="like_button" data-post-id="145634271316" data-blog-name="basic-preview" id="like_button_145634271316"></div>
+    					    <span><i class="fa fa-lg fa-heart"></i></span>
+    					</div>
+    					<div class="float-right reblog-button">
+                            <a href="#"><i class="fa fa-lg fa-refresh"></i></a>
+                        </div>
+    				</div>
+                    <a class="time-posted" href="#">3 years ago &bull; 8,117 notes</a>
+                </div>
+                
+                
+                
+                
+                </div>
+
+            
+            
+                <div id="145634244411" class="post text">
+                
+                <div class="post-main">
+                
+                
+                    
+                    
+                        <div class="post-section"><h2 class="post-title"><a href="#">Text Post</a></h2></div>
+                    
+
+                    
+    					<div class="post-section">
+    					    
+        					<p>
+							Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam
+ nisi lorem, pulvinar id, commodo feugiat, vehicula et, mauris. Aliquam 
+mattis porta urna. Maecenas dui neque, rhoncus sed, vehicula vitae, 
+auctor at, nisi. Aenean id massa ut lacus molestie porta. Curabitur sit 
+amet quam id libero suscipit venenatis.<br /></p><ul><li>Cras eu velit vitae ipsum vulputate condimentum in id urna.</li><li>Proin rutrum tempor nisl ac elementum.</li></ul><p>Cras mollis, urna a porta varius, eros 
+ligula ullamcorper augue, ac lobortis libero eros et turpis. Sed eget 
+posuere nisl. Nam vel sagittis velit. Etiam condimentum quis odio ut 
+vestibulum. Pellentesque mattis condimentum neque eget pretium.
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</p>
+    					</div>
+					
+                    
+                
+                
+                
+
+                
+
+                
+
+                
+
+                
+
+                
+
+                
+
+                
+                
+                </div>
+                
+                
+                
+                
+
+                
+                
+                <div class="post-meta">
+                    <div class="float-right like-reblog-buttons">
+                        <div class="float-right like-button-parent">
+    					    <div class="like_button" data-post-id="145634244411" data-blog-name="basic-preview" id="like_button_145634244411"></div>
+    					    <span><i class="fa fa-lg fa-heart"></i></span>
+    					</div>
+    					<div class="float-right reblog-button">
+                            <a href="#"><i class="fa fa-lg fa-refresh"></i></a>
+                        </div>
+    				</div>
+                    <a class="time-posted" href="#">3 years ago &bull; 2 notes</a>
+                </div>
+                
+                
+                
+                
+                </div>
+
+            
+            
+                <div id="145634175941" class="post photo">
+                
+                <div class="post-main">
+                
+                
+                
+                
+
+                
+                    <a href="#"><img class="photo-post-photo" src="https://66.media.tumblr.com/fd2d24c1db50549eb29c695341ddf5f5/tumblr_ndyeibkdHy1rs8w78o1_500.jpg" srcset="https://66.media.tumblr.com/fd2d24c1db50549eb29c695341ddf5f5/tumblr_ndyeibkdHy1rs8w78o1_1280.jpg 2x" alt="" style="width:500px;height:333px" /></a>
+                    
+                    
+                        
+                    
+                
+
+                
+
+                
+
+                
+
+                
+
+                
+
+                
+                
+                </div>
+                
+                
+                
+                
+
+                
+                
+                <div class="post-meta">
+                    <div class="float-right like-reblog-buttons">
+                        <div class="float-right like-button-parent">
+    					    <div class="like_button" data-post-id="145634175941" data-blog-name="basic-preview" id="like_button_145634175941"></div>
+    					    <span><i class="fa fa-lg fa-heart"></i></span>
+    					</div>
+    					<div class="float-right reblog-button">
+                            <a href="#"><i class="fa fa-lg fa-refresh"></i></a>
+                        </div>
+    				</div>
+                    <a class="time-posted" href="#">3 years ago &bull; 112,178 notes</a>
+                </div>
+                
+                
+                
+                
+                </div>
+
+            
+            
+                <div id="145634164576" class="post photo">
+                
+                <div class="post-main">
+                
+                
+                
+                
+
+                
+                    <a href="http://blog.avisiblesignofmyown.com"><img class="photo-post-photo" src="https://66.media.tumblr.com/5d17218128064e8f7bc3f0d7a85f523a/tumblr_n8062zJLRE1qz62xqo1_500.jpg" srcset="https://66.media.tumblr.com/5d17218128064e8f7bc3f0d7a85f523a/tumblr_n8062zJLRE1qz62xqo1_1280.jpg 2x" alt="elenamorelli:
+&ldquo; { they call it the rainbow lake }
+&rdquo;" style="width:500px;height:750px" /></a>
+                    
+                    
+                        
+                            <div class="post-section">
+                                <p><img class="reblog-avatar" src="https://66.media.tumblr.com/avatar_0b307e7fe649_64.pnj">
+                                <a target="_blank" class="reblog-username" href="https://elenamorelli.tumblr.com/post/90392969818"><b>elenamorelli</b></a>
+                                
+                                </p>
+                                <p>{ they call it the rainbow lake }</p>
+                            </div>
+                        
+                    
+                
+
+                
+
+                
+
+                
+
+                
+
+                
+
+                
+                
+                </div>
+                
+                
+                <div class="post-meta post-tags">
+                    
+                        <a class="tag" href="#">mountains</a>&nbsp;&nbsp;
+                    
+                </div>
+                
+                
+                
+
+                
+                
+                <div class="post-meta">
+                    <div class="float-right like-reblog-buttons">
+                        <div class="float-right like-button-parent">
+    					    <div class="like_button" data-post-id="145634164576" data-blog-name="basic-preview" id="like_button_145634164576"></div>
+    					    <span><i class="fa fa-lg fa-heart"></i></span>
+    					</div>
+    					<div class="float-right reblog-button">
+                            <a href="#"><i class="fa fa-lg fa-refresh"></i></a>
+                        </div>
+    				</div>
+                    <a class="time-posted" href="#">3 years ago &bull; 53,166 notes</a>
+                </div>
+                
+                
+                
+                
+                </div>
+                
+                
+                
+                
+                <div id="145634019141" class="post photo">
+                
+                <div class="post-main">
+                
+                
+                
+                
+
+                
+                    <a href="#"><img class="photo-post-photo" src="https://66.media.tumblr.com/tumblr_lk3benmJ8S1qbvpdao1_500.jpg" alt="" style="width:500px;height:320px" /></a>
+                    
+                    
+                        
+                    
+                
+
+                
+
+                
+
+                
+
+                
+
+                
+
+                
+                
+                </div>
+                
+                
+                
+                
+
+                
+                
+                <div class="post-meta">
+                    <div class="float-right like-reblog-buttons">
+                        <div class="float-right like-button-parent">
+    					    <div class="like_button" data-post-id="145634019141" data-blog-name="basic-preview" id="like_button_145634019141"></div>
+    					    <span><i class="fa fa-lg fa-heart"></i></span>
+    					</div>
+    					<div class="float-right reblog-button">
+                            <a href="#"><i class="fa fa-lg fa-refresh"></i></a>
+                        </div>
+    				</div>
+                    <a class="time-posted" href="#">3 years ago &bull; 116 notes</a>
+                </div>
+                
+                
+                
+                
+                </div>
+
+            
+        </div>
+    </div>
+      
+    
+	<div class="pagination">
+        <div class="span33 align-left">
+		    
+		</div>
+		<div class="span33 align-center">
+		    <a href="#" class="page-info">1 / 3</a>
+		</div>
+		<div class="span33 align-right">
+		    <a href="#" id="next">Next <i class="fa fa-angle-right"></i></a>
+		</div>
+	</div>
+	
+	
+	
+	
+    </div>
+    {% include ga.html %}
+    </body>
+</html>

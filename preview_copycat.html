@@ -1,5 +1,1790 @@
 ---
 permalink: /preview/copycat
-redirect_to:
- - https://copycat-theme.tumblr.com/
 ---
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- 
+        
+        theme:      Copycat
+        version:    3.2 (June 24, 2019)
+        from:       adorablethemes.github.io
+        
+        
+        credits:
+        
+        Font Awesome 4.7.0 (fontawesome.com)
+        imagesLoaded 4.1.4 (imagesloaded.desandro.com)
+        Infinite Scroll 3.0.6 (infinite-scroll.com)
+        jQuery 3.3.1 (jquery.com)
+        Masonry 4.2.2 (masonry.desandro.com)
+        Featherlight (preview only) (noelboss.github.io/featherlight)
+        
+        -->
+        <meta charset="UTF-8">
+        
+        <title>Copycat theme (preview)</title>
+        <meta name="description" content="a powerful responsive grid theme">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <meta name="theme-color" content="#222222">
+        
+        <meta name="robots" content="noindex"/>
+        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+        
+        <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/featherlight@1.7.14/release/featherlight.min.css" type="text/css" rel="stylesheet" />
+        
+        <style type="text/css">
+        .featherlight .featherlight-content {
+            padding: 0;
+            border-bottom: 0;
+            box-shadow: 0 4px 30px #000;
+        }
+        
+        body {
+			color: #000000;
+			background-color: #f6f6f6;
+			
+			background-position: center center;
+			background-attachment: fixed;
+			font-family: Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        
+        #posts {
+            margin-bottom: 80px;
+            -webkit-transition: opacity 0.1s linear;
+            transition: opacity 0.1s linear;
+        }
+        .wrapper {
+            margin: 16px auto;
+        }
+        .main {
+            float: left;
+        }
+        .layout-3col .wrapper, .layout-3col .main {
+			width: 798px;
+        }
+        
+        .layout-4col .wrapper, .layout-4col .main {
+			width: 1064px;
+        }
+        
+        .layout-5col .wrapper, .layout-5col .main {
+        	width: 1330px;
+    	}
+        
+        /* Background and header image settings */
+        .background-cover {
+            background-position: center center;
+            background-size: cover;
+        }
+        .background-tile {
+            background-repeat: repeat;
+        }
+        .background-center {
+            background-position: center center;
+            background-repeat: no-repeat;
+        }
+        
+        
+        /* Responsive layout settings */
+    	@media screen and (min-width:296px) {
+            .layout-3col .wrapper, .layout-3col .main, .layout-4col .wrapper, .layout-4col .main, .layout-5col .wrapper, .layout-5col .main {
+            	width: 266px;
+        	}
+    	}
+    	@media screen and (min-width:562px) {
+            .layout-3col .wrapper, .layout-3col .main, .layout-4col .wrapper, .layout-4col .main, .layout-5col .wrapper, .layout-5col .main {
+            	width: 532px;
+        	}
+    	}
+    	@media screen and (min-width:818px) {
+            .layout-3col .wrapper, .layout-3col .main, .layout-4col .wrapper, .layout-4col .main, .layout-5col .wrapper, .layout-5col .main {
+            	width: 798px;
+        	}
+    	}
+    	@media screen and (min-width:1094px) {
+            .layout-4col .wrapper, .layout-4col .main, .layout-5col .wrapper, .layout-5col .main {
+            	width: 1064px;
+        	} 
+    	}
+    	@media screen and (min-width:1360px) {
+            .layout-5col .wrapper, .layout-5col .main {
+            	width: 1330px;
+        	}
+    	}
+        
+        a, a:hover {
+            text-decoration: none;
+        }
+        
+        h1,h2,h3,h4,h5,h6 {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            font-weight: normal;
+        }
+        
+        .blog-title, .blog-title:hover {
+            color: #ffffff;
+            font-family: Raleway, sans-serif;
+			font-size: 36px;
+			text-decoration: none;
+			margin-top: 0;
+			margin-bottom: 0;
+        }
+        .blog-description {
+            color: #ffffff;
+			font-size: 13px;
+			margin: 12px auto;
+			width: 75%;
+        }
+        
+        ul {
+			list-style-type: none;
+			padding-left: 0;
+        }
+        
+        header {
+			text-align: center;
+			background-color: #222222;
+			background-color: rgba(34,34,34, 1.0);
+			
+			background-image: url('https://static.tumblr.com/3a2ff8f1beca6df1f6c5dc84cdde3cac/anzluor/llDokdg8t/tumblr_static_av9nmfiy5k8o0kw44kwwkw0o4.jpg');
+			
+			display: table;
+			width: 100%;
+			height: 250px;
+        }
+        .header-content {
+            display: table-cell;
+            vertical-align: middle;
+        }
+        .blog-description a, .blog-description a:hover {
+    		color: #ffffff;
+			text-decoration: underline;
+        }
+        .blog-description a:hover {
+    		background-color: rgba(255,255,255,0.25);
+        }
+        .header-navbar {
+			background-color: #111111;
+			text-align: center;
+			clear: both;
+			width: 100%;
+        }
+        ul.header-links {
+            margin: 0 auto;
+        }
+        ul.header-links li {
+            text-align: center;  
+            display: inline-block;
+            padding: 15px 10px;
+            -webkit-transition: background-color 0.05s linear;
+            transition: background-color 0.05s linear;
+        }
+        ul.header-links li:hover {
+            background-color: rgba(255,255,255,0.1);
+        }
+        .header-link {
+            font-size: 10px;
+            text-transform: uppercase;
+            color: #ffffff;
+        }
+        nav {
+			padding: 7px;
+			clear: both;
+        }
+        .sidebar-link {
+            background-color: transparent;
+            display: block;
+            font-size: 14px;
+            color: #f6f6f6;
+            padding: 7px 11px;
+            -webkit-transition: background-color 0.05s linear;
+            transition: background-color 0.05s linear;
+        }
+        .sidebar-link:hover {
+            background-color: rgba(246,246,246,0.1);
+            color: #f6f6f6;
+            text-decoration: none;
+        }
+        .sidebar p {
+            color: #f6f6f6;
+            padding: 9px 18px;
+            font-size: 12px;
+        }
+        .sidebar-link .fa-fw {
+            margin-right: 5px;
+            padding-right: 5px;
+            border-right: 1px solid rgba(246,246,246,0.1);;
+        }
+        .sidebar p a, .sidebar p a:hover {
+            color: #f6f6f6;
+            text-decoration: none;
+        }
+        .sidebar p a:hover {
+            background-color: rgba(246,246,246,0.25);
+        }
+        
+        .search-info {
+			background-color: #ffffff;
+			background-color: rgba(255,255,255, 1.0);
+			margin-bottom: 16px;
+			margin-left: 8px;
+			margin-right: 8px;
+			overflow: hidden;
+			border-radius: 2px;
+			text-align: center;
+        }
+        
+        .post {
+			width: 250px;
+			position: relative;
+			float: left;
+			background-color: #ffffff;
+			background-color: rgba(255,255,255, 1.0);
+			margin-bottom: 16px;
+			margin-left: 8px;
+			margin-right: 8px;
+			overflow: hidden;
+			border-radius: 2px;
+        }
+        
+		.post-section {
+			padding: 10px 20px;
+			font-size: 13px;
+			line-height: 140%;
+        }
+        
+        
+        .font-sans-serif .post-section {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        }
+        .font-serif .post-section {
+            font-family: Georgia, serif;
+        }
+        .font-monospace .post-section {
+            font-family: Consolas, 'Courier New', Monaco, monospace;
+        }
+        
+        .post a, .post a:hover {
+    		color: #529ecc;
+			text-decoration: none;
+        }
+        .post-section a:hover {
+    		background-color: rgba(82,158,204,0.25);
+        }
+        .post h1, .post h2, .post h3, .post h4, .post h5, .post h6 {
+            color: #000000;
+			font-size: 16px;
+        }
+        .post p {
+			font-size: 12px;
+			line-height: 150%;
+        }
+        .post ul {
+			list-style-type: square;
+			font-size: 12px;
+			padding-left: 20px;
+        }
+        .post ol {
+			font-size: 12px;
+			padding-left: 20px;
+        }
+        .post blockquote {
+			font-size: 12px;
+			padding: 0 8px;
+			margin: 16px 0;
+			font-style: italic;
+			background: rgba(0,0,0, 0.025);
+			border: 1px solid rgba(0,0,0, 0.05);
+        }
+        .post figure {
+            margin: 0;
+        }
+        .quote-text {
+            font-family: Georgia, serif;
+            font-style: italic;
+        }
+        
+        .post-section img {
+            max-width: 100%;
+            height: auto;
+        }
+        
+        .index-page .photo-post-photo {
+			max-width: 250px;
+			width: 100%;
+			height: 100%;
+			display: block;
+        }
+        figure.photo-content {
+            margin: 0 auto;
+        }
+        
+        ul.chat {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        
+        .chat li {
+            padding-top: 5px;
+            padding-bottom: 5px;
+            border-bottom: 1px solid rgba(0,0,0,0.05);
+        }
+        
+        .chat li:last-child {
+            border-bottom: none;   
+        }
+        
+		.chat-label {
+			font-weight: bold;
+		}
+		
+		.link-info p {
+		    font-size: 11px !important;
+		}
+        
+        .post-meta {
+			font-size: 13px;
+			padding: 10px 20px;
+			line-height: 15px;
+			font-style: normal;
+            min-height: 16px;
+            border-top: 1px solid rgba(0,0,0,0.1);
+        }
+        .post-share {
+            border-top: 0;
+        }
+        .post-tags {
+            border-top: 0;
+        }
+        .share-item {
+            margin-right: 15px;
+        }
+        .share-item .fa {
+            margin-right: 2px;
+        }
+        
+        .tag:before {
+            content: "#";
+        }
+        .clear {
+            clear: both;
+        }
+        
+        ol.notes {
+			list-style-type: none;
+			padding-left: 0;
+        }
+        .note {
+			padding: 5px 0;
+        }
+        .note:last-child {
+            margin-bottom: 10px;
+        }
+        
+        .post .post-index-meta {
+			width: 230px;
+			font-size: 13px;
+			line-height: 25px;
+			font-weight: normal;
+			padding-left: 10px;
+			padding-right: 10px;
+        }
+        .post-index-meta a {
+            color: rgba(0,0,0, 0.5);
+        }
+        .post-index-meta a:hover {
+            color: rgba(0,0,0, 0.75);
+        }
+        .note-count {
+            font-size: 11px;
+        }
+        
+        
+        .photo .post-index-meta {
+            display: none;
+        }
+        
+        .photo-hover {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			padding: 0;
+			font-size: 11px;
+			line-height: 30px;
+			font-weight: normal;
+			background: rgba(0,0,0,0);
+            border-top: 0;
+			z-index: 100;
+			opacity: 0;
+			transition: all 0.15s ease-in-out;
+        }
+        .photo:hover .photo-hover {
+            background: rgba(0,0,0,0.6);
+            opacity: 1;
+        }
+        .photo-hover a {
+            font-size: 17px;
+			color: white;
+			text-shadow: 1px 2px 5px rgba(0,0,0,0.5);
+			background: rgba(0,0,0,0.25);
+			border: 1px solid rgba(255,255,255,0.05);
+			padding: 10px;
+        }
+        .photo-hover a:hover {
+            color: white;
+			background: rgba(0,0,0,0.5);
+			border: 1px solid rgba(255,255,255,0.25);
+        }
+        
+        .photo-hover .inside {
+            text-align: center;
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            margin-top: -25px;
+        }
+        
+        .inside .note-count {
+            font-size: 11px;
+            background: transparent;
+            border: 0;
+        }
+        .inside .note-count:hover {
+            background: transparent;
+            border: 0;
+        }
+        .touch .photo-hover {
+            display: none;
+        }
+        
+	    
+        .has-lightbox {
+            cursor: pointer;
+        }
+        
+        /* Remove blank space from bottom of iframes */
+        .post iframe, figure img {
+			display: block;
+            max-width: 100%;
+        }
+        figure img {
+            height: auto;
+        }
+        
+        .permalink-page .tumblr_video_iframe {
+            max-height: 540px;
+        }
+        
+        /* Permalink page styles */
+		.permalink-page .wrapper {
+			width: 524px;
+		}
+		.permalink-page .main {
+			width: 524px;   
+		}
+		.permalink-page .post {
+			width: 500px;
+		}
+		.permalink-page .page {
+		    margin: 0 auto;
+			float: none;
+		}
+		.permalink-page .not-page {
+		    float: left;
+		}
+		.permalink-page .photo-post-photo {
+			max-width: 500px;
+			width: 500px;
+			height: auto;
+		}
+        
+        .post hr {
+			clear: both;
+			border: 0;
+			border-bottom: 1px solid rgba(0,0,0,0.07);
+        }
+        
+        .post .asker-avatar, .post .reblog-avatar, .note img.avatar {
+            width: 16px;
+            height: 16px;
+            vertical-align: middle;
+            border-radius: 2px;
+            margin-right: 8px;
+        }
+        
+        /* Note icons */
+        .note.like:after {
+            content: '\f004';
+            font-family: FontAwesome;
+            font-size: 10px;
+            float: right;
+            margin-top: -16px;
+            color: rgba(0,0,0,0.6);
+        }
+        .note.reblog:after {
+            content: '\f079';
+            font-family: FontAwesome;
+            font-size: 10px;
+            float: right;
+            margin-top: -16px;
+            color: rgba(0,0,0,0.6);
+        }
+        .note.reply:after {
+            content: '\f075';
+            font-family: FontAwesome;
+            font-size: 10px;
+            float: right;
+            margin-top: -16px;
+            color: rgba(0,0,0,0.6);
+        }
+        .note.answer:after {
+            content: '\f112';
+            font-family: FontAwesome;
+            font-size: 10px;
+            float: right;
+            margin-top: -16px;
+            color: rgba(0,0,0,0.6);
+        }
+    	
+    	.note blockquote {
+    	    border: 0;
+    	    background: transparent;
+    	    border-left: 2px solid #000000;
+    	}
+        
+        /* Pagination */
+        .pagination {
+			clear: both;
+			text-align: center;
+			margin: 0 auto;
+			margin-bottom: 80px;
+        }
+        #previous, #next, #load_more_button, .page-info {
+            font-size: 11px;
+            text-transform: uppercase;
+            background-color: #ffffff;
+            color: rgba(0,0,0,0.75);
+            padding: 10px 15px;
+            border-radius: 2px;
+        }
+        #previous:hover, #next:hover {
+            color: #000000;
+        }
+        #load_more_button {
+            cursor: pointer;
+        }
+        .align-left {
+            text-align: left;
+        }
+        .align-right {
+            text-align: right;
+        }
+        .span33 {
+            width: 33.33%;
+            float: left;
+            min-height: 1px;
+        }
+        
+        
+        
+        /* Infinite scroll loading indicator */
+        #loading {
+            background: white;
+            color: black;
+            box-shadow: 0px 0px 45px rgba(0,0,0,0.12);
+            border-radius: 5px;
+            padding: 20px;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            z-index: 999;
+        }
+        .loaded {
+            display: none;
+        }
+        .invisible {
+            opacity: 0;
+        }
+        
+        /* Button to open/close the sidebar */
+        #openMenu {
+            background-color: #111111;
+            background-color: rgba(17,17,17,0.98);
+            color: #f6f6f6;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 999;
+            padding: 10px;
+            border-radius: 0 0 3px 0;
+            -webkit-transition: left 0.1s ease-in;
+            transition: left 0.1s ease-in;
+            cursor: pointer;
+        }
+        .tmblr-iframe-pushdown #openMenu {
+            top: 54px;
+        }
+        
+        /* Back-to-top button */
+        .back-to-top {
+            display: none;
+            background-color: #111111;
+            background-color: rgba(17,17,17,0.98);
+            color: #f6f6f6;
+            position: fixed;
+            bottom: 12px;
+            right: 12px;
+            z-index: 101;
+            padding: 5px 10px;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        
+        /* Sidebar */
+        .sidebar {
+            background-color: #111111;
+            background-color: rgba(17,17,17,0.98);
+            color: #f6f6f6;
+            position: fixed;
+            width: 250px;
+            height: 100%;
+            left: -250px;
+            top: 0;
+            z-index: 999;
+            overflow-x: hidden;
+            overflow-y: auto;
+            -webkit-transition: left 0.1s ease-in;
+            transition: left 0.1s ease-in;
+        }
+        
+        /* Open state for sidebar */
+        .sidebar-open {
+            left: 0px;
+        }
+        .openmenu-open {
+            left: 250px !important;
+        }
+        
+        /* Search box */
+        input.search {
+            font-family: 'Segoe UI', 'Lucida Grande', sans-serif;
+            background-color: #000;
+            background-color: rgba(246,246,246,0.15);
+            color: #f6f6f6;
+            border: 0;
+            border-radius: 2px;
+            padding: 5px;
+            margin: 20px;
+            width: 190px;
+        }
+        input.search:focus {
+            background-color: #111;
+            background-color: rgba(246,246,246,0.1);
+            color: #f6f6f6;
+        }
+        
+        /* Only show first photoset photo */
+        .index-page .photoset-container figure {
+            display: none;
+        }
+        
+        .index-page .photoset-container figure:first-child {
+            display: block;
+        }
+        
+        
+        /* Keep reading link arrow */
+        a.read_more:after {
+            content: " \2192";
+        }
+        
+        /* Hide posts before they load */
+        .posts-hidden {
+            opacity: 0.01;
+        }
+        
+        
+        /* Indicator for photosets */
+        .photoset-note {
+            position: absolute;
+            
+            bottom: 10px;
+            
+            
+            left: 10px;
+            border-radius: 3px;
+            background-color: black;
+            background-color: rgba(0,0,0,0.33);
+            text-shadow: 1px 1px 1px rgba(0,0,0,0.66);
+            color: white;
+            font-size: 11px;
+            font-weight: bold;
+            padding: 7px 10px;
+        }
+        
+        
+        
+        /* Media player sizing */
+        .index-page .spotify_audio_player {
+            height: 290px;
+        }
+        .index-page .soundcloud_audio_player {
+            height: 230px;
+        }
+        .index-page iframe.instagram-media {
+            height: 470px;
+            margin-bottom: 0 !important;
+        }
+        .index-page .tmblr-embed #youtube_iframe {
+            width: 210px;
+            height: 118px;
+        }
+        
+        a.reblog-username, a.reblog-username:hover, .asker a, .asker a:hover, .answerer- a, .answerer a:hover {
+            color: #000000;
+        }
+        
+        /* Responsive styles */
+        @media screen and (max-width:359px) {
+		    #tumblr_controls {
+		        display: none;
+		    }
+		}
+		@media screen and (max-width:768px) {
+		    .header-navbar {
+		        display: none;
+		    }
+		    
+		    
+            
+		}
+		@media screen and (max-width:550px) {
+		    .permalink-page .wrapper {
+		        -moz-box-sizing: border-box;
+                box-sizing: border-box;
+    			width: 100%;
+    		}
+    		.permalink-page .main {
+    		    -moz-box-sizing: border-box;
+                box-sizing: border-box;
+    			width: 100%;
+    			padding-left: 16px;
+    			padding-right: 16px;
+    		}
+    		.permalink-page .post {
+    		    -moz-box-sizing: border-box;
+                box-sizing: border-box;
+    			width: 100%;
+    			margin-left: 0;
+    			margin-right: 0;
+    		}
+    		.permalink-page .photo-post-photo {
+    			width: 100%;
+    		}
+    		.blog-title, .blog-title:hover {
+    		    font-size: 24px;
+    		    padding: 0 10px;
+    		}
+    		.blog-description {
+    		    font-size: 11px;
+    		    padding: 0 10px;
+    		}
+    		.sidebar-link {
+    		    font-size: 12px;
+    		}
+    		.post-meta {
+    		    font-size: 11px;
+    		    line-height: 13px;
+    		}
+    		.post p {
+    		    font-size: 11px;
+    		}
+    		.post ol.notes {
+    		    font-size: 10px;
+    		}
+    		.span33 {
+    		    width: 50%;
+    		}
+    		.hide-on-mobile {
+    		    display: none;
+    		}
+		}
+		@media screen and (min-width:1050px) {
+		    .permalink-page .wrapper {
+    			width: 1032px;
+    		}
+    		.permalink-page .main {
+    			width: 1032px;   
+    		}
+		}
+		
+		.tmblr-iframe--app-cta-button {
+            display: none !important;
+        }
+        
+        /* Clearfix */
+        .clearfix:before, .clearfix:after { content: "\0020"; display: block; height: 0; overflow: hidden; }
+        .clearfix:after { clear: both; }
+        .clearfix { zoom: 1; }
+        
+        /* Remove border on linked images in IE */
+        a img {
+			border: 0;   
+        }
+        
+        /* npf styles */
+        p.npf_quirky {
+            font-size: 24px;
+            line-height: 1.3em;
+        }
+        div.npf_row {
+            max-width: 100%;
+            height: auto !important;
+            display: flex;
+            margin: 0 !important;
+        }
+        div.npf_row figure.tmblr-full {
+            flex: 1;
+            justify-content: space-between;
+            margin: 0;
+        }
+        div.npf_row figure.tmblr-full:first-child {
+            padding-right: 2px;
+        }
+        .npf-link-block a {
+            text-decoration: none !important;
+        }
+        .index-page .npf-link-block .poster {
+            height: 150px;
+        }
+        .index-page .npf-link-block .title {
+            font-size: 15px;
+            line-height: 23px;
+            max-height: 100px;
+        }
+        .post-section figure video, .post-section figure audio {
+            max-width: 100%;
+        }
+        
+        .post-section {
+            border-bottom: 1px solid rgba(0,0,0,0.07);
+        }
+        .post-section:last-child {
+            border-bottom: 0;
+        }
+        p.tmblr-attribution {
+            font-size: 10px;
+        }
+        
+        .tmblr-lightbox .lightbox-image {
+            background-color: #ffffff !important;
+        }
+        
+        
+        .index-page .photo .post-section {
+            display: none;
+        }
+        
+        
+        
+        
+        </style>
+        
+        <script type="text/javascript">
+            var copycat = {infScroll: false, indexPage: true};
+        </script>
+        <noscript><style>.posts-hidden {opacity: 1;} #loading {display: none;}.page-1 .pagination { display: block !important; } .pagination.loadmore { display: none !important; }</style></noscript>
+    </head>
+    <body class="index-page page-1 font-sans-serif layout-4col background-tile no-touch">
+        
+        
+        <div id="backToTop" class="back-to-top" title="Back to top">
+            <i class="fa fa-2x fa-angle-up"></i>
+        </div>
+        <div id="loading"><i class="fa fa-lg fa-circle-o-notch fa-spin"></i></div>
+        
+        
+        <div id="sidebar" class="sidebar">
+            
+            
+            <form action="#" method="get" id="search-form">
+    			<input class="search" type="text" placeholder="Search" name="q" value="" />
+			</form>
+			
+				
+            <nav class="navbar">
+                <ul class="sidebar-links sidebar-links-main">
+                    <a class="sidebar-link" href="#"><li><i class="fa fa-fw fa-home"></i> Home</li></a>
+                    
+                    <a class="sidebar-link" href="#"><li><i class="fa fa-fw fa-calendar-o"></i> Archive</li></a>
+                    
+                </ul>
+                
+                <ul class="sidebar-links sidebar-links-social">
+                
+                
+                <a class="sidebar-link link-facebook" href="#"><li><i class="fa fa-fw fa-facebook-square"></i> Facebook</li></a>
+                
+                
+                
+                <a class="sidebar-link link-twitter" href="#"><li><i class="fa fa-fw fa-twitter"></i> Twitter</li></a>
+                
+                
+                
+                <a class="sidebar-link link-instagram" href="#"><li><i class="fa fa-fw fa-instagram"></i> Instagram</li></a>
+
+                
+                
+                <a class="sidebar-link link-youtube" href="#"><li><i class="fa fa-fw fa-youtube"></i> YouTube</li></a>
+                
+                </ul>
+            </nav>
+            
+            
+                <p>&copy; 2014–2020 Adorable Themes</p>
+
+        </div>
+        
+        <div id="openMenu"><i class="fa fa-lg fa-bars"></i></div>
+        
+        
+        <header class="header background-cover clearfix">
+        
+        <div class="header-content">
+            
+            
+			<a href="#"><h1 class="blog-title">Copycat</h1></a>
+
+            
+                <div class="blog-description">a powerful responsive grid theme</div>
+            
+            
+            </div>
+
+        </header>
+        
+        
+        
+        <div class="header-navbar">
+        <ul class="header-links">
+            <a class="header-link" href="#"><li>Home</li></a>
+            
+            <a class="header-link" href="#"><li>Archive</li></a>
+        </ul>
+        </div>
+        
+        
+        <div id="wrapper" class="wrapper">
+        
+        <div class="main">
+        
+        
+            
+        
+
+        <div id="posts" class="posts-hidden">
+        
+            
+				<article id="post_90086883967" class="post photo">
+								
+
+                
+                    <figure data-width="499" data-height="750" data-lowres="https://66.media.tumblr.com/dd6850c1210c249363051ff05dffc102/tumblr_n7skmsyXnm1qgtg29o1_500.jpg" data-highres="https://66.media.tumblr.com/dd6850c1210c249363051ff05dffc102/tumblr_n7skmsyXnm1qgtg29o1_500.jpg" class="photo-content">
+					
+					<a href="#"><img class="photo-post-photo" src="https://66.media.tumblr.com/dd6850c1210c249363051ff05dffc102/tumblr_n7skmsyXnm1qgtg29o1_250.jpg" srcset="https://66.media.tumblr.com/dd6850c1210c249363051ff05dffc102/tumblr_n7skmsyXnm1qgtg29o1_500.jpg 2x" alt="" /></a>
+					</figure>
+					
+
+                
+                
+                <div class="post-index-meta">
+                    <a href="#" class="note-count">5 years ago &bull; 978 notes</a>
+                    
+                    <a title="Reblog" style="float:right; text-align: right" class="reblog-button" href="#"><i class="fa fa-retweet"></i></a>
+                    
+                    <a style="float:right; text-align: right; margin-right: 8px" data-featherlight="https://66.media.tumblr.com/dd6850c1210c249363051ff05dffc102/tumblr_n7skmsyXnm1qgtg29o1_500.jpg" data-featherlight-open-speed="0" data-featherlight-close-speed="0" data-postid="90086883967" title="Zoom"><i class="fa fa-search-plus"></i></a>
+                    
+                    
+                </div>
+                
+                
+                <div class="photo-hover">
+                    <div class="inside">
+                        <a data-featherlight="https://66.media.tumblr.com/dd6850c1210c249363051ff05dffc102/tumblr_n7skmsyXnm1qgtg29o1_500.jpg" data-featherlight-open-speed="0" data-featherlight-close-speed="0" data-postid="90086883967" title="Zoom"><i class="fa fa-fw fa-search-plus"></i></a><a href="#" title="Permalink"><i class="fa fa-fw fa-link"></i></a><a href="#" title="Reblog"><i class="fa fa-fw fa-retweet"></i></a>
+                        <br><a href="#" class="note-count">5 years ago &bull; 978 notes</a>
+                    </div>
+                </div>
+                
+                
+                
+                
+                
+                </article>
+                
+                
+				
+            
+				<article id="post_88588402177" class="post photo">
+
+
+                
+                    <figure data-width="500" data-height="500" data-lowres="https://66.media.tumblr.com/507011c3b971be7b4a7cf706bdd2f133/tumblr_n6zwp4pX4f1rmhz68o1_500.jpg" data-highres="https://66.media.tumblr.com/507011c3b971be7b4a7cf706bdd2f133/tumblr_n6zwp4pX4f1rmhz68o1_500.jpg" class="photo-content">
+					
+					<a href="#"><img class="photo-post-photo" src="https://66.media.tumblr.com/507011c3b971be7b4a7cf706bdd2f133/tumblr_n6zwp4pX4f1rmhz68o1_250.jpg" srcset="https://66.media.tumblr.com/507011c3b971be7b4a7cf706bdd2f133/tumblr_n6zwp4pX4f1rmhz68o1_500.jpg 2x" alt="" /></a>
+					</figure>
+					
+
+                
+                
+                
+                <div class="post-index-meta">
+                    <a href="#" class="note-count">5 years ago &bull; 557 notes</a>
+                    
+                    <a title="Reblog" style="float:right; text-align: right" class="reblog-button" href="#"><i class="fa fa-retweet"></i></a>
+                    
+                    <a style="float:right; text-align: right; margin-right: 8px" data-featherlight="https://66.media.tumblr.com/507011c3b971be7b4a7cf706bdd2f133/tumblr_n6zwp4pX4f1rmhz68o1_500.jpg" data-featherlight-open-speed="0" data-featherlight-close-speed="0" data-postid="88588402177" title="Zoom"><i class="fa fa-search-plus"></i></a>
+                    
+                    
+                </div>
+                
+                
+                <div class="photo-hover">
+                    <div class="inside">
+                        <a data-featherlight="https://66.media.tumblr.com/507011c3b971be7b4a7cf706bdd2f133/tumblr_n6zwp4pX4f1rmhz68o1_500.jpg" data-featherlight-open-speed="0" data-featherlight-close-speed="0" data-postid="88588402177" title="Zoom"><i class="fa fa-fw fa-search-plus"></i></a><a href="#" title="Permalink"><i class="fa fa-fw fa-link"></i></a><a href="#" title="Reblog"><i class="fa fa-fw fa-retweet"></i></a>
+                        <br><a href="#" class="note-count">5 years ago &bull; 557 notes</a>
+                    </div>
+                </div>
+                
+                
+                
+                
+                
+                </article>
+                
+                
+				
+            
+				<article id="post_88588317597" class="post photo">
+
+                
+                    <figure data-width="500" data-height="333" data-lowres="https://66.media.tumblr.com/b6dda00dc92c1dd3810eb54e0e6ecee9/tumblr_n6sy87FucY1tr9u2ao1_500.jpg" data-highres="https://66.media.tumblr.com/b6dda00dc92c1dd3810eb54e0e6ecee9/tumblr_n6sy87FucY1tr9u2ao1_500.jpg" class="photo-content">
+					
+					<a href="#"><img class="photo-post-photo" src="https://66.media.tumblr.com/b6dda00dc92c1dd3810eb54e0e6ecee9/tumblr_n6sy87FucY1tr9u2ao1_250.jpg" srcset="https://66.media.tumblr.com/b6dda00dc92c1dd3810eb54e0e6ecee9/tumblr_n6sy87FucY1tr9u2ao1_500.jpg 2x" alt="wallflooweerr:
+&ldquo; http://wallflooweerr.tumblr.com/
+&rdquo;" /></a>
+					</figure>
+					
+					
+                    
+                        
+                            <div class="post-section">
+                                <p><img class="reblog-avatar" src="https://assets.tumblr.com/images/default_avatar/sphere_open_64.png">
+                                <a class="reblog-username"  href="https://wallflooweerr.tumblr.com/post/88287087745"><b>wallflooweerr</b></a>
+                                
+                                </p>
+                                <p><a href="https://wallflooweerr.tumblr.com/">http://wallflooweerr.tumblr.com/</a></p>
+                            </div>
+
+                
+                
+                
+                <div class="post-index-meta">
+                    <a href="#" class="note-count">5 years ago &bull; 252 notes</a>
+                    
+                    <a title="Reblog"  style="float:right; text-align: right" class="reblog-button" href="#"><i class="fa fa-retweet"></i></a>
+                    
+                    <a style="float:right; text-align: right; margin-right: 8px" data-featherlight="https://66.media.tumblr.com/b6dda00dc92c1dd3810eb54e0e6ecee9/tumblr_n6sy87FucY1tr9u2ao1_500.jpg" data-featherlight-open-speed="0" data-featherlight-close-speed="0" data-postid="88588317597" title="Zoom"><i class="fa fa-search-plus"></i></a>
+                    
+                    
+                </div>
+                
+                
+                <div class="photo-hover">
+                    <div class="inside">
+                        <a data-featherlight="https://66.media.tumblr.com/b6dda00dc92c1dd3810eb54e0e6ecee9/tumblr_n6sy87FucY1tr9u2ao1_500.jpg" data-featherlight-open-speed="0" data-featherlight-close-speed="0" data-postid="88588317597" title="Zoom"><i class="fa fa-fw fa-search-plus"></i></a><a href="#" title="Permalink"><i class="fa fa-fw fa-link"></i></a><a href="#" title="Reblog"><i class="fa fa-fw fa-retweet"></i></a>
+                        <br><a href="#" class="note-count">5 years ago &bull; 252 notes</a>
+                    </div>
+                </div>
+                
+                
+                
+                
+                
+                </article>
+                
+                
+				
+            
+				<article id="post_88588237422" class="post photo">
+								
+
+                
+                    <figure data-width="500" data-height="370" data-lowres="https://66.media.tumblr.com/b625f2f960d80cf330eea374a6d1e439/tumblr_n71xrp6c1S1qcqywxo1_500.jpg" data-highres="https://66.media.tumblr.com/b625f2f960d80cf330eea374a6d1e439/tumblr_n71xrp6c1S1qcqywxo1_500.jpg" class="photo-content">
+					
+					<a href="#"><img class="photo-post-photo" src="https://66.media.tumblr.com/b625f2f960d80cf330eea374a6d1e439/tumblr_n71xrp6c1S1qcqywxo1_250.jpg" srcset="https://66.media.tumblr.com/b625f2f960d80cf330eea374a6d1e439/tumblr_n71xrp6c1S1qcqywxo1_500.jpg 2x" alt="" /></a>
+					</figure>
+
+                
+                
+                
+                
+                <div class="post-index-meta">
+                    <a href="#" class="note-count">5 years ago &bull; 229 notes</a>
+                    
+                    <a title="Reblog" style="float:right; text-align: right" class="reblog-button" href="#"><i class="fa fa-retweet"></i></a>
+                    
+                    <a style="float:right; text-align: right; margin-right: 8px" data-featherlight="https://66.media.tumblr.com/b625f2f960d80cf330eea374a6d1e439/tumblr_n71xrp6c1S1qcqywxo1_500.jpg" data-featherlight-open-speed="0" data-featherlight-close-speed="0" data-postid="88588237422" title="Zoom"><i class="fa fa-search-plus"></i></a>
+                    
+                    
+                </div>
+                
+                
+                <div class="photo-hover">
+                    <div class="inside">
+                        <a data-featherlight="https://66.media.tumblr.com/b625f2f960d80cf330eea374a6d1e439/tumblr_n71xrp6c1S1qcqywxo1_500.jpg" data-featherlight-open-speed="0" data-featherlight-close-speed="0" data-postid="88588237422" title="Zoom"><i class="fa fa-fw fa-search-plus"></i></a><a href="#" title="Permalink"><i class="fa fa-fw fa-link"></i></a><a href="#" title="Reblog"><i class="fa fa-fw fa-retweet"></i></a>
+                        <br><a href="#" class="note-count">5 years ago &bull; 229 notes</a>
+                    </div>
+                </div>
+                
+                
+                
+                
+                
+                </article>
+
+                
+                
+				
+            
+				<article id="post_88410537287" class="post photo">
+
+
+                
+                    <figure data-width="640" data-height="640" data-lowres="https://66.media.tumblr.com/615f374af1892b0c104bb47f80387551/tumblr_n6t5e0UZ5a1sjlnfzo1_500.jpg" data-highres="https://66.media.tumblr.com/615f374af1892b0c104bb47f80387551/tumblr_n6t5e0UZ5a1sjlnfzo1_640.jpg" class="photo-content">
+					
+					<a href="#"><img class="photo-post-photo" src="https://66.media.tumblr.com/615f374af1892b0c104bb47f80387551/tumblr_n6t5e0UZ5a1sjlnfzo1_250.jpg" srcset="https://66.media.tumblr.com/615f374af1892b0c104bb47f80387551/tumblr_n6t5e0UZ5a1sjlnfzo1_500.jpg 2x" alt="happifeetphoto:
+&ldquo; #iPhone giving sweet #bokeh too right? #vsco #vscocam (at Bkt Tambun)
+&rdquo;" /></a>
+					</figure>
+					
+					
+                    
+                        
+                            <div class="post-section">
+                                <p><img class="reblog-avatar" src="https://66.media.tumblr.com/avatar_ef6651e1a12e_64.pnj">
+                                <a class="reblog-username"  href="https://happifeetphoto.tumblr.com/post/88090068523"><b>happifeetphoto</b></a>
+                                
+                                </p>
+                                <p>#iPhone giving sweet #bokeh too right? #vsco #vscocam (at Bkt Tambun)</p>
+                            </div>
+
+                
+                
+                
+                <div class="post-index-meta">
+                    <a href="#" class="note-count">5 years ago &bull; 84 notes</a>
+                    
+                    <a title="Reblog"  style="float:right; text-align: right" class="reblog-button" href="#"><i class="fa fa-retweet"></i></a>
+                    
+                    <a style="float:right; text-align: right; margin-right: 8px" data-featherlight="https://66.media.tumblr.com/615f374af1892b0c104bb47f80387551/tumblr_n6t5e0UZ5a1sjlnfzo1_640.jpg" data-featherlight-open-speed="0" data-featherlight-close-speed="0" data-postid="88410537287" title="Zoom"><i class="fa fa-search-plus"></i></a>
+                    
+                    
+                </div>
+                
+                
+                <div class="photo-hover">
+                    <div class="inside">
+                        <a data-featherlight="https://66.media.tumblr.com/615f374af1892b0c104bb47f80387551/tumblr_n6t5e0UZ5a1sjlnfzo1_640.jpg" data-featherlight-open-speed="0" data-featherlight-close-speed="0" data-postid="88410537287" title="Zoom"><i class="fa fa-fw fa-search-plus"></i></a><a href="#" title="Permalink"><i class="fa fa-fw fa-link"></i></a><a href="#" title="Reblog"><i class="fa fa-fw fa-retweet"></i></a>
+                        <br><a href="#" class="note-count">5 years ago &bull; 84 notes</a>
+                    </div>
+                </div>
+                
+                
+                
+                
+                
+                </article>
+                
+                
+				
+            
+				<article id="post_88410362432" class="post photo">
+								
+                
+                
+                
+                
+                
+
+                
+                    <figure data-width="1280" data-height="854" data-lowres="https://66.media.tumblr.com/b3ac7ac4d7f9eb773fecd286807b68f0/tumblr_n6q6hd1bY01qi3fplo1_500.jpg" data-highres="https://66.media.tumblr.com/b3ac7ac4d7f9eb773fecd286807b68f0/tumblr_n6q6hd1bY01qi3fplo1_1280.jpg" class="photo-content">
+					
+					<a href="#"><img class="photo-post-photo" src="https://66.media.tumblr.com/b3ac7ac4d7f9eb773fecd286807b68f0/tumblr_n6q6hd1bY01qi3fplo1_250.jpg" srcset="https://66.media.tumblr.com/b3ac7ac4d7f9eb773fecd286807b68f0/tumblr_n6q6hd1bY01qi3fplo1_500.jpg 2x" alt="mylifeasjesus:
+&ldquo; The sun sets but my pain remains.
+&rdquo;" /></a>
+					</figure>
+					
+					
+                    
+                        
+                            <div class="post-section">
+                                <p><img class="reblog-avatar" src="https://assets.tumblr.com/images/default_avatar/octahedron_open_64.png">
+                                
+                                <b class="reblog-username">mylifeasjesus</b>
+                                </p>
+                                <p>The sun sets but my pain remains.</p>
+                            </div>
+
+                
+                
+                
+                
+                
+                <div class="post-index-meta">
+                    <a href="#" class="note-count">5 years ago &bull; 64 notes</a>
+                    
+                    <a title="Reblog"  style="float:right; text-align: right" class="reblog-button" href="#"><i class="fa fa-retweet"></i></a>
+                    
+                    <a style="float:right; text-align: right; margin-right: 8px" data-featherlight="https://66.media.tumblr.com/b3ac7ac4d7f9eb773fecd286807b68f0/tumblr_n6q6hd1bY01qi3fplo1_1280.jpg" data-featherlight-open-speed="0" data-featherlight-close-speed="0" data-postid="88410362432" title="Zoom"><i class="fa fa-search-plus"></i></a>
+                    
+                    
+                </div>
+                
+                
+                <div class="photo-hover">
+                    <div class="inside">
+                        <a data-featherlight="https://66.media.tumblr.com/b3ac7ac4d7f9eb773fecd286807b68f0/tumblr_n6q6hd1bY01qi3fplo1_1280.jpg" data-featherlight-open-speed="0" data-featherlight-close-speed="0" data-postid="88410362432" title="Zoom"><i class="fa fa-fw fa-search-plus"></i></a><a href="#" title="Permalink"><i class="fa fa-fw fa-link"></i></a><a href="#" title="Reblog"><i class="fa fa-fw fa-retweet"></i></a>
+                        <br><a href="#" class="note-count">5 years ago &bull; 64 notes</a>
+                    </div>
+                </div>
+                
+                
+                
+                
+                
+                </article>
+                
+                
+				
+            
+				<article id="post_88410209937" class="post photo">
+
+
+                
+                    <figure data-width="1280" data-height="1280" data-lowres="https://66.media.tumblr.com/26d9dab1c68fee06197b057c25c4c80b/tumblr_n6porpBTnd1s2vgfdo1_500.jpg" data-highres="https://66.media.tumblr.com/26d9dab1c68fee06197b057c25c4c80b/tumblr_n6porpBTnd1s2vgfdo1_1280.jpg" class="photo-content">
+					
+					<a href="#"><img class="photo-post-photo" src="https://66.media.tumblr.com/26d9dab1c68fee06197b057c25c4c80b/tumblr_n6porpBTnd1s2vgfdo1_250.jpg" srcset="https://66.media.tumblr.com/26d9dab1c68fee06197b057c25c4c80b/tumblr_n6porpBTnd1s2vgfdo1_500.jpg 2x" alt="trxvels:
+&ldquo; &ldquo;Lights will guide you home&rdquo; &rdquo;" /></a>
+					</figure>
+					
+					
+                    
+                        
+                            <div class="post-section">
+                                <p><img class="reblog-avatar" src="https://66.media.tumblr.com/avatar_31442fa33b5c_64.pnj">
+                                <a class="reblog-username"  href="https://trxvels.tumblr.com/post/87919396448"><b>trxvels</b></a>
+                                
+                                </p>
+                                <p>"Lights will guide you home"</p>
+                            </div>
+                        
+
+                
+                
+                
+                
+                <div class="post-index-meta">
+                    <a href="#" class="note-count">5 years ago &bull; 157 notes</a>
+                    
+                    <a title="Reblog"  style="float:right; text-align: right" class="reblog-button" href="#"><i class="fa fa-retweet"></i></a>
+                    
+                    <a style="float:right; text-align: right; margin-right: 8px" data-featherlight="https://66.media.tumblr.com/26d9dab1c68fee06197b057c25c4c80b/tumblr_n6porpBTnd1s2vgfdo1_1280.jpg" data-featherlight-open-speed="0" data-featherlight-close-speed="0" data-postid="88410209937" title="Zoom"><i class="fa fa-search-plus"></i></a>
+                    
+                    
+                </div>
+                
+                
+                <div class="photo-hover">
+                    <div class="inside">
+                        <a data-featherlight="https://66.media.tumblr.com/26d9dab1c68fee06197b057c25c4c80b/tumblr_n6porpBTnd1s2vgfdo1_1280.jpg" data-featherlight-open-speed="0" data-featherlight-close-speed="0" data-postid="88410209937" title="Zoom"><i class="fa fa-fw fa-search-plus"></i></a><a href="#" title="Permalink"><i class="fa fa-fw fa-link"></i></a><a href="#" title="Reblog"><i class="fa fa-fw fa-retweet"></i></a>
+                        <br><a href="#" class="note-count">5 years ago &bull; 157 notes</a>
+                    </div>
+                </div>
+                
+                
+                
+                
+                
+                </article>
+                
+                
+				
+            
+				<article id="post_88410118217" class="post photo">
+								
+
+
+                
+                    <figure data-width="1280" data-height="857" data-lowres="https://66.media.tumblr.com/7174843ff818c95e406eceb337ed66e3/tumblr_n6syvptEhS1r7282yo1_500.jpg" data-highres="https://66.media.tumblr.com/7174843ff818c95e406eceb337ed66e3/tumblr_n6syvptEhS1r7282yo1_1280.jpg" class="photo-content">
+					
+					<a href="#"><img class="photo-post-photo" src="https://66.media.tumblr.com/7174843ff818c95e406eceb337ed66e3/tumblr_n6syvptEhS1r7282yo1_250.jpg" srcset="https://66.media.tumblr.com/7174843ff818c95e406eceb337ed66e3/tumblr_n6syvptEhS1r7282yo1_500.jpg 2x" alt="" /></a>
+					</figure>
+					
+
+                
+                
+                
+                <div class="post-index-meta">
+                    <a href="#" class="note-count">5 years ago &bull; 424 notes</a>
+                    
+                    <a title="Reblog"  style="float:right; text-align: right" class="reblog-button" href="#"><i class="fa fa-retweet"></i></a>
+                    
+                    <a style="float:right; text-align: right; margin-right: 8px" data-featherlight="https://66.media.tumblr.com/7174843ff818c95e406eceb337ed66e3/tumblr_n6syvptEhS1r7282yo1_1280.jpg" data-featherlight-open-speed="0" data-featherlight-close-speed="0" data-postid="88410118217" title="Zoom"><i class="fa fa-search-plus"></i></a>
+                    
+                    
+                </div>
+                
+                
+                <div class="photo-hover">
+                    <div class="inside">
+                        <a data-featherlight="https://66.media.tumblr.com/7174843ff818c95e406eceb337ed66e3/tumblr_n6syvptEhS1r7282yo1_1280.jpg" data-featherlight-open-speed="0" data-featherlight-close-speed="0" data-postid="88410118217" title="Zoom"><i class="fa fa-fw fa-search-plus"></i></a><a href="#" title="Permalink"><i class="fa fa-fw fa-link"></i></a><a href="#" title="Reblog"><i class="fa fa-fw fa-retweet"></i></a>
+                        <br><a href="#" class="note-count">5 years ago &bull; 424 notes</a>
+                    </div>
+                </div>
+                
+                
+                
+                
+                
+                </article>
+                
+                
+				
+            
+				<article id="post_88410026052" class="post photo">
+
+
+                
+                    <figure data-width="900" data-height="600" data-lowres="https://66.media.tumblr.com/8e043173371c432be0a9b1992d70ec26/tumblr_n6x0w1wVNk1svsncno1_500.jpg" data-highres="https://66.media.tumblr.com/8e043173371c432be0a9b1992d70ec26/tumblr_n6x0w1wVNk1svsncno1_1280.jpg" class="photo-content">
+					
+					<a href="#"><img class="photo-post-photo" src="https://66.media.tumblr.com/8e043173371c432be0a9b1992d70ec26/tumblr_n6x0w1wVNk1svsncno1_250.jpg" srcset="https://66.media.tumblr.com/8e043173371c432be0a9b1992d70ec26/tumblr_n6x0w1wVNk1svsncno1_500.jpg 2x" alt="damjddesignz:
+&ldquo; #Macro : Red on Green by ursula http://ift.tt/1s0T6uO
+&rdquo;" /></a>
+					</figure>
+					
+					
+                    
+                        
+                            <div class="post-section">
+                                <p><img class="reblog-avatar" src="https://assets.tumblr.com/images/default_avatar/cone_closed_64.png">
+                                <a class="reblog-username"  href="https://damjddesignz.tumblr.com/post/88295934812"><b>damjddesignz</b></a>
+                                
+                                </p>
+                                <p>#Macro&nbsp;: Red on Green by ursula <a href="http://ift.tt/1s0T6uO">http://ift.tt/1s0T6uO</a></p>
+                            </div>
+
+                
+                
+                
+                
+                
+                <div class="post-index-meta">
+                    <a href="#" class="note-count">5 years ago &bull; 57 notes</a>
+                    
+                    <a title="Reblog"  style="float:right; text-align: right" class="reblog-button" href="#"><i class="fa fa-retweet"></i></a>
+                    
+                    <a style="float:right; text-align: right; margin-right: 8px" data-featherlight="https://66.media.tumblr.com/8e043173371c432be0a9b1992d70ec26/tumblr_n6x0w1wVNk1svsncno1_1280.jpg" data-featherlight-open-speed="0" data-featherlight-close-speed="0" data-postid="88410026052" title="Zoom"><i class="fa fa-search-plus"></i></a>
+                    
+                    
+                </div>
+                
+                
+                <div class="photo-hover">
+                    <div class="inside">
+                        <a data-featherlight="https://66.media.tumblr.com/8e043173371c432be0a9b1992d70ec26/tumblr_n6x0w1wVNk1svsncno1_1280.jpg" data-featherlight-open-speed="0" data-featherlight-close-speed="0" data-postid="88410026052" title="Zoom"><i class="fa fa-fw fa-search-plus"></i></a><a href="#" title="Permalink"><i class="fa fa-fw fa-link"></i></a><a href="#" title="Reblog"><i class="fa fa-fw fa-retweet"></i></a>
+                        <br><a href="#" class="note-count">5 years ago &bull; 57 notes</a>
+                    </div>
+                </div>
+                
+                
+                
+                
+                
+                </article>
+                
+                
+				
+            
+				<article id="post_88409550977" class="post photo">
+								
+                
+                
+                
+                
+                
+
+                
+                    <figure data-width="1280" data-height="853" data-lowres="https://66.media.tumblr.com/e370caa2a25b2c048470a7abef3311ab/tumblr_n6tnc59P5H1rxkyweo1_500.jpg" data-highres="https://66.media.tumblr.com/e370caa2a25b2c048470a7abef3311ab/tumblr_n6tnc59P5H1rxkyweo1_1280.jpg" class="photo-content">
+					
+					<a href="#"><img class="photo-post-photo" src="https://66.media.tumblr.com/e370caa2a25b2c048470a7abef3311ab/tumblr_n6tnc59P5H1rxkyweo1_250.jpg" srcset="https://66.media.tumblr.com/e370caa2a25b2c048470a7abef3311ab/tumblr_n6tnc59P5H1rxkyweo1_500.jpg 2x" alt="" /></a>
+					</figure>
+					
+
+                
+                
+                
+                
+                <div class="post-index-meta">
+                    <a href="#" class="note-count">5 years ago &bull; 98 notes</a>
+                    
+                    <a title="Reblog"  style="float:right; text-align: right" class="reblog-button" href="#"><i class="fa fa-retweet"></i></a>
+                    
+                    <a style="float:right; text-align: right; margin-right: 8px" data-featherlight="https://66.media.tumblr.com/e370caa2a25b2c048470a7abef3311ab/tumblr_n6tnc59P5H1rxkyweo1_1280.jpg" data-featherlight-open-speed="0" data-featherlight-close-speed="0" data-postid="88409550977" title="Zoom"><i class="fa fa-search-plus"></i></a>
+                    
+                    
+                </div>
+                
+                
+                <div class="photo-hover">
+                    <div class="inside">
+                        <a data-featherlight="https://66.media.tumblr.com/e370caa2a25b2c048470a7abef3311ab/tumblr_n6tnc59P5H1rxkyweo1_1280.jpg" data-featherlight-open-speed="0" data-featherlight-close-speed="0" data-postid="88409550977" title="Zoom"><i class="fa fa-fw fa-search-plus"></i></a><a href="#" title="Permalink"><i class="fa fa-fw fa-link"></i></a><a href="#" title="Reblog"><i class="fa fa-fw fa-retweet"></i></a>
+                        <br><a href="#" class="note-count">5 years ago &bull; 98 notes</a>
+                    </div>
+                </div>
+                
+                
+                
+                
+                
+                </article>
+                
+                
+				
+            
+				<article id="post_88409511482" class="post photo">
+								
+
+
+                
+                    <figure data-width="640" data-height="420" data-lowres="https://66.media.tumblr.com/a3739ddd5ad67718b86782606926b1ca/tumblr_n6urimYbCP1rgsogqo1_500.jpg" data-highres="https://66.media.tumblr.com/a3739ddd5ad67718b86782606926b1ca/tumblr_n6urimYbCP1rgsogqo1_640.jpg" class="photo-content">
+					
+					<a href="#"><img class="photo-post-photo" src="https://66.media.tumblr.com/a3739ddd5ad67718b86782606926b1ca/tumblr_n6urimYbCP1rgsogqo1_250.jpg" srcset="https://66.media.tumblr.com/a3739ddd5ad67718b86782606926b1ca/tumblr_n6urimYbCP1rgsogqo1_500.jpg 2x" alt="" /></a>
+					</figure>
+					
+					
+                    
+                        
+                            <div class="post-section">
+                                <p><img class="reblog-avatar" src="https://66.media.tumblr.com/avatar_895aa483b88c_64.pnj">
+                                <a class="reblog-username"  href="https://youcallinmealiar.tumblr.com/post/88171514276"><b>youcallinmealiar</b></a>
+                                
+                                </p>
+                                <p>instagram: <br /> @goes_and_comes <br /> personal blog:<br /> goes-and-comes.blogspot.de</p>
+                            </div>
+                        
+                    
+
+                
+                
+                
+                <div class="post-index-meta">
+                    <a href="#" class="note-count">5 years ago &bull; 70 notes</a>
+                    
+                    <a title="Reblog" style="float:right; text-align: right" class="reblog-button" href="#"><i class="fa fa-retweet"></i></a>
+                    
+                    <a style="float:right; text-align: right; margin-right: 8px" data-featherlight="https://66.media.tumblr.com/a3739ddd5ad67718b86782606926b1ca/tumblr_n6urimYbCP1rgsogqo1_640.jpg" data-featherlight-open-speed="0" data-featherlight-close-speed="0" data-postid="88409511482" title="Zoom"><i class="fa fa-search-plus"></i></a>
+                    
+                    
+                </div>
+                
+                
+                <div class="photo-hover">
+                    <div class="inside">
+                        <a data-featherlight="https://66.media.tumblr.com/a3739ddd5ad67718b86782606926b1ca/tumblr_n6urimYbCP1rgsogqo1_640.jpg" data-featherlight-open-speed="0" data-featherlight-close-speed="0" data-postid="88409511482" title="Zoom"><i class="fa fa-fw fa-search-plus"></i></a><a href="#" title="Permalink"><i class="fa fa-fw fa-link"></i></a><a href="#" title="Reblog"><i class="fa fa-fw fa-retweet"></i></a>
+                        <br><a href="#" class="note-count">5 years ago &bull; 70 notes</a>
+                    </div>
+                </div>
+                
+                
+                
+                
+                
+                </article>
+                
+                
+				
+            
+				<article id="post_88409497547" class="post photo">
+								
+
+                
+                    <figure data-width="500" data-height="333" data-lowres="https://66.media.tumblr.com/2e86848539d10db49031d6d7fe7b707c/tumblr_n6sloxA00V1r0klrdo1_500.jpg" data-highres="https://66.media.tumblr.com/2e86848539d10db49031d6d7fe7b707c/tumblr_n6sloxA00V1r0klrdo1_500.jpg" class="photo-content">
+					
+					<a href="#"><img class="photo-post-photo" src="https://66.media.tumblr.com/2e86848539d10db49031d6d7fe7b707c/tumblr_n6sloxA00V1r0klrdo1_250.jpg" srcset="https://66.media.tumblr.com/2e86848539d10db49031d6d7fe7b707c/tumblr_n6sloxA00V1r0klrdo1_500.jpg 2x" alt="roobascooba:
+&ldquo; Fairies in my garden. by *incredi on We Heart It.
+&rdquo;" /></a>
+					</figure>
+					
+					
+                    
+                        
+                            <div class="post-section">
+                                <p><img class="reblog-avatar" src="https://66.media.tumblr.com/avatar_242c3bcd920d_64.pnj">
+                                <a class="reblog-username"  href="https://roobascooba.tumblr.com/post/88066179119"><b>roobascooba</b></a>
+                                
+                                </p>
+                                <p>Fairies in my garden. by *incredi on <a href="#">We Heart It</a>.</p>
+                            </div>
+                        
+
+                
+                
+                
+                
+                <div class="post-index-meta">
+                    <a href="#" class="note-count">5 years ago &bull; 188 notes</a>
+                    
+                    <a title="Reblog" style="float:right; text-align: right" class="reblog-button" href="#"><i class="fa fa-retweet"></i></a>
+                    
+                    <a style="float:right; text-align: right; margin-right: 8px" data-featherlight="https://66.media.tumblr.com/2e86848539d10db49031d6d7fe7b707c/tumblr_n6sloxA00V1r0klrdo1_500.jpg" data-featherlight-open-speed="0" data-featherlight-close-speed="0" data-postid="88409497547" title="Zoom"><i class="fa fa-search-plus"></i></a>
+                    
+                    
+                </div>
+                
+                
+                <div class="photo-hover">
+                    <div class="inside">
+                        <a data-featherlight="https://66.media.tumblr.com/2e86848539d10db49031d6d7fe7b707c/tumblr_n6sloxA00V1r0klrdo1_500.jpg" data-featherlight-open-speed="0" data-featherlight-close-speed="0" data-postid="88409497547" title="Zoom"><i class="fa fa-fw fa-search-plus"></i></a><a href="#" title="Permalink"><i class="fa fa-fw fa-link"></i></a><a href="#" title="Reblog"><i class="fa fa-fw fa-retweet"></i></a>
+                        <br><a href="#" class="note-count">5 years ago &bull; 188 notes</a>
+                    </div>
+                </div>
+                
+                
+                
+                
+                
+                </article>
+                
+                
+				
+            
+				<article id="post_88409476357" class="post photo">
+								
+
+
+                
+                    <figure data-width="500" data-height="667" data-lowres="https://66.media.tumblr.com/ab2b982757789ee77077f90098de668c/tumblr_n6xr2jh8bh1r0klrdo1_500.gifv" data-highres="https://66.media.tumblr.com/ab2b982757789ee77077f90098de668c/tumblr_n6xr2jh8bh1r0klrdo1_500.gifv" class="photo-content">
+					
+					<a href="#"><img class="photo-post-photo" src="https://66.media.tumblr.com/ab2b982757789ee77077f90098de668c/tumblr_n6xr2jh8bh1r0klrdo1_250.gifv" srcset="https://66.media.tumblr.com/ab2b982757789ee77077f90098de668c/tumblr_n6xr2jh8bh1r0klrdo1_500.gifv 2x" alt="roobascooba:
+&ldquo; Nature on We Heart It
+http://weheartit.com/entry/120373850/via/lacrobat
+&rdquo;" /></a>
+					</figure>
+					
+					
+                    
+                        
+                            <div class="post-section">
+                                <p><img class="reblog-avatar" src="https://66.media.tumblr.com/avatar_242c3bcd920d_64.pnj">
+                                <a class="reblog-username"  href="https://roobascooba.tumblr.com/post/88345008864"><b>roobascooba</b></a>
+                                
+                                </p>
+                                <p>Nature on We Heart It<br /><a href="http://weheartit.com/entry/120373850/via/lacrobat">http://weheartit.com/entry/120373850/via/lacrobat</a></p>
+                            </div>
+
+
+                
+                
+                
+                
+                
+                <div class="post-index-meta">
+                    <a href="#" class="note-count">5 years ago &bull; 264 notes</a>
+                    
+                    <a title="Reblog" style="float:right; text-align: right" class="reblog-button" href="#"><i class="fa fa-retweet"></i></a>
+                    
+                    <a style="float:right; text-align: right; margin-right: 8px" data-featherlight="https://66.media.tumblr.com/ab2b982757789ee77077f90098de668c/tumblr_n6xr2jh8bh1r0klrdo1_500.gif" data-featherlight-open-speed="0" data-featherlight-close-speed="0" data-postid="88409476357" title="Zoom"><i class="fa fa-search-plus"></i></a>
+                    
+                    
+                </div>
+                
+                
+                <div class="photo-hover">
+                    <div class="inside">
+                        <a data-featherlight="https://66.media.tumblr.com/ab2b982757789ee77077f90098de668c/tumblr_n6xr2jh8bh1r0klrdo1_500.gif" data-featherlight-open-speed="0" data-featherlight-close-speed="0" data-postid="88409476357" title="Zoom"><i class="fa fa-fw fa-search-plus"></i></a><a href="#" title="Permalink"><i class="fa fa-fw fa-link"></i></a><a href="#" title="Reblog"><i class="fa fa-fw fa-retweet"></i></a>
+                        <br><a href="#" class="note-count">5 years ago &bull; 264 notes</a>
+                    </div>
+                </div>
+                
+                
+                
+                
+                
+                </article>
+                
+                
+				
+            
+				<article id="post_88409341442" class="post photo">
+								
+
+
+                
+                    <figure data-width="500" data-height="500" data-lowres="https://66.media.tumblr.com/b00f2137e0b3c053514e318f05199ceb/tumblr_n6reyyVzms1r5sy35o1_500.jpg" data-highres="https://66.media.tumblr.com/b00f2137e0b3c053514e318f05199ceb/tumblr_n6reyyVzms1r5sy35o1_500.jpg" class="photo-content">
+					
+					<a href="#"><img class="photo-post-photo" src="https://66.media.tumblr.com/b00f2137e0b3c053514e318f05199ceb/tumblr_n6reyyVzms1r5sy35o1_250.jpg" srcset="https://66.media.tumblr.com/b00f2137e0b3c053514e318f05199ceb/tumblr_n6reyyVzms1r5sy35o1_500.jpg 2x" alt="This picture." /></a>
+					</figure>
+					
+					
+                    
+                        
+                            <div class="post-section">
+                                <p><img class="reblog-avatar" src="https://66.media.tumblr.com/23e601f2207f1acd6d8c7573f376c719/a744825d36d96cd3-35/s64x64u_c1/07b0f635a65486d7dc71e708e92386caa7d63e52.pnj">
+                                <b>copycat-theme</b>
+                                
+                                </p>
+                                <p>This picture.</p>
+                            </div>
+
+                
+                
+                
+                
+                <div class="post-index-meta">
+                    <a href="#" class="note-count">5 years ago &bull; 98 notes</a>
+                    
+                    <a title="Reblog"  style="float:right; text-align: right" class="reblog-button" href="#"><i class="fa fa-retweet"></i></a>
+                    
+                    <a style="float:right; text-align: right; margin-right: 8px" data-featherlight="https://66.media.tumblr.com/b00f2137e0b3c053514e318f05199ceb/tumblr_n6reyyVzms1r5sy35o1_500.jpg" data-featherlight-open-speed="0" data-featherlight-close-speed="0" data-postid="88409341442" title="Zoom"><i class="fa fa-search-plus"></i></a>
+                    
+                    
+                </div>
+                
+                
+                <div class="photo-hover">
+                    <div class="inside">
+                        <a data-featherlight="https://66.media.tumblr.com/b00f2137e0b3c053514e318f05199ceb/tumblr_n6reyyVzms1r5sy35o1_500.jpg" data-featherlight-open-speed="0" data-featherlight-close-speed="0" data-postid="88409341442" title="Zoom"><i class="fa fa-fw fa-search-plus"></i></a><a href="#" title="Permalink"><i class="fa fa-fw fa-link"></i></a><a href="#" title="Reblog"><i class="fa fa-fw fa-retweet"></i></a>
+                        <br><a href="#" class="note-count">5 years ago &bull; 98 notes</a>
+                    </div>
+                </div>
+                
+                
+                
+                
+                
+                </article>
+                
+                
+				<article id="post_88407478117" class="post text">
+								
+                
+                    
+                    <div class="post-section"><h2>Sample Text Post</h2></div>
+                    
+					
+    					<div class="post-section">
+        					
+        					<p>Lorem <strong>ipsum</strong> dolor sit amet, consectetur adipiscing elit. Quisque posuere augue dignissim luctus ullamcorper. Donec vulputate, urna vitae mattis sodales, sapien <em>orci malesuada</em> lectus, nec gravida elit risus vitae sem. Pellentesque venenatis egestas mattis. Aliquam in libero eget ligula condimentum condimentum.</p><blockquote><p>Pellentesque tincidunt vitae ipsum nec egestas. Mauris at erat eu tortor semper condimentum <strike>nec</strike> gravida massa.</p></blockquote><p></p><p class="read_more_container"><a href="#" class="read_more">Keep reading</a></p>
+    					</div>
+					
+
+                
+                
+                <div class="post-index-meta">
+                    <a href="#" class="note-count">6 years ago &bull; 1 note</a>
+                    
+                    <a title="Reblog"  style="float:right; text-align: right" class="reblog-button" href="#"><i class="fa fa-retweet"></i></a>
+                    
+                    
+                    
+                    
+                </div>
+                
+
+                
+                </article>
+                
+                <article id="post_88408639532" class="post photo">
+								
+
+                
+                    <figure data-width="500" data-height="750" data-lowres="https://64.media.tumblr.com/72ed5625f376b04695f940bec69b5b53/tumblr_n6sjrrqeOq1rbh9fto1_500.jpg" data-highres="https://64.media.tumblr.com/72ed5625f376b04695f940bec69b5b53/tumblr_n6sjrrqeOq1rbh9fto1_500.jpg" class="photo-content">
+					
+					<a href="#"><img class="photo-post-photo" src="https://64.media.tumblr.com/72ed5625f376b04695f940bec69b5b53/tumblr_n6sjrrqeOq1rbh9fto1_250.jpg" srcset="https://64.media.tumblr.com/72ed5625f376b04695f940bec69b5b53/tumblr_n6sjrrqeOq1rbh9fto1_500.jpg 2x" alt="amarepervivere:
+&ldquo; &ldquo; More?
+&rdquo;
+Shameless Plug: The Dream Project
+&rdquo;" /></a>
+					</figure>
+
+                        
+                            <div class="post-section">
+                                <p><img class="reblog-avatar" src="https://64.media.tumblr.com/avatar_9bc1d7f51f6d_64.pnj">
+                                <a class="reblog-username"  href="https://amarepervivere.tumblr.com/post/88064598140"><b>amarepervivere</b></a>
+                                
+                                </p>
+                                <p></p><blockquote>
+<p><em>More?</em></p>
+</blockquote>
+<p><strong><em>Shameless Plug:&nbsp;</em><em><a href="https://oneirevomai.tumblr.com/">The Dream Project</a></em></strong></p>
+                            </div>
+
+                
+                
+                
+                <div class="post-index-meta">
+                    <a href="#" class="note-count">6 years ago &bull; 273 notes</a>
+                    
+                    <a title="Reblog"  style="float:right; text-align: right" class="reblog-button" href="#"><i class="fa fa-retweet"></i></a>
+                    
+                    <a style="float:right; text-align: right; margin-right: 8px" data-featherlight="https://64.media.tumblr.com/72ed5625f376b04695f940bec69b5b53/tumblr_n6sjrrqeOq1rbh9fto1_500.jpg" data-featherlight-open-speed="0" data-featherlight-close-speed="0" data-postid="88408639532" title="Zoom"><i class="fa fa-search-plus"></i></a>
+                    
+                    
+                </div>
+                
+                
+                <div class="photo-hover">
+                    <div class="inside">
+                        <a data-featherlight="https://64.media.tumblr.com/72ed5625f376b04695f940bec69b5b53/tumblr_n6sjrrqeOq1rbh9fto1_500.jpg" data-featherlight-open-speed="0" data-featherlight-close-speed="0" data-postid="88408639532" title="Zoom"><i class="fa fa-fw fa-search-plus"></i></a><a href="https://copycat-theme.tumblr.com/post/88408639532/amarepervivere-more-shameless-plug-the" title="Permalink"><i class="fa fa-fw fa-link"></i></a><a href="#" title="Reblog"><i class="fa fa-fw fa-retweet"></i></a>
+                        <br><a href="#" class="note-count">6 years ago &bull; 273 notes</a>
+                    </div>
+                </div>
+                
+                
+                
+                
+                
+                </article>
+            
+        </div>
+      </div>
+    
+        
+    <div class="pagination clearfix">
+        <div class="span33 align-left">
+        
+        </div>
+        <div class="span33 hide-on-mobile">
+        <span class="page-info">Page 1 of 3</span>
+        </div>
+        <div class="span33 align-right">
+        <a href="#" id="next">Next <i class="fa fa-angle-right fa-fw"></i></a>
+        </div>
+    </div>
+    	
+	</div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://static.tumblr.com/anzluor/iaEpqmv4c/masonry.js"></script>
+    <script src="https://unpkg.com/infinite-scroll@3.0.6/dist/infinite-scroll.pkgd.min.js"></script>
+    <script src="https://static.tumblr.com/anzluor/aGlptl3tu/copycat.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/featherlight@1.7.14/release/featherlight.min.js"></script>
+    {% include ga.html %}
+</body>
+</html>

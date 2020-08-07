@@ -1,0 +1,6 @@
+<article class="theme clearfix">
+    <a href="/theme/{{ include.name | slugify }}"><img src="/assets/250_{{ include.name | slugify }}.jpg" srcset="/assets/500_{{ include.name | slugify }}.jpg 2x" /></a>
+    <h2>{{ include.name }}</h2>
+    <p>{{ include.desc }}</p>
+    <p><a href="/theme/{{ include.name | slugify }}">More info</a> | <a href="/preview/{{ include.name | slugify }}" target="_blank">Preview</a> | <a href="https://raw.githubusercontent.com/adorablethemes/themes/master/{{ include.name | slugify }}.txt" target="_blank">Code &rarr;</a></p>
+</article>

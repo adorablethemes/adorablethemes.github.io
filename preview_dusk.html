@@ -1,0 +1,544 @@
+---
+permalink: /preview/dusk
+redirect_from:
+  - /preview/03
+---
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- 
+        
+        theme:      Dusk
+        version:    2.0.5 (April 27, 2019)
+        from:       adorablethemes.github.io
+        
+        credits:
+        
+        imagesLoaded 4.1.4 (imagesloaded.desandro.com)
+        Infinite Scroll (infinite-scroll.com)
+        Masonry 4.2.2 (masonry.desandro.com)
+        jQuery 3.3.1 (jquery.com)
+        
+        -->
+        <title>Dusk (preview)</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=900">
+        <meta name="theme-color" content="#fe3b80">
+        <style>figure{margin:0}</style>
+        <meta name="description" content="dark two column theme">
+        <meta name="robots" content="noindex"/>
+        
+        <style type="text/css">
+        body {
+			color: white;
+			background-color: black;
+			font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+			width: 864px;
+			margin: 0 auto;
+			position: relative;
+        }
+        
+        main {
+			width: 864px;
+			margin-top: 20px;
+        }
+        
+        header {
+			padding: 10px;
+        }
+        
+        .blog-title {
+            font-family: Consolas, Menlo, Monaco, monospace;
+            font-size: 20px;
+        }
+        
+        .blog-description {
+            color: #bbb;
+			font-size: 11px; 
+        }
+        
+        .header-links {
+            list-style-type: none;
+            padding-left: 0;
+            margin-bottom: 0;
+        }
+        .header-link {
+			font-size: 10px;
+			color: #fe3b80;
+			display: inline-block;
+			padding: 12px;
+			padding-left: 0;
+			margin-bottom: 1px;
+			text-transform: uppercase;
+			text-decoration: none;
+			transition: color 0.1s ease-in;
+        }
+        .header-link:hover {
+            color: white;
+            text-decoration: none;
+        }
+        
+        .post {
+			margin-bottom: 10px;
+			margin-left: 5px;
+			margin-right: 5px;
+			border: 1px solid #333;
+			width: 420px;
+			float: left;
+        }
+        figure {
+            margin: 0;
+        }
+        .post-content {
+            padding: 10px;
+        }
+        .post img {
+			max-width: 100%;
+			height: auto;
+        }
+        .post h1,.post h2,.post h3,.post h4,.post h5,.post h6 {
+            font-family: Consolas, Menlo, Monaco, monospace;
+			font-size: 14px;
+        }
+        .post a, .blog-description a {
+			color: #fe3b80;
+			text-decoration: none;
+        }
+        .post a:hover, .blog-description a:hover {
+			color: #fe3b80;
+			text-decoration: underline;
+        }
+        .post p, .blog-description p {
+			font-size: 12px;
+			line-height: 150%;
+        }
+        .post ul, .blog-description ul {
+			list-style-type: circle;
+			font-size: 11px;
+            line-height: 140%;
+			padding-left: 20px;
+        }
+        .post ol, .blog-description ol {
+            font-size: 11px;
+            line-height: 140%;
+            padding-left: 20px;   
+        }
+        .post blockquote, .blog-description blockquote {
+            border-left: 2px solid white;
+			font-size: 11px;
+			padding: 0px 16px;
+			margin: 16px 0;
+			font-style: italic;
+        }
+        
+        .post iframe, .blog-description iframe {
+            max-width: 100%;
+        }
+        .tumblr_video_iframe {
+            max-height: 540px;
+        }
+        .post hr {
+            border: 0;
+            border-bottom: 1px solid #888;
+        }
+        
+        .chat .label {
+			font-weight: bold;
+			text-align: right;
+        }
+        .chat ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        .chat ul li {
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+            padding: 5px 0;
+        }
+        .chat ul li:last-child {
+            border-bottom: 0;   
+        }
+        
+        .quote-text {
+            font-family: serif;
+            font-size: 15px !important;
+            font-style: italic;
+        }
+        
+        .post-meta {
+            background-color: #111;
+			color: #888;
+            font-size: 10px;
+			padding: 7px 10px;
+			margin-bottom: 1px;
+        }
+        .post-meta.question {
+            font-size: 13px;
+            padding: 10px;
+        }
+        .post-meta.tags-list {
+            background-color: transparent;
+        }
+        .post-meta a {
+            color: #888;  
+            text-decoration: none;
+        }
+        .post-meta a:hover {
+            color: #999;
+            text-decoration: none;
+        }
+        .tag:before {
+            content: "#";
+        }
+        ol.notes {
+    		list-style-type: none;
+			padding-left: 0;
+        }
+        .note {
+			padding: 5px 0;
+        }
+        .note img.avatar, .asker-avatar {
+            width: 16px;
+            height: 16px;
+            border-radius: 2px;
+            margin-right: 8px;
+			vertical-align: middle;
+        }
+        
+        .pagination {
+			margin: 0 auto;
+			clear: both;
+			text-align: center;
+			
+        }
+        #previous, #next, .page-info {
+            font-size: 12px;
+            border: 1px solid #333;
+            color: white;
+            padding: 5px;
+            text-decoration: none;
+        }
+        #previous:hover, #next:hover {
+            text-decoration: none;
+        }
+        
+        
+        .index-page .tags-list {
+            display: none;
+        }
+        
+        
+        .permalink-page {
+            width: 532px;
+        }
+        .permalink-page .main {
+            width: 522px;
+        }
+        .permalink-page .post {
+            width: 520px;
+            margin-right: 0;
+        }
+        
+        .float-right {
+			float: right;
+        }
+        .text-right {
+            text-align: right;   
+        }
+        
+        a img {
+			border: 0;
+        }
+        
+        .clearfix:before,
+        .clearfix:after {
+        	content: " ";
+        	display: table;
+        }
+        .clearfix:after {
+        	clear: both;
+        }
+        .clearfix {
+        	*zoom: 1;
+        }
+        
+        a.read_more:after {
+            content: " \2192";
+        }
+
+        div.npf_row {
+            max-width: 100%;
+            height: auto !important;
+            display: flex;
+            margin: 0 !important;
+        }
+        div.npf_row figure.tmblr-full {
+            flex: 1;
+            justify-content: space-between;
+        }
+        div.npf_row figure.tmblr-full:first-child {
+            padding-right: 2px;
+        }
+        figure video {
+            max-width: 100%;
+        }
+        
+        .reblog-avatar {
+            width: 16px;
+            height: 16px;
+            border-radius: 2px;
+            margin-right: 8px;
+            vertical-align: middle;
+        }
+        .reblog-avatar.deleted {
+            -webkit-filter: grayscale(1);
+            filter: grayscale(1);
+        }
+        a.reblog-username, a.reblog-username:hover {
+            color: white;
+        }
+        .post-section {
+            border-bottom: 1px solid #222;
+        }
+        .post-section:last-child {
+            border-bottom: 0;
+        }
+        p.tmblr-attribution {
+            font-size: 11px !important;
+        }
+        .post-attribution a {
+            display: none;
+        }
+        .post-attribution a:first-child {
+            display: inline;
+        }
+        
+        
+        </style>
+        
+    
+    </head>
+    
+    <body class="index-page">
+        <header>
+        <h1 class="blog-title">Dusk</h1>
+
+        
+            <div class="blog-description">a tumblr theme</div>
+        
+        
+        <ul class="header-links">
+            
+            <a class="header-link" href="/"><li>Home</li></a>
+			
+			<a class="header-link" href="/archive"><li>Archive</li></a>
+
+			
+        </ul>
+
+        </header>
+        
+        <main class="clearfix">
+
+                <article id="184485844988" class="post photo">
+
+                <div class="post-content">
+
+                    <figure>
+                        <a href="#"><img src="http://24.media.tumblr.com/3794bf080333257e59b36571b57ef160/tumblr_n54cqggSr01r5gmiko1_400.jpg" alt=""/></a>
+                    </figure>
+
+                
+                </div>
+
+                <div class="post-meta">
+                    <a class="time-posted" href='#'>Jan 1<span class="year_2020"> 2020</span></a>
+                     / <a class="note-count" href='#'>13,725 notes</a>
+                </div>
+
+                
+                </article>
+                
+                
+                
+                
+                <article class="post text">
+
+                <div class="post-content">
+                
+                    
+                        <h3>Example text post</h3>
+                    
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut facilisis dolor nec blandit gravida. Fusce facilisis pellentesque viverra. Aenean et ultricies nisl, a consectetur eros. Donec <em>feugiat dignissim est</em>, congue bibendum augue auctor ut.</p>
+<ul><li>Cras placerat posuere lorem a cursus.</li>
+<li>Morbi non lacus eu felis gravida auctor.</li>
+</ul><p><strong>Duis facilisis auctor sagittis.</strong> Aliquam lobortis blandit sapien sed vestibulum. Maecenas euismod odio suscipit viverra sagittis. Sed sodales vel lorem porta hendrerit. Quisque accumsan leo et nulla semper, ut rhoncus libero blandit. Sed in hendrerit quam. Nam sit amet magna in nunc laoreet sagittis quis et est. Phasellus imperdiet neque mi, in tempor lorem suscipit vel. Nullam nec lacus eros.</p>
+<blockquote>
+<p>Pellentesque vitae volutpat odio, vel tincidunt enim. Phasellus mattis molestie justo. Mauris eu quam id dui volutpat convallis.</p>
+</blockquote>
+<p>Aenean rhoncus, orci at vestibulum elementum, orci mi auctor libero, vel condimentum ipsum massa id diam.</p>
+<ol><li>Sed laoreet nunc sit</li>
+<li>Met egestas ultricies</li>
+<li>Duis interdum nisl vitae orci laoreet</li>
+</ol><p>Quis porta diam interdum. Donec eget lorem sit amet lectus laoreet ullamcorper. <strike> Phasellus</strike> id ligula in lacus tristique consequat non quis arcu. Etiam iaculis ligula a dui ullamcorper <a href="#">commodo</a>.</p>
+
+                </div>
+
+                
+                <div class="post-meta">
+                    <a class="time-posted" href='#'>Apr 27<span class="year_2019"> 2019</span></a>
+                     / <a class="note-count" href='#'>2 notes</a>
+                    <span class="post-attribution float-right"></span>
+                </div>
+
+                
+                </article>
+                
+                
+                
+                
+                
+                <article id="184485844988" class="post photo">
+
+                <div class="post-content">
+
+                    <figure>
+                        <a href="#"><img src="https://64.media.tumblr.com/061fe01c8ca9ac97383fb17ffb4817bc/tumblr_n5d0m1UlRd1rn92vwo1_400.jpg" alt=""/></a>
+                    </figure>
+
+                
+                </div>
+
+                <div class="post-meta">
+                    <a class="time-posted" href='#'>Oct 9<span class="year_2018"> 2018</span></a>
+                     / <a class="note-count" href='#'>46 notes</a>
+                </div>
+
+                
+                </article>
+                
+                
+                
+                
+                
+                
+                
+                <article id="184485844988" class="post photo">
+
+                <div class="post-content">
+
+                    <figure>
+                        <a href="#"><img src="https://64.media.tumblr.com/324af41a7b38ba07eed20dcfbcd2b5df/tumblr_ngvq1nNodk1rsj4s9o1_400.jpg" alt=""/></a>
+                    </figure>
+
+                
+                </div>
+
+                <div class="post-meta">
+                    <a class="time-posted" href='#'>Jun 10<span class="year_2019"> 2018</span></a>
+                     / <a class="note-count" href='#'>141,521 notes</a>
+                </div>
+
+                
+                </article>
+                
+                
+                
+                
+                
+                <article id="184485844988" class="post photo">
+
+                <div class="post-content">
+
+                    <figure>
+                        <a href="#"><img src="https://64.media.tumblr.com/573d7d10c0653cd12c3355f10371bec4/tumblr_nqggt8nZ751r7pi7mo1_400.jpg" alt=""/></a>
+                    </figure>
+
+                
+                </div>
+
+                <div class="post-meta">
+                    <a class="time-posted" href='#'>Feb 1<span class="year_2019"> 2017</span></a>
+                     / <a class="note-count" href='#'>992 notes</a>
+                    <span class="post-attribution float-right">
+                        
+                        <a href="#">Source</a>
+                    </span>
+                </div>
+
+                
+                </article>
+                
+                
+                <article id="184485844988" class="post photo">
+
+                <div class="post-content">
+
+                    <figure>
+                        <a href="#"><img src="https://64.media.tumblr.com/33cf75054cc065921c84a168ffa75925/tumblr_n3e6cr8d3m1shixoso1_400.jpg" alt=""/></a>
+                    </figure>
+                    
+                    <div class="post-section">
+                        <p><img class="reblog-avatar" src="https://64.media.tumblr.com/avatar_89901c03085d_64.pnj">
+                        <a target="_blank" class="reblog-username" href="https://808vibesss.tumblr.com/post/81469745599/beautiful-sunset-tonight"><b>808vibesss</b></a>
+                        <p>beautiful sunset tonight</p>
+                    </div>
+                
+                </div>
+
+                <div class="post-meta">
+                    <a class="time-posted" href='#'>Mar 1<span class="year_2016"> 2016</span></a>
+                     / <a class="note-count" href='#'>296,856 notes</a>
+                    <span class="post-attribution float-right">
+                        
+                        <a href="https://808vibesss.tumblr.com/post/81469745599/beautiful-sunset-tonight">Source</a>
+                    </span>
+                </div>
+
+                
+                </article>
+
+        
+    </main>
+    
+    
+            <div class="pagination">
+        		
+        		
+        		
+        		<span class="page-info">1 of 5</span>
+        		
+        		<a href="#" id="next">&raquo;</a>
+        		
+        	</div>
+        
+    
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="https://static.tumblr.com/anzluor/iaEpqmv4c/masonry.js"></script>
+	
+	
+	<script>
+		$(function(){
+			var container = $('main');
+			
+			trimDates();
+			container.imagesLoaded().always(function(b){
+				container.masonry({
+					itemSelector : '.post'
+				});
+				setTimeout(function(){ container.masonry({
+    				itemSelector : '.post',
+    				transitionDuration: 0
+    			}); }, 750);
+			});
+			
+		});
+		function trimDates() {
+            var theYear = new Date().getFullYear();
+            $(".year_"+theYear).css("display", "none");
+        }
+	</script>
+	
+	{% include ga.html %}
+</body>
+</html>

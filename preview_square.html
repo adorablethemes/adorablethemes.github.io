@@ -1,0 +1,627 @@
+---
+permalink: /preview/square
+redirect_from:
+  - /preview/01
+---
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- 
+        
+        theme:      Square
+        version:    2.0.4 (November 2, 2018)
+        from:       adorablethemes.github.io
+        
+        credits:
+        
+        Font Awesome 4.7.0 (fontawesome.com)
+        Infinite Scroll 2.0.2 (infinite-scroll.com)
+        jQuery 3.3.1 (jquery.com)
+        
+        -->
+        <title>Square theme (preview)</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=640">
+        <meta name="theme-color" content="#000000">
+        <style>figure{margin:0}</style>
+        <meta name="description" content="compact one column theme">
+        <link href="https://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        <meta name="robots" content="noindex"/>
+        <style type="text/css">
+        body {
+			color: #222;
+			background-color: #EEEEEE;
+			
+			font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+			width: 604px;
+			margin: 0 auto;
+			position: relative;
+        }
+        
+        .main {
+			float: right;
+			width: 402px;
+			margin-top: 20px;
+        }
+        
+        .sidebar {
+			width: 160px;
+			padding: 10px;
+			margin-top: 20px;
+			background: #fff;
+			box-shadow: 4px 4px 0px rgba(0,0,0,0.1);
+			border: 1px solid #bbb;
+            position: fixed;
+        }
+        
+        .blog-title {
+            font-size: 14px;
+        }
+        
+        .blog-description {
+			font-size: 11px; 
+        }
+        
+        .sidebar-links {
+            list-style-type: none;
+            padding-left: 0;
+        }
+                
+        .sidebar-link {
+			font-size: 10px;
+			color: #000000;
+			border: 1px solid rgba(0,0,0, 0.25);
+			border-bottom: 0;
+			background-color: rgba(0,0,0, 0.05);
+			display: block;
+			padding: 4px 5px;
+			text-decoration: none;
+        }
+        .sidebar-link:last-child {
+			border-bottom: 1px solid rgba(0,0,0, 0.25);
+        }
+        .sidebar-link:hover {
+            background-color: rgba(0,0,0, 0.1);
+            text-decoration: none;
+        }
+        
+        .post {
+			background-color: #fff;
+			margin-bottom: 20px;
+			box-shadow: 4px 4px 0px rgba(0,0,0,0.1);
+			border: 1px solid #bbb;
+        }
+        figure {
+            margin: 0;
+        }
+        .post-section {
+            padding: 5px 10px;
+        }
+        .post img {
+			max-width: 100%;
+			height: auto;
+        }
+        .post h1,.post h2,.post h3,.post h4,.post h5,.post h6 {
+			font-size: 14px;
+        }
+        .post a, .blog-description a {
+			color: #000000;
+			text-decoration: none;
+        }
+        .post a:hover, .blog-description a:hover {
+			color: #000000;
+			text-decoration: underline;
+        }
+        .post p, .blog-description p {
+			font-size: 11px;
+			line-height: 150%;
+        }
+        .post ul, .blog-description ul {
+			list-style-type: circle;
+			font-size: 11px;
+            line-height: 140%;
+			padding-left: 20px;
+        }
+        .post ol, .blog-description ol {
+            font-size: 11px;
+            line-height: 140%;
+            padding-left: 20px;   
+        }
+        .post blockquote, description blockquote {
+            border-left: 2px solid #888;
+            color: #888;
+			font-size: 11px;
+			padding: 0 10px;
+			margin: 10px 0;
+			font-style: italic;
+        }
+        
+        .post iframe, .blog-description iframe {
+            max-width: 100%;
+        }
+        .tumblr_video_iframe {
+            max-height: 540px;
+        }
+        .photo-post-photo {
+            display: block;
+        }
+        
+        .chat .label {
+			font-weight: bold;
+        }
+        .chat ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        .chat ul li {
+            padding: 5px 0;
+        }
+        .chat ul li:last-child {
+            border-bottom: 0;   
+        }
+        .chat .user_1 .label {
+            color: #DD6E53;
+        }
+        .chat .user_2 .label {
+            color: #63A8D1;
+        }
+        .chat .user_3 .label {
+            color: #67C396;
+        }
+        .chat .user_4 .label {
+            color: #F3A343;
+        }
+        .chat .user_5 .label {
+            color: #B08AC8;
+        }
+        
+        .quote-text {
+            font-family: serif;
+            font-size: 15px !important;
+            font-style: italic;
+        }
+        
+        p.link-excerpt {
+            font-size: 10px;
+            color: #777;
+        }
+        
+        .post-meta {
+            background-color: #f6f6f6;
+            border-top: 1px solid #ddd;
+			color: #888;
+            font-size: 10px;
+			padding: 8px 10px;
+        }
+        .post-meta a, .post-meta a:hover {
+            color: #888;  
+            text-decoration: none;
+        }
+        .post-tags {
+            background-color: transparent;
+            border-top: 0;
+        }
+        .tag:before {
+            content: "#";
+        }
+        
+        ol.notes {
+    		list-style-type: none;
+			padding-left: 0;
+        }
+        .note {
+			padding: 5px 0;
+			font-size: 10px;
+        }
+        .note img.avatar, .asker-avatar {
+            width: 16px;
+            height: 16px;
+            border-radius: 2px;
+            margin-right: 7px;
+			vertical-align: middle;
+        }
+        
+        div.pagination {
+			margin: 0 auto;
+			clear: both;
+			text-align: center;
+        }
+        #previous, #next, .jump-page {
+            font-size: 10px;
+            background-color: #fff;
+            color: #555;
+            padding: 5px;
+            text-decoration: none;
+        }
+        .current-page {
+            font-weight: 700;
+            color: white;
+            background-color: #000000;
+        }
+        #previous:hover, #next:hover {
+            text-decoration: none;
+        }
+        
+        
+        
+        a.read_more:after {
+            content: " \2192";
+        }
+        
+        a img {
+			border: 0;
+        }
+        
+        .note.like:after {
+            content: '\f004';
+            font-family: FontAwesome;
+            font-size: 10px;
+            float: right;
+            margin-top: -18px;
+            color: #DD6E53;
+        }
+        .note.reblog:after {
+            content: '\f021';
+            font-family: FontAwesome;
+            font-size: 10px;
+            float: right;
+            margin-top: -18px;
+            color: #67C396;
+        }
+        .note.reply:after {
+            content: '\f075';
+            font-family: FontAwesome;
+            font-size: 10px;
+            float: right;
+            margin-top: -18px;
+            color: #63A8D1;
+        }
+        .note.answer:after {
+            content: '\f112';
+            font-family: FontAwesome;
+            font-size: 10px;
+            float: right;
+            margin-top: -18px;
+            color: #828D95;
+        }
+        
+        .like-button-parent {
+            display: inline-block !important;
+            float: right;
+        }
+        .reblog-button {
+            margin-right: 5px;
+        }
+        .like-button-parent {
+            position: relative;
+        }
+        .like-button-parent .like_button {
+            position: absolute;
+            top: 0;
+            opacity: 0;
+        }
+        .like-button-parent .like_button.liked + span {
+            color: #d95e40;
+        }
+        
+        .reblog-avatar {
+            border-radius: 2px;
+            width: 16px;
+            height: 16px;
+            margin-right: 7px;
+            vertical-align: middle;
+        }
+        .reblog-avatar.deleted {
+            -webkit-filter: grayscale(1);
+            filter: grayscale(1);
+        }
+        a.reblog-username {
+            color: black;
+        }
+        .asker a, .answerer a {
+            color: black;
+        }
+        .post-section {
+            border-bottom: 1px solid #ddd;
+        }
+        .post-section:last-child {
+            border-bottom: 0;
+        }
+        p.tmblr-attribution {
+            font-size: 10px;
+        }
+        div.npf_row {
+            max-width: 100%;
+            height: auto !important;
+            display: flex;
+            margin: 0 !important;
+        }
+        div.npf_row figure.tmblr-full {
+            flex: 1;
+            justify-content: space-between;
+        }
+        div.npf_row figure.tmblr-full:first-child {
+            padding-right: 2px;
+        }
+        figure video {
+            max-width: 100%;
+        }
+        
+        .post-attribution {
+            display: none;
+        }
+        .post-attribution.is-reblog {
+            display: block;
+        }
+        .post-attribution.is-submission {
+            display: block;
+        }
+        .post-attribution.has-source {
+            display: block;
+        }
+        
+        .span33, .span50 {
+            float: left;
+            min-height: 1px;
+        }
+        .span33 {
+            width: 33.33%;
+        }
+        .span50 {
+            width: 50%;
+        }
+        .align-left { text-align: left; }
+        .align-center { text-align: center; }
+        .align-right { text-align: right; }
+        .float-right {
+            float: right;   
+        }
+        
+        .clearfix:before, .clearfix:after { content: "\0020"; display: block; height: 0; overflow: hidden; }
+        .clearfix:after { clear: both; }
+        .clearfix { zoom: 1; }
+        
+        
+        </style>
+        
+    <body class="index-page">
+        <div class="sidebar">
+        <h1 class="blog-title">Square</h1>
+
+        
+            <div class="blog-description">compact one column theme</div>
+        
+        
+        <ul class="sidebar-links">
+            
+            <a class="sidebar-link" href="#"><li>Home</li></a>
+
+                <a class="sidebar-link" href="#"><li>Archive</li></a>
+
+                <a class="sidebar-link" href="#"><li>Random</li></a>
+
+				
+			
+			
+        </ul>
+        
+        
+        <div class="pagination">
+
+                <span class="jump-page current-page">1</span>
+
+            
+                <a class="jump-page" href="#">2</a>
+
+            
+                <a class="jump-page" href="#">3</a>
+
+            
+                <a class="jump-page" href="#">4</a>
+
+            
+                <a class="jump-page" href="#">5</a>
+
+    		
+    		<a href="#" id="next"><i class="fa fa-fw fa-angle-right"></i></a>
+    		
+    	</div>
+    	
+
+        </div>
+        
+        <div class="main">
+
+        <div id="posts">
+
+
+            
+                <article id="1000" class="post photo">
+                
+                <div class="post-main">
+                
+                
+                
+
+                
+                    <figure>
+                        <a href="#"><img class="photo-post-photo" src="https://64.media.tumblr.com/6b0ccc4d90bd15ebe5e44b08395f4bfd/tumblr_pwc7goaSZy1u16n75o1_400.jpg" srcset="https://64.media.tumblr.com/6b0ccc4d90bd15ebe5e44b08395f4bfd/tumblr_pwc7goaSZy1u16n75o1_1280.jpg 2x" style="width: 400px; height: 400px" alt="" /></a>
+                    </figure>
+            		
+                    <div class="post-section">
+                        <p><img class="reblog-avatar" src="https://64.media.tumblr.com/avatar_8e23a6c76e28_64.pnj">
+                        <a target="_blank" class="reblog-username" href="https://www.dailyminimal.com/post/187053068929/no-476-a-new-geometric-design-every-day"><b>dailyminimal</b></a>
+                        </p>
+                        <p>No. 476</p>
+
+                        <p>A new geometric design every day</p>
+                    </div>
+                
+                
+                </div>
+                
+
+                
+                <div class="post-meta">
+                    <div class="float-right like-reblog-buttons">
+                        <div class="float-right like-button-parent">
+    					    <div class="like_button" data-post-id="184485844988" id="like_button_184485844988"></div>
+    					    <span><i class="fa fa-heart"></i></span>
+    					</div>
+    					<div class="float-right reblog-button">
+                            <a href="#"><i class="fa fa-refresh"></i></a>
+                        </div>
+    				</div>
+                    <a class="time-posted" href="#">1 year ago &bull; 608 notes</a>
+                </div>
+
+                </article>
+                
+                
+                
+                <article id="2000" class="post text">
+                
+                <div class="post-main">
+                
+                    
+                        <div class="post-section"><h3 class="post-title">Sample text post</h3></div>
+                    
+
+                    
+    					<div class="post-section">
+    					    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut facilisis dolor nec blandit gravida. Fusce facilisis pellentesque viverra. Aenean et ultricies nisl, a consectetur eros. Donec <em>feugiat dignissim est</em>, congue bibendum augue auctor ut.</p><p class="read_more_container"><a href="#" class="read_more">Keep reading</a></p>
+    					</div>
+
+                
+                
+                </div>
+
+                
+                <div class="post-meta">
+                    <div class="float-right like-reblog-buttons">
+                        <div class="float-right like-button-parent">
+    					    <div class="like_button" data-post-id="86722130073" id="like_button_86722130073"></div>
+    					    <span><i class="fa fa-heart"></i></span>
+    					</div>
+    					<div class="float-right reblog-button">
+                            <a href="#"><i class="fa fa-refresh"></i></a>
+                        </div>
+    				</div>
+                    <a class="time-posted" href="#">1 year ago &bull; 1 note</a>
+                </div>
+                
+
+                
+                </article>
+                
+                
+                <article id="4000" class="post photo">
+                
+                <div class="post-main">
+                
+                
+                
+
+                
+                    <figure>
+                        <a href="#"><img class="photo-post-photo" src="https://66.media.tumblr.com/cc29a01872a7da59a81925e18af4bd0c/tumblr_pd6c5dgulE1u60a8co3_400.jpg" srcset="https://66.media.tumblr.com/cc29a01872a7da59a81925e18af4bd0c/tumblr_pd6c5dgulE1u60a8co3_1280.jpg 2x" style="width: 400px; height: 267px" alt="" /></a>
+                    </figure>
+                
+                
+                </div>
+                
+
+                
+                <div class="post-meta">
+                    <div class="float-right like-reblog-buttons">
+                        <div class="float-right like-button-parent">
+    					    <div class="like_button" data-post-id="184485844988" id="like_button_184485844988"></div>
+    					    <span><i class="fa fa-heart"></i></span>
+    					</div>
+    					<div class="float-right reblog-button">
+                            <a href="#"><i class="fa fa-refresh"></i></a>
+                        </div>
+    				</div>
+                    <a class="time-posted" href="#">2 years ago &bull; 4 notes</a>
+                </div>
+
+                </article>
+                
+                
+                <article id="3000" class="post answer">
+                
+                <div class="post-main">
+                
+                
+                
+                    <div class="post-section asker">
+					<p><img class="asker-avatar" src="https://assets.tumblr.com/images/anonymous_avatar_64.gif" /> <b>Anonymous asked</b></p><p>sample ask post</p>
+					
+					</div>
+					
+					
+
+					<div class="post-section"><p>answer</p></div>
+
+                
+                </div>
+
+                
+                <div class="post-meta">
+                    <div class="float-right like-reblog-buttons">
+                        <div class="float-right like-button-parent">
+    					    <div class="like_button" data-post-id="171783258708" id="like_button_171783258708"></div>
+    					    <span><i class="fa fa-heart"></i></span>
+    					</div>
+    					<div class="float-right reblog-button">
+                            <a href="#"><i class="fa fa-refresh"></i></a>
+                        </div>
+    				</div>
+                    <a class="time-posted" href="#">2 years ago</a>
+                </div>
+                
+                
+                
+                
+                </article>
+
+                
+                
+                <article id="5000" class="post photo">
+                
+                <div class="post-main">
+                
+                
+                
+
+                
+                    <figure>
+                        <a href="#"><img class="photo-post-photo" src="https://66.media.tumblr.com/d70552a9f511f0c02e1f44f8f8430402/tumblr_oegjsprDn11u60a8co1_400.jpg" srcset="https://66.media.tumblr.com/d70552a9f511f0c02e1f44f8f8430402/tumblr_oegjsprDn11u60a8co1_1280.jpg 2x" style="width: 400px; height: 533px" alt="" /></a>
+                    </figure>
+                
+                
+                </div>
+                
+
+                
+                <div class="post-meta">
+                    <div class="float-right like-reblog-buttons">
+                        <div class="float-right like-button-parent">
+    					    <div class="like_button" data-post-id="184485844988" id="like_button_184485844988"></div>
+    					    <span><i class="fa fa-heart"></i></span>
+    					</div>
+    					<div class="float-right reblog-button">
+                            <a href="#"><i class="fa fa-refresh"></i></a>
+                        </div>
+    				</div>
+                    <a class="time-posted" href="#">2 years ago &bull; 12 notes</a>
+                </div>
+
+                </article>
+
+            
+        </div>
+    </div>
+	{% include ga.html %}
+</body>
+</html>

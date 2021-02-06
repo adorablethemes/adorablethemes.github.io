@@ -1,0 +1,382 @@
+---
+permalink: /preview/big-text
+redirect_from:
+  - /preview/bigtext
+---
+<!DOCTYPE html>
+<html>
+    <head>
+		<title>Big Text Theme (preview)</title>
+		<meta name="description" content="This is a preview of a theme." />
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="https://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Titillium+Web:400,400italic,600,700|Noto+Serif:400,400italic,700" rel="stylesheet" type="text/css">
+
+        <style type="text/css">
+        body {
+			color: #222222;
+			background: white;
+			background-attachment: fixed;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+        .serif {
+            font-family: 'Noto Serif', Cambria, Times, serif;
+        }
+        .sans-serif {
+            font-family: 'Titillium Web', Helvetica, Arial, sans-serif;
+        }
+        .wrapper {
+            background: #ffffff;
+			width: 800px;
+			margin: 0 auto;
+            padding-left: 30px;
+            padding-right: 30px;
+            
+        }
+        header {
+            margin: 0 auto;
+            padding-top: 30px;
+            width: 740px;
+        }
+        .main {
+            margin: 0 auto;
+			width: 740px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+        }
+        h1 {
+            font-size: 36px;
+            font-weight: 700;
+        }
+        h2 {
+            font-size: 30px;
+            font-weight: 600;
+        }
+        .blog-title, .blog-title:hover {
+            margin-top: 0;
+            color: #222222;
+        }
+        .description {
+            font-size: 18px;   
+        }
+        a {
+			color: #46B8D1;
+			text-decoration: none;
+        }
+        a:hover {
+			color: #46B8D1;
+			text-decoration: underline;
+        }
+        ul {
+			list-style-type: none;
+			padding-left: 0;
+        }
+        nav {
+            margin-bottom: 20px;
+            border-bottom: 1px solid #46B8D1;
+        }
+        .header-links {
+            margin: 16px auto;
+        }
+        .header-links li {
+            text-align: center;  
+            display: inline;
+            padding-right: 24px;
+        }
+        .header-link {
+            font-size: 16px;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+        .post p {
+			font-size: 20px;
+			line-height: 150%;
+        }
+        .post ul {
+			list-style-type: square;
+			font-size: 20px;
+			padding-left: 20px;
+        }
+        .post ol {
+            font-size: 20px;
+    		padding-left: 20px;
+        }
+        .post blockquote {
+            line-height: 100%;
+			font-size: 20px;
+			padding: 1px 12px;
+            margin: 10px 2px;
+            border-left: 5px solid #222222;
+            background-color: rgba(68,68,68,0.05);
+			font-style: italic;
+        }
+        .chat {
+			font-size: 20px;
+			line-height: 150%;
+        }
+        .chat ul {
+            list-style-type: none;  
+            padding-left: 0;
+        }
+        .chat ul li {
+            padding: 10px 0;
+            border-bottom: 1px solid #ecf0f1;
+        }
+        .chat ul li:last-child {
+            border-bottom: 0;
+        }
+        .chat .label {
+			font-weight: 700;
+        }
+        .link-post-link {
+            font-weight: 700;   
+        }
+        .quote-text {
+            font-size: 30px;
+            font-style: italic;
+        }
+        .text-right {
+            text-align: right;
+        }
+        .post {
+            padding-top: 75px;
+			padding-bottom: 75px;
+			border-bottom: 1px solid #ecf0f1;
+        }
+        .post img {
+            border-radius: 4px;
+			max-width: 740px;
+			height: auto;
+        }
+        .photo img {
+            width: 740px;   
+        }
+        aside {
+            font-size: 16px;
+            padding: 16px 0;
+            text-transform: uppercase;
+        }
+        hr {
+			clear: both;
+			border: 0;
+			border-bottom: 1px solid #ecf0f1;
+			margin: 15px 5px;
+        }
+        ol.notes {
+    		list-style-type: none;
+			padding-left: 0;
+            font-size: 14px;
+        }
+        .note {
+			padding: 10px 0;
+			border-bottom: 1px solid #ecf0f1;
+        }
+        .note:last-child {
+            border-bottom: 0;
+        }
+        .video iframe {
+            width: 740px;
+            height: 416px;
+        }
+        .post iframe {
+            max-width: 100%;
+            border-radius: 4px;    
+        }
+        img.avatar {
+			vertical-align: middle;
+            width: 28px;
+            height: 28px;
+            margin-right: 14px;
+        }
+        a img {
+			border: 0;
+        }
+        div.pagination {
+            padding: 20px 0;
+			margin: 0 auto;
+			clear: both;
+			text-align: center;
+        }
+        #previous, #next {
+            padding: 5px;
+        }
+        .tag:before {
+            content: "#";
+        }
+        
+        .tags-list {
+            display: none;
+        }
+        
+        
+        
+        @media screen and (max-width: 820px) {
+            * {
+                -webkit-box-sizing: border-box;
+                -moz-box-sizing: border-box;
+                box-sizing: border-box;
+            }
+            body {
+                background: #ffffff;   
+            }
+            .wrapper {
+                width: 100%;
+                padding: 20px;
+            }
+            header {
+                width: 100%;
+            }
+            .main {
+                width: 100%;
+            }
+            .post img {
+                max-width: 100%;
+            }
+            .post iframe {
+                max-width: 100%;
+            }
+        }
+        @media screen and (max-width: 640px) {
+            .post p, .post ul, .post ol {
+                font-size: 18px;
+            }
+            .description {
+                font-size: 17px;
+            }
+        }
+        @media screen and (max-width: 360px) {
+            .post p, .post ul, .post ol {
+                font-size: 15px;
+            }
+            .description {
+                font-size: 14px;
+            }
+            .notes {
+                display: none;
+            }
+        }
+        
+        
+        </style>
+    <meta name="robots" content="noindex"/>
+</head>
+    <body class="index-page sans-serif">
+		<div class="wrapper">
+        <header>
+        <a href="#">
+        <h1 class="blog-title">
+            Big Text
+        </h1>
+        </a>
+        
+        <nav role="navigation">
+        <ul class="header-links">
+				<li><a class="header-link" href="#">About me</a></li>
+				<li><a class="header-link" href="#">Ask me anything</a></li>
+				<li><a class="header-link" href="#">Archive</a></li>
+        </ul>
+        </nav>
+        
+        
+        <div class="description">
+            Description text goes here.
+        </div>
+        
+
+        </header>
+        
+        <div class="main" role="main">
+        
+        
+        
+        <article class="post text">
+                        <h2>Sample Post</h2>
+                    
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut facilisis dolor nec blandit gravida. Fusce facilisis pellentesque viverra. Aenean et ultricies nisl, a consectetur eros. Donec <em>feugiat dignissim est</em>, congue bibendum augue auctor ut.</p>
+<ul><li>Cras placerat posuere lorem a cursus.</li>
+<li>Morbi non lacus eu felis gravida auctor.</li>
+</ul><p><strong>Duis facilisis auctor sagittis.</strong> Aliquam lobortis blandit sapien sed vestibulum. Maecenas euismod odio suscipit viverra sagittis. Sed sodales vel lorem porta hendrerit. Quisque accumsan leo et nulla semper, ut rhoncus libero blandit. Sed in hendrerit quam. Nam sit amet magna in nunc laoreet sagittis quis et est. Phasellus imperdiet neque mi, in tempor lorem suscipit vel. Nullam nec lacus eros.</p>
+<blockquote>
+<p>Pellentesque vitae volutpat odio, vel tincidunt enim. Phasellus mattis molestie justo. Mauris eu quam id dui volutpat convallis.</p>
+</blockquote>
+<p>Aenean rhoncus, orci at vestibulum elementum, orci mi auctor libero, vel condimentum ipsum massa id diam.</p>
+<ol><li>Sed laoreet nunc sit</li>
+<li>Met egestas ultricies</li>
+<li>Duis interdum nisl vitae orci laoreet</li>
+</ol><p>Quis porta diam interdum. Donec eget lorem sit amet lectus laoreet ullamcorper. <strike> Phasellus</strike> id ligula in lacus tristique consequat non quis arcu. Etiam iaculis ligula a dui ullamcorper <a href="#">commodo</a>.</p>
+                
+                <aside class="post-meta">
+                    <a class="time-ago" href="#"><i class="fa fa-clock-o fa-fw"></i> 1 day ago</a>&nbsp;&nbsp;&nbsp;<a class="note-count" href="#"><i class="fa fa-heart-o fa-fw"></i> 1,000 notes</a>
+                </aside>
+                
+                
+                </article>
+                
+                
+                
+                <article class="post photo">
+
+                
+				<a href="#"><img src="https://i.imgur.com/CCRhoaY.jpg" alt=""/></a>
+				
+				<p>Photo caption</p>
+                
+                <aside class="post-meta">
+                    <a class="time-ago" href="#"><i class="fa fa-clock-o fa-fw"></i> 1 month ago</a>&nbsp;&nbsp;&nbsp;<a class="note-count" href="#"><i class="fa fa-heart-o fa-fw"></i> 1,000 notes</a>
+                </aside>
+
+                </article>
+                
+            
+            <article class="post link">
+
+                
+                    <h2><a href="#" class="link-post-link" >A link post &rarr;</a></h2>
+
+                    
+                        <p>some words about that link</p>
+
+                <aside class="post-meta">
+                    <a class="time-ago" href="#"><i class="fa fa-clock-o fa-fw"></i> 2 months ago</a>&nbsp;&nbsp;&nbsp;<a class="note-count" href="#"><i class="fa fa-heart-o fa-fw"></i> 1,000 notes</a>
+                </aside>
+                
+                
+                </article>
+
+
+
+            
+            <article class="post video">
+
+                
+                <iframe width="700" height="393" src="https://www.youtube.com/embed/e9DfSCk-6Ko?wmode=transparent&autohide=1&egm=0&hd=1&iv_load_policy=3&modestbranding=1&rel=0&showinfo=0&showsearch=0" frameborder="0" allowfullscreen></iframe>
+                    
+                <p>4096 - blank vhs covers were kinda beautiful (1:42)</p>
+
+                
+                <aside class="post-meta">
+                    <a class="time-ago" href="#"><i class="fa fa-clock-o fa-fw"></i> 2 years ago</a>&nbsp;&nbsp;&nbsp;<a class="note-count" href="#"><i class="fa fa-heart-o fa-fw"></i> 1,000 notes</a>
+                </aside>
+                
+                
+                </article>
+            
+
+            
+            
+
+      </div>
+
+    <footer>
+        Powered by <a href="https://www.tumblr.com/">Tumblr</a> &amp; <a href="http://adorablethemes.github.io/theme/big-text">Big Text Theme</a>
+    </footer>
+    
+    </div>
+{% include ga.html %}
+</body>
+</html>

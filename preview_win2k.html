@@ -7,7 +7,7 @@ permalink: /preview/win2k
         <!-- 
         
         theme:      Win2K
-        version:    2.5 (November 5, 2019)
+        version:    3.0 (January 5, 2023)
         from:       adorablethemes.github.io
         
         
@@ -15,7 +15,7 @@ permalink: /preview/win2k
         
         imagesLoaded 4.1.4 (imagesloaded.desandro.com)
         Infinite Scroll 2.0.2 (infinite-scroll.com)
-        jQuery 3.3.1 (jquery.com)
+        jQuery 3.6.0 (jquery.com)
         Masonry 4.2.1 (masonry.desandro.com)
         
         -->
@@ -28,6 +28,12 @@ permalink: /preview/win2k
         <meta name="robots" content="noindex"/>
         
         <style>
+        
+        figure {
+            padding: 0;
+            margin: 0;
+        }
+        
         * {
             -webkit-box-sizing: border-box;
             -moz-box-sizing: border-box;
@@ -48,10 +54,7 @@ permalink: /preview/win2k
         }
         body {
             background-color: #386ca0;
-            
             background-image: url('https://static.tumblr.com/7b0c4b7fff889b97794b921ef03b5660/anzluor/TYype5vkq/tumblr_static_eu4nuyf8hioscog00g4ko8s04.png');
-            background-attachment: fixed;
-            
             font-family: Tahoma, 'MS Sans Serif', sans-serif;
             width: 690px;
             margin: 0 auto;
@@ -250,7 +253,13 @@ permalink: /preview/win2k
             border-right-color: white;
             border-bottom-color: white;
             background-color: white;
-            padding: 10px 20px;
+        }
+        .text-area p, .text-area h1, .text-area h2, .text-area h3, .text-area h4, .text-area h5, .text-area h6, .text-area ol, .text-area ul, .text-area blockquote {
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+        .text-area ul, .text-area ol {
+            padding-left: 20px;
         }
         .text-area a.tumblr_blog {
             text-decoration: none;
@@ -276,15 +285,6 @@ permalink: /preview/win2k
         .font-tahoma .text-area {
             font-family: Tahoma, sans-serif;
         }
-        .photo .text-area, .video .text-area, .audio .text-area {
-            display: none;
-        }
-        .photo .text-area.has-caption, .video .text-area.has-caption, .audio .text-area.has-caption {
-            display: block;
-        }
-        .photo .text-area.has-tags, .video .text-area.has-tags, .audio .text-area.has-tags {
-            display: block;
-        }
         .text-area a {
             color: black;
             text-decoration: underline;
@@ -306,8 +306,6 @@ permalink: /preview/win2k
         }
         .text-area blockquote {
             border-left: 2px solid black;
-            margin-left: 2px;
-            padding-left: 8px;
         }
         .quote-text {
             font-family: 'Times New Roman', Times, serif;
@@ -331,71 +329,9 @@ permalink: /preview/win2k
             float: right;
             width: 16px;
             height: 16px;
-            background-image: url('//static.tumblr.com/anzluor/Fgkolwea1/m56u7v9.png');
+            background-image: url('https://static.tumblr.com/anzluor/Fgkolwea1/m56u7v9.png');
             background-repeat: no-repeat;
             background-position: -160px -32px;
-        }
-        
-        .media-container {
-            border: 1px inset #d0d0c8;
-            border-left-color: #404040;
-            border-top-color: #404040;
-            border-right-color: white;
-            border-bottom-color: white;
-            margin-bottom: 2px;
-            background-color: #d0d0c8;
-            overflow: hidden;
-        }
-        .photo-post-photo {
-            max-width: 100%;
-            height: auto;
-            display: block;
-        }
-        
-        .stretch-images .photo-post-photo {
-            width: 500px;
-        }
-        .stretch-images.layout-two-column .photo-post-photo {
-            width: 400px;
-        }
-        .stretch-images.layout-three-column .photo-post-photo {
-            width: 275px;
-        }
-        
-        
-        .media-container iframe {
-            display: block;
-            max-width: 100%;
-        }
-        .layout-two-column .video .media-container iframe {
-            width: 400px;
-            height: 225px;
-        }
-        .layout-three-column .video .media-container iframe {
-            width: 275px;
-            height: 154px;
-        }
-        
-        .video .media-container iframe.instagram-media {
-            margin: 0 !important;
-        }
-        
-        .layout-two-column .video .media-container iframe.instagram-media {
-            width: 400px;
-            height: 610px;
-        }
-        .layout-three-column .video .media-container iframe.instagram-media {
-            width: 275px;
-            height: 460px;
-        }
-        
-        .layout-two-column .soundcloud_audio_player {
-            width: 400px;
-            height: 400px;
-        }
-        .layout-three-column .soundcloud_audio_player {
-            width: 275px;
-            height: 275px;
         }
         
         .tumblr_video_iframe {
@@ -431,17 +367,6 @@ permalink: /preview/win2k
         .chat .chat-line {
             font-family: Arial, sans-serif;
             font-size: 14px;
-        }
-        
-        .video .text-area, .audio .text-area {
-            background-color: black;
-            color: white;
-        }
-        .video .text-area a, .video .text-area a:hover, .audio .text-area a, .audio .text-area a:hover {
-            color: white;   
-        }
-        .video .text-area blockquote, .audio .text-area blockquote {
-            border-left: 2px solid white;
         }
         
         /* Keep reading link arrow */
@@ -506,10 +431,6 @@ permalink: /preview/win2k
         .more_notes_link {
             display: none;
         }
-        
-        
-        
-        
         
         .pagenav {
             float: none !important;
@@ -583,8 +504,8 @@ permalink: /preview/win2k
         .post-section {
             border-bottom: 1px solid #ddd;
         }
-        .video .post-section, .audio .post-section {
-            border-bottom: 1px solid #222;
+        .post-section.legacy-media {
+            border-bottom: 0;
         }
         .post-section:last-child {
             border-bottom: 0;
@@ -594,29 +515,36 @@ permalink: /preview/win2k
         }
         
         div.npf_row {
-            max-width: 100%;
             height: auto !important;
             display: flex;
-            margin: 0 !important;
         }
         div.npf_row figure.tmblr-full {
             flex: 1;
             justify-content: space-between;
             margin: 0;
         }
-        div.npf_row figure.tmblr-full:first-child {
-            padding-right: 2px;
+        .tmblr-full .post_media_photo_anchor {
+            width: 100%;
         }
-        .post-section figure video, .post-section figure audio {
-            max-width: 100%;
+        .tmblr-full audio {
+            width: 100%;
+        }
+        .tmblr-full img {
+            width: 100%;
+            height: auto;
+        }
+        figure:not(.tmblr-full) {
+            margin: 10px 20px;
         }
         .npf-link-block a {
             text-decoration: none !important;
         }
+        div.npf-link-block {
+            margin: 10px 20px !important;
+        }
         
         .text-area.related {
-            padding-top: 20px;
-            padding-right: 5px;
+            padding: 20px 5px 5px 20px;
         }
         
         .square {
@@ -635,18 +563,13 @@ permalink: /preview/win2k
             overflow: hidden;
         }
         
-        .related-posts-container a:nth-child(n+9) {
-            display: none;
-        }
-        
         .related-posts a:hover .square {
             -webkit-filter: brightness(1.07);
             filter: brightness(1.07);
         }
         
-        
-        .title-bar .post-date {
-            display: none;
+        .invisible {
+            opacity: 0;   
         }
         
         
@@ -658,7 +581,7 @@ permalink: /preview/win2k
         </script>
         
         </head>
-    <body class="index-page page-1 font-arial background-tile layout-two-column stretch-images">
+    <body class="index-page page-1 font-arial background-tile layout-two-column">
     <main>
     
     <div class="posts-container">
@@ -683,35 +606,30 @@ permalink: /preview/win2k
                     
                     
                     
-                    <span class="title">Photo</span>
-                    
-                    
-                    
-                    
-                    
-                    <span class="post-date"> - Sep 21, 2018</span>
+                    <span class="title">Sep 21, 2018</span>
                     <div class="title-bar-buttons"></div>
                 </div>
                 
                 <div class="menu-bar">
                     <ul class="menu-items">
-                        <a href="#"><li>Reblog</li></a><a href="#"><li>Permalink</li></a><a target="_blank" href="#"><li>Zoom</li></a>
+                        <a href="#"><li>Reblog</li></a><a href="#"><li>Permalink</li></a>
                     </ul>
                 </div>
                 
-                <div class="media-container"><a href="#"><img class="photo-post-photo" src="https://66.media.tumblr.com/ebf74887520abe1b1fbed76f463af135/tumblr_pew3zxiCR71rnbw6mo1_500.gifv" alt="waneella:
-&ldquo;patreon
-&rdquo;" /></a></div>
-                
-                
-                
-                <div class="text-area has-caption">
+                <div class="text-area">
                     
                     
                     
                         
                         
                             
+                                <div class="post-section legacy-media">
+                                    <figure class="tmblr-full">
+                                    <img class="post_media_photo image" src="https://66.media.tumblr.com/ebf74887520abe1b1fbed76f463af135/tumblr_pew3zxiCR71rnbw6mo1_500.gifv" alt="waneella:
+&ldquo;patreon
+&rdquo;" />
+                                    </figure>
+                                </div>
                                 <div class="post-section">
                                     <p><img class="reblog-avatar" src="https://66.media.tumblr.com/avatar_124d0093bbca_64.pnj">
                                     <a target="_blank" class="reblog-username" href="https://waneella.tumblr.com/post/177972849547"><b>waneella</b></a>
@@ -751,43 +669,24 @@ permalink: /preview/win2k
                     
                     
                     
-                    <span class="title">Photo</span>
-                    
-                    
-                    
-                    
-                    
-                    <span class="post-date"> - Sep 15, 2018</span>
+                    <span class="title">Sep 15, 2018</span>
                     <div class="title-bar-buttons"></div>
                 </div>
                 
                 <div class="menu-bar">
                     <ul class="menu-items">
-                        <a href="#"><li>Reblog</li></a><a href="#"><li>Permalink</li></a><a target="_blank" href="#"><li>Zoom</li></a>
+                        <a href="#"><li>Reblog</li></a><a href="#"><li>Permalink</li></a>
                     </ul>
                 </div>
-                
-                <div class="media-container"><a href="#"><img class="photo-post-photo" src="https://66.media.tumblr.com/11ec0873ed19c17e028e0df0a27c6b3b/tumblr_os4ictWKJJ1tanofjo1_500.jpg" alt="" /></a></div>
-                
-                
+
                 
                 <div class="text-area">
-                    
-                    
-                    
-                        
-                        
-                            
-                        
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
+                    <div class="post-section legacy-media">
+                        <figure class="tmblr-full">
+                        <img class="post_media_photo image" src="https://66.media.tumblr.com/11ec0873ed19c17e028e0df0a27c6b3b/tumblr_os4ictWKJJ1tanofjo1_500.jpg" alt="" />
+                        </figure>
+                    </div>
+
                 </div>
                 
                 <div class="status-bar">
@@ -809,41 +708,23 @@ permalink: /preview/win2k
                     
                     
                     
-                    <span class="title">Photo</span>
-                    
-                    
-                    
-                    
-                    
-                    <span class="post-date"> - Sep 15, 2018</span>
+                    <span class="title">Sep 15, 2018</span>
                     <div class="title-bar-buttons"></div>
                 </div>
                 
                 <div class="menu-bar">
                     <ul class="menu-items">
-                        <a href="#"><li>Reblog</li></a><a href="#"><li>Permalink</li></a><a target="_blank" href="#"><li>Zoom</li></a>
+                        <a href="#"><li>Reblog</li></a><a href="#"><li>Permalink</li></a>
                     </ul>
                 </div>
                 
-                <div class="media-container"><a href="#"><img class="photo-post-photo" src="https://66.media.tumblr.com/2c61d47fd7b407f7651812f6adefe32b/tumblr_oh5tfwwLm91tofcqeo1_500.jpg" alt="" /></a></div>
-                
-                
-                
                 <div class="text-area">
                     
-                    
-                    
-                        
-                        
-                            
-                        
-                    
-                    
-                    
-                    
-                    
-                    
-                    
+                    <div class="post-section legacy-media">
+                        <figure class="tmblr-full">
+                        <img class="post_media_photo image" src="https://66.media.tumblr.com/2c61d47fd7b407f7651812f6adefe32b/tumblr_oh5tfwwLm91tofcqeo1_500.jpg" alt="" />
+                        </figure>
+                    </div>
                     
                     
                 </div>
@@ -867,13 +748,7 @@ permalink: /preview/win2k
                     
                     
                     
-                    <span class="title">Photo</span>
-                    
-                    
-                    
-                    
-                    
-                    <span class="post-date"> - Sep 15, 2018</span>
+                    <span class="title">Sep 15, 2018</span>
                     <div class="title-bar-buttons"></div>
                 </div>
                 
@@ -883,25 +758,13 @@ permalink: /preview/win2k
                     </ul>
                 </div>
                 
-                <div class="media-container"><img class="photo-post-photo" src="https://66.media.tumblr.com/abf295388fd3b3ac6cedf0a266b842b6/tumblr_p8ngsnE8DH1x31mt5o1_400.gifv" alt="" /></div>
-                
-                
-                
                 <div class="text-area">
                     
-                    
-                    
-                        
-                        
-                            
-                        
-                    
-                    
-                    
-                    
-                    
-                    
-                    
+                    <div class="post-section legacy-media">
+                        <figure class="tmblr-full">
+                        <img class="post_media_photo image" src="https://66.media.tumblr.com/abf295388fd3b3ac6cedf0a266b842b6/tumblr_p8ngsnE8DH1x31mt5o1_400.gifv" alt="" />
+                        </figure>
+                    </div>
                     
                     
                 </div>
@@ -925,51 +788,34 @@ permalink: /preview/win2k
                     
                     
                     
-                    <span class="title">Photo</span>
-                    
-                    
-                    
-                    
-                    
-                    <span class="post-date"> - Sep 11, 2018</span>
+                    <span class="title">Sep 11, 2018</span>
                     <div class="title-bar-buttons"></div>
                 </div>
                 
                 <div class="menu-bar">
                     <ul class="menu-items">
-                        <a href="#"><li>Reblog</li></a><a href="#"><li>Permalink</li></a><a target="_blank" href="#"><li>Zoom</li></a>
+                        <a href="#"><li>Reblog</li></a><a href="#"><li>Permalink</li></a>
                     </ul>
                 </div>
-                
-                <div class="media-container"><a href="#"><img class="photo-post-photo" src="https://66.media.tumblr.com/6b62254d35e783cb1daf4ebc082088e3/tumblr_pc0okce3dI1rmc7bfo1_500.jpg" alt="retrotech:
+
+                <div class="text-area">
+                    
+                    <div class="post-section legacy-media">
+                        <figure class="tmblr-full">
+                        <img class="post_media_photo image" src="https://66.media.tumblr.com/6b62254d35e783cb1daf4ebc082088e3/tumblr_pc0okce3dI1rmc7bfo1_500.jpg" alt="retrotech:
 &ldquo;Sony VAIO PCG-707 - Pentium MMX - 1997
-&rdquo;" /></a></div>
-                
-                
-                
-                <div class="text-area has-caption">
-                    
-                    
-                    
-                        
-                        
+&rdquo;" />
+                        </figure>
+                    </div>
                             
-                                <div class="post-section">
-                                    <p><img class="reblog-avatar" src="https://66.media.tumblr.com/avatar_1b29bcea2f57_64.pnj">
-                                    <a target="_blank" class="reblog-username" href="https://retrotech.tumblr.com/post/175988368442"><b>retrotech</b></a>
-                                    
-                                    </p>
-                                    <p>Sony VAIO PCG-707 - Pentium MMX - <i>1997</i></p>
-                                </div>
-                            
+                    <div class="post-section">
+                        <p><img class="reblog-avatar" src="https://66.media.tumblr.com/avatar_1b29bcea2f57_64.pnj">
+                        <a target="_blank" class="reblog-username" href="https://retrotech.tumblr.com/post/175988368442"><b>retrotech</b></a>
                         
-                    
-                    
-                    
-                    
-                    
-                    
-                    
+                        </p>
+                        <p>Sony VAIO PCG-707 - Pentium MMX - <i>1997</i></p>
+                    </div>
+
                     
                     
                 </div>
@@ -993,13 +839,7 @@ permalink: /preview/win2k
                     
                     
                     
-                    <span class="title">Photo</span>
-                    
-                    
-                    
-                    
-                    
-                    <span class="post-date"> - Sep 10, 2018</span>
+                    <span class="title">Sep 10, 2018</span>
                     <div class="title-bar-buttons"></div>
                 </div>
                 
@@ -1009,36 +849,21 @@ permalink: /preview/win2k
                     </ul>
                 </div>
                 
-                <div class="media-container"><img class="photo-post-photo" src="https://66.media.tumblr.com/tumblr_ln60rrLGOw1qzzelmo1_500.png" alt="prettycolors:
-&ldquo;#008080
-&rdquo;" /></div>
-                
-                
-                
-                <div class="text-area has-caption">
+                <div class="text-area">
                     
-                    
-                    
-                        
-                        
+                    <div class="post-section legacy-media">
+                        <figure class="tmblr-full">
+                        <img class="post_media_photo image" src="https://66.media.tumblr.com/tumblr_ln60rrLGOw1qzzelmo1_500.png" alt="" />
+                        </figure>
+                    </div>
                             
-                                <div class="post-section">
-                                    <p><img class="reblog-avatar" src="https://66.media.tumblr.com/avatar_b4b74782986a_64.pnj">
-                                    <a target="_blank" class="reblog-username" href="https://prettycolors.tumblr.com/post/6872883501"><b>prettycolors</b></a>
-                                    
-                                    </p>
-                                    <p>#008080</p>
-                                </div>
-                            
+                    <div class="post-section">
+                        <p><img class="reblog-avatar" src="https://66.media.tumblr.com/avatar_b4b74782986a_64.pnj">
+                        <a target="_blank" class="reblog-username" href="https://prettycolors.tumblr.com/post/6872883501"><b>prettycolors</b></a>
                         
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
+                        </p>
+                        <p>#008080</p>
+                    </div>
                     
                 </div>
                 
@@ -1061,53 +886,31 @@ permalink: /preview/win2k
                     
                     
                     
-                    <span class="title">Photo</span>
-                    
-                    
-                    
-                    
-                    
-                    <span class="post-date"> - Aug 21, 2018</span>
+                    <span class="title">Aug 21, 2018</span>
                     <div class="title-bar-buttons"></div>
                 </div>
                 
                 <div class="menu-bar">
                     <ul class="menu-items">
-                        <a href="#"><li>Reblog</li></a><a href="#"><li>Permalink</li></a><a target="_blank" href="#"><li>Zoom</li></a>
+                        <a href="#"><li>Reblog</li></a><a href="#"><li>Permalink</li></a>
                     </ul>
                 </div>
                 
-                <div class="media-container"><a href="#"><img class="photo-post-photo" src="https://66.media.tumblr.com/ad9042c6fd131ce9b5c0fdae39a91102/tumblr_ouuiq8cdJK1tlgv32o1_500.gifv" alt="8pxl:
-&ldquo; Seattle nights, 2017
-Check out my: shop / patreon / tip jar
-&rdquo;" /></a></div>
-                
-                
-                
-                <div class="text-area has-caption">
+                <div class="text-area">
                     
-                    
-                    
-                        
-                        
+                    <div class="post-section legacy-media">
+                        <figure class="tmblr-full">
+                        <img class="post_media_photo image" src="https://66.media.tumblr.com/ad9042c6fd131ce9b5c0fdae39a91102/tumblr_ouuiq8cdJK1tlgv32o1_500.gifv" alt="" />
+                        </figure>
+                    </div> 
                             
-                                <div class="post-section">
-                                    <p><img class="reblog-avatar" src="https://66.media.tumblr.com/avatar_ff2e32cf82ca_64.pnj">
-                                    <a target="_blank" class="reblog-username" href="https://8pxl.tumblr.com/post/164302161230"><b>8pxl</b></a>
-                                    
-                                    </p>
-                                    <p><i>Seattle nights, 2017</i></p><p>Check out my:&nbsp;<a href="https://society6.com/software">shop</a>&nbsp;/&nbsp;<a href="https://www.patreon.com/8pixel">patreon</a>&nbsp;/&nbsp;<a href="https://ko-fi.com/A627LI1">tip jar</a>&nbsp;<br /></p>
-                                </div>
-                            
+                    <div class="post-section">
+                        <p><img class="reblog-avatar" src="https://66.media.tumblr.com/avatar_ff2e32cf82ca_64.pnj">
+                        <a target="_blank" class="reblog-username" href="https://8pxl.tumblr.com/post/164302161230"><b>8pxl</b></a>
                         
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
+                        </p>
+                        <p><i>Seattle nights, 2017</i></p><p>Check out my:&nbsp;<a href="https://society6.com/software">shop</a>&nbsp;/&nbsp;<a href="https://www.patreon.com/8pixel">patreon</a>&nbsp;/&nbsp;<a href="https://ko-fi.com/A627LI1">tip jar</a>&nbsp;<br /></p>
+                    </div>
                     
                 </div>
                 
@@ -1130,42 +933,23 @@ Check out my: shop / patreon / tip jar
                     
                     
                     
-                    <span class="title">Photo</span>
-                    
-                    
-                    
-                    
-                    
-                    <span class="post-date"> - Aug 17, 2018</span>
+                    <span class="title">Aug 17, 2018</span>
                     <div class="title-bar-buttons"></div>
                 </div>
                 
                 <div class="menu-bar">
                     <ul class="menu-items">
-                        <a href="#"><li>Reblog</li></a><a href="#"><li>Permalink</li></a><a target="_blank" href="#"><li>Zoom</li></a><a target="_blank" href="https://retrotech.tumblr.com/post/169400028126"><li>Source</li></a>
+                        <a href="#"><li>Reblog</li></a><a href="#"><li>Permalink</li></a><a target="_blank" href="https://retrotech.tumblr.com/post/169400028126"><li>Source</li></a>
                     </ul>
                 </div>
                 
-                <div class="media-container"><a href="#"><img class="photo-post-photo" src="https://66.media.tumblr.com/11cef5e24108038ae8956bf348403fc6/tumblr_p25m69ohev1rmc7bfo1_500.jpg" alt="" /></a></div>
-                
-                
-                
                 <div class="text-area">
                     
-                    
-                    
-                        
-                        
-                            
-                        
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
+                    <div class="post-section legacy-media">
+                        <figure class="tmblr-full">
+                        <img class="post_media_photo image" src="https://66.media.tumblr.com/11cef5e24108038ae8956bf348403fc6/tumblr_p25m69ohev1rmc7bfo1_500.jpg" alt="" />
+                        </figure>
+                    </div>
                     
                 </div>
                 
@@ -1184,17 +968,7 @@ Check out my: shop / patreon / tip jar
                 <div class="title-bar">
                     <div class="icon"></div>
                     
-                    <span class="title">Text</span>
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    <span class="post-date"> - Aug 16, 2018</span>
+                    <span class="title">Aug 16, 2018</span>
                     <div class="title-bar-buttons"></div>
                 </div>
                 
@@ -1245,78 +1019,6 @@ Check out my: shop / patreon / tip jar
         </div>
         
         
-    
-        <div class="window-border inf-scroll-item">
-            <div id="177075107469" class="window photo">
-                <div class="title-bar">
-                    <div class="icon"></div>
-                    
-                    
-                    
-                    
-                    
-                    <span class="title">Photo</span>
-                    
-                    
-                    
-                    
-                    
-                    <span class="post-date"> - Aug 16, 2018</span>
-                    <div class="title-bar-buttons"></div>
-                </div>
-                
-                <div class="menu-bar">
-                    <ul class="menu-items">
-                        <a href="#"><li>Reblog</li></a><a href="#"><li>Permalink</li></a><a target="_blank" href="#"><li>Zoom</li></a>
-                    </ul>
-                </div>
-                
-                <div class="media-container"><a href="#"><img class="photo-post-photo" src="https://66.media.tumblr.com/e7263b251ac7feadbdb12898e775fe75/tumblr_prg9lzUwtf1xkay4po1_540.png" alt="Windows 9x color schemes - Rainy Day" /></a></div>
-                
-                
-                
-                <div class="text-area has-caption has-tags">
-                    
-                    
-                    
-                        
-                            
-            					<div class="post-section">
-                                    <p><img class="reblog-avatar" src="https://66.media.tumblr.com/23a15c55cdc13f581821a28dcd8bfed8/2aeed3789d5a290c-a1/s64x64u_c1/1607cb370b48a653395b7412cf85d357bb6edb47.pnj">
-                                    <a target="_blank" class="reblog-username" href="https://never-obsolete.tumblr.com/post/184899300464/windows-9x-color-schemes-rainy-day"><b>never-obsolete</b></a>
-                                    
-                                    </p>
-                					<p>Windows 9x color schemes - Rainy Day</p>
-            					</div>
-        					
-    					
-                        
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                        <p>
-                        
-                            <a class="tag" href="#">windows</a>&nbsp;
-                        
-                            <a class="tag" href="#">retrocomputing</a>&nbsp;
-                        
-                        </p>
-                    
-                </div>
-                
-                <div class="status-bar">
-                    <div class="grip"></div>
-                    <a href="https://never-obsolete.tumblr.com/post/184899300464/windows-9x-color-schemes-rainy-day">Reblogged from never-obsolete</a> - <a href="#">66 notes</a>
-                </div>
-                
-            </div>
-        </div>
         
         
     
@@ -1329,13 +1031,7 @@ Check out my: shop / patreon / tip jar
                     
                     
                     
-                    <span class="title">Photo</span>
-                    
-                    
-                    
-                    
-                    
-                    <span class="post-date"> - Feb 12, 2018</span>
+                    <span class="title">Feb 12, 2018</span>
                     <div class="title-bar-buttons"></div>
                 </div>
                 
@@ -1345,26 +1041,13 @@ Check out my: shop / patreon / tip jar
                     </ul>
                 </div>
                 
-                <div class="media-container"><img class="photo-post-photo" src="https://66.media.tumblr.com/ef3f73d47e5124d8bac66bdb022057d8/tumblr_p2xfakyUTu1rn5gv3o1_400.gifv" alt="" /></div>
-                
-                
-                
                 <div class="text-area">
                     
-                    
-                    
-                        
-                        
-                            
-                        
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
+                    <div class="post-section legacy-media">
+                        <figure class="tmblr-full">
+                        <img class="post_media_photo image" src="https://66.media.tumblr.com/ef3f73d47e5124d8bac66bdb022057d8/tumblr_p2xfakyUTu1rn5gv3o1_400.gifv" alt="" />
+                        </figure>
+                    </div>
                     
                 </div>
                 
@@ -1387,59 +1070,36 @@ Check out my: shop / patreon / tip jar
                     
                     
                     
-                    <span class="title">Photo</span>
-                    
-                    
-                    
-                    
-                    
-                    <span class="post-date"> - Nov 30, 2017</span>
+                    <span class="title">Nov 30, 2017</span>
                     <div class="title-bar-buttons"></div>
                 </div>
                 
                 <div class="menu-bar">
                     <ul class="menu-items">
-                        <a href="#"><li>Reblog</li></a><a href="#"><li>Permalink</li></a><a target="_blank" href="#"><li>Zoom</li></a>
+                        <a href="#"><li>Reblog</li></a><a href="#"><li>Permalink</li></a>
                     </ul>
                 </div>
-                
-                <div class="media-container"><a href="#"><img class="photo-post-photo" src="https://66.media.tumblr.com/332f9b4eaeeddd557624b1d0f3de1016/tumblr_ouumy10DVL1rktvuto1_500.jpg" alt="silentstructures:
-&ldquo; Coffee Break - 2010
-Looks can be deceiving.
-Windows 2000 Professional booting up in an abandoned office space on the upper floors of a small industrial space in Toronto, Ontario, Canada.
-&rdquo;" /></a></div>
-                
-                
-                
+
                 <div class="text-area has-caption">
                     
-                    
-                    
+                    <div class="post-section legacy-media">
+                        <figure class="tmblr-full">
+                        <img class="post_media_photo image" src="https://66.media.tumblr.com/332f9b4eaeeddd557624b1d0f3de1016/tumblr_ouumy10DVL1rktvuto1_500.jpg" alt="" />
+                        </figure>
+                    </div>
+    
+                    <div class="post-section">
+                        <p><img class="reblog-avatar" src="https://66.media.tumblr.com/avatar_f7cf6cd6506e_64.pnj">
+                        <a target="_blank" class="reblog-username" href="https://silentstructures.tumblr.com/post/164305044678"><b>silentstructures</b></a>
                         
-                        
-                            
-                                <div class="post-section">
-                                    <p><img class="reblog-avatar" src="https://66.media.tumblr.com/avatar_f7cf6cd6506e_64.pnj">
-                                    <a target="_blank" class="reblog-username" href="https://silentstructures.tumblr.com/post/164305044678"><b>silentstructures</b></a>
-                                    
-                                    </p>
-                                    <p>Coffee Break - 2010</p><p>Looks can be deceiving.</p><p>
+                        </p>
+                        <p>Coffee Break - 2010</p><p>Looks can be deceiving.</p><p>
 
 Windows 2000 Professional
 
- booting up in an abandoned office space on the upper floors of a small industrial space in Toronto, Ontario, Canada.<br /></p>
-                                </div>
-                            
-                        
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
+booting up in an abandoned office space on the upper floors of a small industrial space in Toronto, Ontario, Canada.<br /></p>
+                    </div>
+
                 </div>
                 
                 <div class="status-bar">
@@ -1449,6 +1109,8 @@ Windows 2000 Professional
                 
             </div>
         </div>
+        
+        <div class="window-border inf-scroll-item" style="position: absolute; left: 442px; top: 1667px;"><div id="123456778924" class="window answer"><div class="title-bar"><div class="icon"></div><span class="post-date">Nov 30, 2017</span><div class="title-bar-buttons"></div></div><div class="menu-bar"><ul class="menu-items"><a href="#"><li>Reblog</li></a><a href="#"><li>Permalink</li></a></ul></div><div class="text-area"><div class="post-section asker"><p><img class="reblog-avatar" src="https://assets.tumblr.com/images/anonymous_avatar_64.gif"> <b>Anonymous asked</b></p><p></p><p>Example ask?</p><p></p></div><div class="post-section"><p>example answer...</p></div></div><div class="status-bar"><div class="grip"></div><a href="#">Posted 5 years ago</a></div></div></div>
         
         
     <div class="window-border inf-scroll-item">
@@ -1460,52 +1122,33 @@ Windows 2000 Professional
                     
                     
                     
-                    <span class="title">Photo</span>
-                    
-                    
-                    
-                    
-                    
-                    <span class="post-date"> - Nov 30, 2017</span>
+                    <span class="title">Nov 30, 2017</span>
                     <div class="title-bar-buttons"></div>
                 </div>
                 
                 <div class="menu-bar">
                     <ul class="menu-items">
-                        <a href="#"><li>Reblog</li></a><a href="#"><li>Permalink</li></a><a target="_blank" href="#"><li>Zoom</li></a>
+                        <a href="#"><li>Reblog</li></a><a href="#"><li>Permalink</li></a>
                     </ul>
                 </div>
-                
-                <div class="media-container"><a href="#"><img class="photo-post-photo" src="https://66.media.tumblr.com/e5e3b9cdc367bf9ab3729bbd58e13937/tumblr_pyvhkzglKQ1xkay4po2_500.jpg" alt="Ocean Wave" /></a></div>
-                
-                
-                
+
                 <div class="text-area has-caption">
                     
-                    
-                    
-                        
-                        
-                            
-                                <div class="post-section">
-                                    <p>Ocean Wave</p>
-                                </div>
-                            
-                        
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
+                    <div class="post-section legacy-media">
+                        <figure class="tmblr-full">
+                        <img class="post_media_photo image" src="https://66.media.tumblr.com/e5e3b9cdc367bf9ab3729bbd58e13937/tumblr_pyvhkzglKQ1xkay4po2_500.jpg" alt="" />
+                        </figure>
+                    </div>
+  
+                    <div class="post-section">
+                        <p>Ocean Wave</p>
+                    </div>
                     
                 </div>
                 
                 <div class="status-bar">
                     <div class="grip"></div>
-                    <a href="#">Posted 3 years ago</a> - <a href="#">100 notes</a>
+                    <a href="#">Posted 5 years ago</a> - <a href="#">100 notes</a>
                 </div>
                 
             </div>
@@ -1579,7 +1222,7 @@ Windows 2000 Professional
         </div>
 	</div>
 	
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://static.tumblr.com/anzluor/jA5p3abax/masonry.js"></script>
     
     <script>

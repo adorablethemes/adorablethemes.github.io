@@ -7,7 +7,7 @@ permalink: /preview/win31
         <!-- 
         
         theme:      Win3.1
-        version:    1.7 (February 8, 2020)
+        version:    2.0 (January 5, 2023)
         from:       adorablethemes.github.io
         
         
@@ -15,7 +15,7 @@ permalink: /preview/win31
         
         imagesLoaded 4.1.4 (imagesloaded.desandro.com)
         Infinite Scroll 2.0.2 (infinite-scroll.com)
-        jQuery 3.3.1 (jquery.com)
+        jQuery 3.6.0 (jquery.com)
         Masonry 4.2.1 (masonry.desandro.com)
         
         -->
@@ -27,6 +27,10 @@ permalink: /preview/win31
     	<link rel="shortcut icon" href="https://66.media.tumblr.com/avatar_0a049fec4ca7_128.pnj">
         <meta name="robots" content="noindex"/>
         <style>
+        figure {
+            padding: 0;
+            margin: 0;
+        }
         * {
             -webkit-box-sizing: border-box;
             -moz-box-sizing: border-box;
@@ -47,7 +51,6 @@ permalink: /preview/win31
         }
         body {
             background-color: #c3c7cb;
-            
             font-family: -apple-system, BlinkMacSystemFont, Arial, Helvetica, sans-serif;
             width: 690px;
             margin: 0 auto;
@@ -217,8 +220,14 @@ permalink: /preview/win31
             font-size: 12px;
             background-color: #ffffff;
             color: #000000;
-            padding: 10px 20px;
             border-top: 1px solid black;
+        }
+        .text-area p, .text-area h1, .text-area h2, .text-area h3, .text-area h4, .text-area h5, .text-area h6, .text-area ol, .text-area ul, .text-area blockquote {
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+        .text-area ul, .text-area ol {
+            padding-left: 20px;
         }
         .text-area a.tumblr_blog {
             text-decoration: none;
@@ -234,15 +243,6 @@ permalink: /preview/win31
         }
         .font-georgia .text-area {
             font-family: Georgia, 'Times New Roman', Times, serif;
-        }
-        .photo .text-area, .video .text-area, .audio .text-area {
-            display: none;
-        }
-        .photo .text-area.has-caption, .video .text-area.has-caption, .audio .text-area.has-caption {
-            display: block;
-        }
-        .photo .text-area.has-tags, .video .text-area.has-tags, .audio .text-area.has-tags {
-            display: block;
         }
         .text-area a {
             color: #000000;
@@ -265,8 +265,6 @@ permalink: /preview/win31
         }
         .text-area blockquote {
             border-left: 2px solid #000000;
-            margin-left: 2px;
-            padding-left: 8px;
         }
         .quote-text {
             font-family: Georgia, 'Times New Roman', Times, serif;
@@ -283,72 +281,6 @@ permalink: /preview/win31
         }
         .status-bar a {
             color: #000000;
-        }
-        
-        .media-container {
-            border-top: 1px solid black;
-            background-color: #ffffff;
-            overflow: hidden;
-        }
-        .photo-post-photo {
-            max-width: 100%;
-            height: auto;
-            display: block;
-        }
-        
-        .stretch-images .photo-post-photo {
-            width: 500px;
-        }
-        .stretch-images.layout-two-column .photo-post-photo {
-            width: 400px;
-        }
-        .stretch-images.layout-three-column .photo-post-photo {
-            width: 275px;
-        }
-        
-        
-        .media-container iframe {
-            display: block;
-            max-width: 100%;
-        }
-        .layout-two-column .video .media-container iframe {
-            width: 400px;
-            height: 225px;
-        }
-        .layout-three-column .video .media-container iframe {
-            width: 275px;
-            height: 154px;
-        }
-        
-        .video .media-container iframe.instagram-media {
-            margin: 0 !important;
-        }
-        
-        .layout-two-column .video .media-container iframe.instagram-media {
-            width: 400px;
-            height: 610px;
-        }
-        .layout-three-column .video .media-container iframe.instagram-media {
-            width: 275px;
-            height: 460px;
-        }
-        
-        .layout-two-column .soundcloud_audio_player {
-            width: 400px;
-            height: 400px;
-        }
-        .layout-three-column .soundcloud_audio_player {
-            width: 275px;
-            height: 275px;
-        }
-        
-        .layout-two-column .spotify_audio_player {
-            width: 400px;
-            height: 464px;
-        }
-        .layout-three-column .spotify_audio_player {
-            width: 275px;
-            height: 319px;
         }
         
         .tumblr_video_iframe {
@@ -415,9 +347,6 @@ permalink: /preview/win31
         }
         
         
-        
-        
-        
         .pagenav {
             float: none !important;
             margin: 0 auto !important;
@@ -476,7 +405,7 @@ permalink: /preview/win31
 	    only screen and (-o-min-device-pixel-ratio: 11/10),
         only screen and (min-resolution: 110dpi) {
             .window-border {
-                background-image: url('https://static.tumblr.com/anzluor/Zn8p2fcyr/win31grip_hidpi.png'), url('https://static.tumblr.com/anzluor/Zn8p2fcyr/win31grip_hidpi.png'), url('https://static.tumblr.com/anzluor/Zn8p2fcyr/win31grip_hidpi.pngg'), url('https://static.tumblr.com/anzluor/Zn8p2fcyr/win31grip_hidpi.png');
+                background-image: url('https://static.tumblr.com/anzluor/Zn8p2fcyr/win31grip_hidpi.png'), url('https://static.tumblr.com/anzluor/Zn8p2fcyr/win31grip_hidpi.png'), url('https://static.tumblr.com/anzluor/Zn8p2fcyr/win31grip_hidpi.png'), url('https://static.tumblr.com/anzluor/Zn8p2fcyr/win31grip_hidpi.png');
                 background-size: 43px 43px, 43px 43px, 43px 43px, 43px 43px;
             }
             .title-bar-buttons {
@@ -518,33 +447,43 @@ permalink: /preview/win31
         .post-section:last-child {
             border-bottom: 0;
         }
+        .post-section.legacy-media {
+            border-bottom: 0;
+        }
         p.tmblr-attribution {
             font-size: 11px;
         }
         div.npf_row {
-            max-width: 100%;
             height: auto !important;
             display: flex;
-            margin: 0 !important;
         }
         div.npf_row figure.tmblr-full {
             flex: 1;
             justify-content: space-between;
             margin: 0;
         }
-        div.npf_row figure.tmblr-full:first-child {
-            padding-right: 2px;
+        .tmblr-full .post_media_photo_anchor {
+            width: 100%;
+        }
+        .tmblr-full audio {
+            width: 100%;
+        }
+        div.npf-link-block {
+            margin: 10px 20px !important;
         }
         .npf-link-block a {
             text-decoration: none !important;
         }
-        .post-section figure video, .post-section figure audio {
-            max-width: 100%;
+        .tmblr-full img {
+            width: 100%;
+            height: auto;
+        }
+        .post-section figure:not(.tmblr-full) {
+            margin: 10px 20px;
         }
         
         .text-area.related {
-            padding-top: 20px;
-            padding-right: 5px;
+            padding: 20px 5px 5px 20px;
         }
         
         .square {
@@ -563,21 +502,14 @@ permalink: /preview/win31
             overflow: hidden;
         }
         
-        .related-posts-container a:nth-child(n+9) {
-            display: none;
-        }
-        
         .related-posts a:hover .square {
             -webkit-filter: brightness(1.07);
             filter: brightness(1.07);
         }
         
-        
-        .title-bar .post-date {
-            display: none;
+        .invisible {
+            opacity: 0;   
         }
-        
-        
         
         </style>
         
@@ -585,67 +517,33 @@ permalink: /preview/win31
             var win31 = {infScroll: false, indexPage: true, layout: 'two-column', prefill: false};
         </script>
         </head>
-        <body class="index-page page-1 font-arial background-tile layout-two-column stretch-images">
+        <body class="index-page page-1 font-arial background-tile layout-two-column">
     <main>
     
     <div class="posts-container">
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
     
         <div class="window-border inf-scroll-item">
             <div id="169641202233" class="window photo">
                 <div class="title-bar">
                     <div class="icon"></div>
-                    
-                    
-                    
-                    
-                    
-                    <span class="title">Photo</span>
-                    
-                    
-                    
-                    
-                    
-                    <span class="post-date"> - Jan 12, 2018</span>
+                    <span class="post-date">Jan 12, 2018</span>
                     <div class="title-bar-buttons"></div>
                 </div>
                 
                 <div class="menu-bar">
                     <ul class="menu-items">
-                        <a href="#"><li><span class="first-letter">R</span>eblog</li></a><a href="#"><li><span class="first-letter">P</span>ermalink</li></a><a href="#"><li><span class="first-letter">Z</span>oom</li></a>
+                        <a href="#"><li><span class="first-letter">R</span>eblog</li></a><a href="#"><li><span class="first-letter">P</span>ermalink</li></a>
                     </ul>
                 </div>
                 
-                <div class="media-container"><a href="#"><img class="photo-post-photo" src="https://66.media.tumblr.com/1017456f2a2147a3419f582fcc5ccf32/tumblr_p01gswTUGz1tofcqeo1_500.jpg" alt="" /></a></div>
-                
-                
-                
-                <div class="text-area">
+                <div class="text-area clearfix">
                     
-                    
-                    
-                        
-                    
-                        
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
+                    <div class="post-section legacy-media">
+                        <figure class="tmblr-full">
+                        <img class="post_media_photo image" src="https://66.media.tumblr.com/1017456f2a2147a3419f582fcc5ccf32/tumblr_p01gswTUGz1tofcqeo1_500.jpg" alt="" />
+                        </figure>
+                    </div>
                     
                 </div>
                 
@@ -663,61 +561,36 @@ permalink: /preview/win31
             <div id="169641071883" class="window photo">
                 <div class="title-bar">
                     <div class="icon"></div>
-                    
-                    
-                    
-                    
-                    
-                    <span class="title">Photo</span>
-                    
-                    
-                    
-                    
-                    
-                    <span class="post-date"> - Jan 12, 2018</span>
+                    <span class="post-date">Jan 12, 2018</span>
                     <div class="title-bar-buttons"></div>
                 </div>
                 
                 <div class="menu-bar">
                     <ul class="menu-items">
-                        <a href="#"><li><span class="first-letter">R</span>eblog</li></a><a href="#"><li><span class="first-letter">P</span>ermalink</li></a><a href="\image\169641071883"><li><span class="first-letter">Z</span>oom</li></a>
+                        <a href="#"><li><span class="first-letter">R</span>eblog</li></a><a href="#"><li><span class="first-letter">P</span>ermalink</li></a>
                     </ul>
                 </div>
                 
-                <div class="media-container"><a href="#"><img class="photo-post-photo" src="https://66.media.tumblr.com/88be3b613cadb3d95efd411cb8422690/tumblr_oobwupsoPo1tigc1po1_500.jpg" alt="monochrome-monitor:
-&ldquo; IBM PC110 palmtop
-&rdquo;" /></a></div>
-                
-                
-                
-                <div class="text-area has-caption">
+                <div class="text-area clearfix">
                     
-                    
-                    
+                    <div class="post-section legacy-media">
+                        <figure class="tmblr-full">
+                        <img class="post_media_photo image" src="https://66.media.tumblr.com/88be3b613cadb3d95efd411cb8422690/tumblr_oobwupsoPo1tigc1po1_500.jpg" alt="" />
+                        </figure>
+                    </div>
+
                         
-                    
+                    <div class="post-section">
+                        <p><img class="reblog-avatar" src="https://66.media.tumblr.com/avatar_3b81de3102d4_64.pnj">
+                        <a target="_blank" class="reblog-username" href="https://monochrome-monitor.tumblr.com/post/159514399407"><b>monochrome-monitor</b></a>
                         
-                            <div class="post-section">
-                                <p><img class="reblog-avatar" src="https://66.media.tumblr.com/avatar_3b81de3102d4_64.pnj">
-                                <a target="_blank" class="reblog-username" href="https://monochrome-monitor.tumblr.com/post/159514399407"><b>monochrome-monitor</b></a>
-                                
-                                </p>
-                                <p>
+                        </p>
+                        <p>
 
 IBM PC110 palmtop
 
 <br /></p>
-                            </div>
-                        
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
+                    </div>
                     
                 </div>
                 
@@ -735,18 +608,7 @@ IBM PC110 palmtop
             <div id="169631237238" class="window photo">
                 <div class="title-bar">
                     <div class="icon"></div>
-                    
-                    
-                    
-                    
-                    
-                    <span class="title">Photo</span>
-                    
-                    
-                    
-                    
-                    
-                    <span class="post-date"> - Jan 12, 2018</span>
+                    <span class="post-date">Jan 12, 2018</span>
                     <div class="title-bar-buttons"></div>
                 </div>
                 
@@ -755,33 +617,20 @@ IBM PC110 palmtop
                         <a href="#"><li><span class="first-letter">R</span>eblog</li></a><a href="#"><li><span class="first-letter">P</span>ermalink</li></a>
                     </ul>
                 </div>
-                
-                <div class="media-container"><img class="photo-post-photo" src="https://66.media.tumblr.com/c582b91dd0cd8fe655259742b6a1d7f2/tumblr_p2grd26TcU1x1xxyso1_500.png" alt="" /></div>
-                
-                
-                
-                <div class="text-area">
+
+                <div class="text-area clearfix">
                     
-                    
-                    
-                        
-                        
-					
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
+                    <div class="post-section legacy-media">
+                        <figure class="tmblr-full">
+                        <img class="post_media_photo image" src="https://66.media.tumblr.com/c582b91dd0cd8fe655259742b6a1d7f2/tumblr_p2grd26TcU1x1xxyso1_500.png" alt="" />
+                        </figure>
+                    </div>
                     
                 </div>
                 
                 <div class="status-bar">
                     <div class="grip"></div>
-                    <a href="#">Posted 2 years ago</a> - <a href="#">156 notes</a>
+                    <a href="#">Posted 4 years ago</a> - <a href="#">156 notes</a>
                 </div>
                 
             </div>
@@ -793,57 +642,31 @@ IBM PC110 palmtop
             <div id="169630904288" class="window photo">
                 <div class="title-bar">
                     <div class="icon"></div>
-                    
-                    
-                    
-                    
-                    
-                    <span class="title">Photo</span>
-                    
-                    
-                    
-                    
-                    
-                    <span class="post-date"> - Jan 12, 2018</span>
+                    <span class="post-date">Jan 12, 2018</span>
                     <div class="title-bar-buttons"></div>
                 </div>
                 
                 <div class="menu-bar">
                     <ul class="menu-items">
-                        <a href="#"><li><span class="first-letter">R</span>eblog</li></a><a href="#"><li><span class="first-letter">P</span>ermalink</li></a><a href="#"><li><span class="first-letter">Z</span>oom</li></a>
+                        <a href="#"><li><span class="first-letter">R</span>eblog</li></a><a href="#"><li><span class="first-letter">P</span>ermalink</li></a>
                     </ul>
                 </div>
-                
-                <div class="media-container"><a href="#"><img class="photo-post-photo" src="https://66.media.tumblr.com/318e0beb3247cdc5b802d8b981f09f84/tumblr_off5zcQcpB1ts4htvo1_500.gifv" alt="isopoly:
-&ldquo;&ldquo;block&rdquo; &rdquo;" /></a></div>
-                
-                
-                
-                <div class="text-area has-caption">
+
+                <div class="text-area clearfix">
                     
-                    
-                    
+                    <div class="post-section legacy-media">
+                        <figure class="tmblr-full">
+                        <img class="post_media_photo image" src="https://66.media.tumblr.com/318e0beb3247cdc5b802d8b981f09f84/tumblr_off5zcQcpB1ts4htvo1_500.gifv" alt="" />
+                        </figure>
+                    </div>
+
+                    <div class="post-section">
+                        <p><img class="reblog-avatar" src="https://66.media.tumblr.com/avatar_83191dfc70e9_64.pnj">
                         
-                    
-                        
-                            <div class="post-section">
-                                <p><img class="reblog-avatar" src="https://66.media.tumblr.com/avatar_83191dfc70e9_64.pnj">
-                                
-                                <b>isopoly</b>
-                                </p>
-                                <p>&ldquo;block&rdquo;<br /></p>
-                            </div>
-                        
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
+                        <b>isopoly</b>
+                        </p>
+                        <p>&ldquo;block&rdquo;<br /></p>
+                    </div>
                 </div>
                 
                 <div class="status-bar">
@@ -860,18 +683,7 @@ IBM PC110 palmtop
             <div id="169597752283" class="window text">
                 <div class="title-bar">
                     <div class="icon"></div>
-                    
-                    <span class="title">Text</span>
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    <span class="post-date"> - Jan 11, 2018</span>
+                    <span class="post-date">Jan 11, 2018</span>
                     <div class="title-bar-buttons"></div>
                 </div>
                 
@@ -885,7 +697,7 @@ IBM PC110 palmtop
                 
                 
                 
-                <div class="text-area">
+                <div class="text-area clearfix">
                     
                         <h2>Example text post</h2>
                         
@@ -918,7 +730,7 @@ consectetur fermentum lacus arcu vel orci.<br /></p>
                 
                 <div class="status-bar">
                     <div class="grip"></div>
-                    <a href="#">Posted 2 years ago</a>
+                    <a href="#">Posted 4 years ago</a>
                 </div>
                 
             </div>
@@ -930,55 +742,31 @@ consectetur fermentum lacus arcu vel orci.<br /></p>
             <div id="169588520683" class="window photo">
                 <div class="title-bar">
                     <div class="icon"></div>
-                    
-                    
-                    
-                    
-                    
-                    <span class="title">Photo</span>
-                    
-                    
-                    
-                    
-                    
-                    <span class="post-date"> - Jan 11, 2018</span>
+                    <span class="post-date">Jan 11, 2018</span>
                     <div class="title-bar-buttons"></div>
                 </div>
                 
                 <div class="menu-bar">
                     <ul class="menu-items">
-                        <a href="#"><li><span class="first-letter">R</span>eblog</li></a><a href="#"><li><span class="first-letter">P</span>ermalink</li></a><a href="#"><li><span class="first-letter">Z</span>oom</li></a>
+                        <a href="#"><li><span class="first-letter">R</span>eblog</li></a><a href="#"><li><span class="first-letter">P</span>ermalink</li></a>
                     </ul>
                 </div>
-                
-                <div class="media-container"><a href="#"><img class="photo-post-photo" src="https://66.media.tumblr.com/43a278b770807466a2559920a44e13a4/tumblr_pxgsuk26Gs1xkay4po1_500.png" alt="Hot Dog Stand" /></a></div>
-                
-                
-                
-                <div class="text-area has-caption">
+
+                <div class="text-area clearfix">
                     
-                    
-                    
+                    <div class="post-section legacy-media">
+                        <figure class="tmblr-full">
+                        <img class="post_media_photo image" src="https://66.media.tumblr.com/43a278b770807466a2559920a44e13a4/tumblr_pxgsuk26Gs1xkay4po1_500.png" alt="" />
+                        </figure>
+                    </div>
+
+                    <div class="post-section">
+                        <p><img class="reblog-avatar" src="https://66.media.tumblr.com/23a15c55cdc13f581821a28dcd8bfed8/2aeed3789d5a290c-a1/s64x64u_c1/1607cb370b48a653395b7412cf85d357bb6edb47.pnj">
+                        <a target="_blank" class="reblog-username" href="https://never-obsolete.tumblr.com/post/188199978370/windows-31-hotdog-stand-color-scheme"><b>never-obsolete</b></a>
                         
-                        
-        					<div class="post-section">
-                                <p><img class="reblog-avatar" src="https://66.media.tumblr.com/23a15c55cdc13f581821a28dcd8bfed8/2aeed3789d5a290c-a1/s64x64u_c1/1607cb370b48a653395b7412cf85d357bb6edb47.pnj">
-                                <a target="_blank" class="reblog-username" href="https://never-obsolete.tumblr.com/post/188199978370/windows-31-hotdog-stand-color-scheme"><b>never-obsolete</b></a>
-                                
-                                </p>
-            					<p>Windows 3.1 - Hotdog Stand color scheme</p>
-        					</div>
-    					
-					
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
+                        </p>
+                        <p>Windows 3.1 - Hotdog Stand color scheme</p>
+                    </div>
                     
                 </div>
                 
@@ -993,91 +781,10 @@ consectetur fermentum lacus arcu vel orci.<br /></p>
         
     
         <div class="window-border inf-scroll-item">
-            <div id="169588428933" class="window link">
-                <div class="title-bar">
-                    <div class="icon"></div>
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    <span class="title">Link</span>
-                    
-                    
-                    
-                    <span class="post-date"> - Jan 11, 2018</span>
-                    <div class="title-bar-buttons"></div>
-                </div>
-                
-                <div class="menu-bar">
-                    <ul class="menu-items">
-                        <a href="#"><li><span class="first-letter">R</span>eblog</li></a><a href="#"><li><span class="first-letter">P</span>ermalink</li></a>
-                    </ul>
-                </div>
-                
-                
-                
-                
-                
-                <div class="text-area">
-                    
-                    
-                    
-                    
-                    
-                        <div class="post-section">
-                        <h2><a href="https://classicreload.com/win3x-windows-311.html" class="link-post-link" title="classicreload.com" >Try Windows 3.1 in your browser &rarr;</a></h2>
-                        <p>classicreload.com &mdash; <em>Here's an emulated version of Windows 3.1, running in your browser. Experience what PCs were like back in 1992.</em></p>
-                        </div>
-                        
-                        
-					
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                        <p>
-                        
-                            <a class="tag" href="https://win31t.tumblr.com/tagged/windows-3.1">windows 3.1</a>&nbsp;
-                        
-                            <a class="tag" href="https://win31t.tumblr.com/tagged/dosbox">dosbox</a>&nbsp;
-                        
-                        </p>
-                    
-                </div>
-                
-                <div class="status-bar">
-                    <div class="grip"></div>
-                    <a href="#">Posted 2 years ago</a> - <a href="#">6 notes</a>
-                </div>
-                
-            </div>
-        </div>
-        
-        
-    
-        <div class="window-border inf-scroll-item">
             <div id="171485845923" class="window audio">
                 <div class="title-bar">
                     <div class="icon"></div>
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    <span class="title">Audio</span>
-                    
-                    <span class="post-date"> - Jan 10, 2018</span>
+                    <span class="post-date">Jan 10, 2018</span>
                     <div class="title-bar-buttons"></div>
                 </div>
                 
@@ -1086,44 +793,23 @@ consectetur fermentum lacus arcu vel orci.<br /></p>
                         <a href="#"><li><span class="first-letter">R</span>eblog</li></a><a href="#"><li><span class="first-letter">P</span>ermalink</li></a><a href="https://soundcloud.com/ideoforms/windows-95-startup-sound"><li><span class="first-letter">S</span>ource</li></a>
                     </ul>
                 </div>
-                
-                
-                
-                
-                <div class="media-container"><iframe src="https://w.soundcloud.com/player/?url=https%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F220721042&amp;visual=true&amp;liking=false&amp;sharing=false&amp;auto_play=false&amp;show_comments=false&amp;continuous_play=false&amp;origin=tumblr" frameborder="0" allowtransparency="true" class="soundcloud_audio_player" width="500" height="500"></iframe></div>
-                <div class="text-area">
+
+                <div class="text-area clearfix">
                     
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                        
-                        
-					
-                    
-                    
-                    
-                    
+                    <div class="post-section legacy-media">
+                        <iframe src="https://w.soundcloud.com/player/?url=https%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F220721042&amp;visual=true&amp;liking=false&amp;sharing=false&amp;auto_play=false&amp;show_comments=false&amp;continuous_play=false&amp;origin=tumblr" frameborder="0" allowtransparency="true" class="soundcloud_audio_player" width="500" height="500"></iframe>
+                    </div>
+
                 </div>
                 
                 <div class="status-bar">
                     <div class="grip"></div>
-                    <a href="#">Posted 2 years ago</a> - <a href="#">13 notes</a>
+                    <a href="#">Posted 4 years ago</a> - <a href="#">13 notes</a>
                 </div>
                 
             </div>
         </div>
-        
-        
-    
-    
-    
-    
-    
+
     
     </div>
     
@@ -1161,7 +847,7 @@ consectetur fermentum lacus arcu vel orci.<br /></p>
         </div>
 	</div>
 	
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://static.tumblr.com/anzluor/jA5p3abax/masonry.js"></script>
     
     <script>
